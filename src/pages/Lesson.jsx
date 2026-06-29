@@ -1,5 +1,5 @@
 // src/pages/Lesson.jsx
-import { useState, useCallback, useRef } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useGame } from '../context/GameContext';
 import { getCourseById } from '../data/courses';
@@ -30,6 +30,8 @@ export default function Lesson() {
   const [mistakes, setMistakes] = useState(0);
   const [showConfetti, setShowConfetti] = useState(false);
   const [resultMsg, setResultMsg] = useState('');
+  const [noHearts, setNoHearts] = useState(false); // cảnh báo hết tim
+  const navTimerRef = useRef(null); // ref để hủy timeout nếu cần
 
   const currentLesson = lessons[currentIdx];
   const progress = ((currentIdx) / totalQuestions) * 100;
@@ -49,21 +51,25 @@ export default function Lesson() {
       playWrong();
       playHeartLost();
       setMistakes(m => m + 1);
-      const newHearts = hearts - 1;
+      const newHearts = Math.max(0, hearts - 1); // không xuống dưới 0
       setHearts(newHearts);
       loseHeart();
-      setResultMsg('Chưa đúng, cố gắng lên! 💪');
-      if (newHearts <= 0) {
-        setTimeout(() => navigate('/'), 2000);
+      if (newHearts === 0) {
+        setNoHearts(true);
+        setResultMsg('Hết tim rồi! Cố gắng lên nhé 💪');
+      } else {
+        setResultMsg('Chưa đúng, cố gắng lên! 💪');
       }
+      // KHÔNG auto-navigate — để người dùng tự bấm Tiếp theo
     }
-  }, [hearts, loseHeart, navigate]);
+  }, [hearts, loseHeart]);
 
   const handleNext = () => {
     setAnswered(false);
     setIsCorrect(null);
     setShowConfetti(false);
     setResultMsg('');
+    setNoHearts(false);
 
     if (currentIdx + 1 >= totalQuestions) {
       // Lesson complete!
