@@ -4,7 +4,7 @@
 
 import { useState, useEffect } from 'react';
 
-const STORAGE_KEY = 'dulygo-theme';
+const STORAGE_KEY = 'minhenglish-theme';
 const DARK = 'dark';
 const LIGHT = 'light';
 

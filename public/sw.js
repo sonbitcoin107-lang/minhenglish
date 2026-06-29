@@ -1,5 +1,5 @@
 // public/sw.js
-// Service Worker — Dulygo
+// Service Worker — MinhEnglish
 // Strategy:
 //   - index.html  → Network first (luôn lấy version mới nhất)
 //   - /assets/*   → Cache first  (Vite đã hash tên file, tự cache bust)
@@ -7,12 +7,12 @@
 //   - skipWaiting → Kích hoạt SW mới NGAY khi cài xong (không chờ tab đóng)
 //   - clients.claim → SW mới kiểm soát tất cả tab ngay lập tức
 
-const CACHE_VERSION = 'dulygo-v3';
+const CACHE_VERSION = 'minhenglish-v3';
 const STATIC_ASSETS = [
-  '/dulygo/',
-  '/dulygo/index.html',
-  '/dulygo/mascot.png',
-  '/dulygo/manifest.json',
+  '/minhenglish/',
+  '/minhenglish/index.html',
+  '/minhenglish/mascot.png',
+  '/minhenglish/manifest.json',
 ];
 
 // ── INSTALL ────────────────────────────────────────────────────
@@ -55,15 +55,15 @@ self.addEventListener('fetch', (event) => {
   // index.html — Network first (để app luôn mới nhất khi mở lại)
   if (
     request.mode === 'navigate' ||
-    url.pathname === '/dulygo/' ||
-    url.pathname === '/dulygo/index.html'
+    url.pathname === '/minhenglish/' ||
+    url.pathname === '/minhenglish/index.html'
   ) {
     event.respondWith(networkFirstWithCache(request));
     return;
   }
 
   // /assets/* — Cache first (Vite hash tên file nên cache an toàn)
-  if (url.pathname.startsWith('/dulygo/assets/')) {
+  if (url.pathname.startsWith('/minhenglish/assets/')) {
     event.respondWith(cacheFirstWithNetwork(request));
     return;
   }

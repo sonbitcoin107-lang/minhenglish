@@ -44,7 +44,7 @@ export default function Onboarding() {
       <div className="onboarding-content fade-in" key={step}>
         {step === 0 && (
           <div className="onboarding-screen text-center">
-            <DuoMascot size="xl" mood="excited" message="Chào mừng đến với Dulygo! 🎉" />
+            <DuoMascot size="xl" mood="excited" message="Chào mừng đến với MinhEnglish! 🎉" />
             <h1 className="onboarding-title">Học tiếng Anh<br />mỗi ngày!</h1>
             <p className="onboarding-sub">Cùng Duo học vui, học hiệu quả,<br />và nhận phần thưởng mỗi ngày!</p>
             <button id="btn-start" className="btn btn-primary btn-full" onClick={next}>

@@ -33,7 +33,7 @@ export default function Guidebook({ unit, onClose, onStart }) {
         <div className="guidebook-header">
           <img
             className="guidebook-mascot"
-            src="/dulygo/mascot.png"
+            src="/minhenglish/mascot.png"
             alt="Mascot"
             onError={(e) => {
               e.currentTarget.style.display = 'none';

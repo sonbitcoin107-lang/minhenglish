@@ -11,9 +11,9 @@ export default function TopBar() {
   return (
     <header className="topbar">
       <div className="topbar-logo">
-        <img src="/dulygo/mascot.png" alt="MinhTi" width={32} height={32}
+        <img src="/minhenglish/mascot.png" alt="MinhTi" width={32} height={32}
           style={{ borderRadius: '50%', objectFit: 'contain' }} />
-        <span className="topbar-brand">Dulygo</span>
+        <span className="topbar-brand">MinhEnglish</span>
       </div>
       <div className="topbar-stats">
         <div className="streak-badge">

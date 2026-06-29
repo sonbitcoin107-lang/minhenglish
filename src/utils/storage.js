@@ -1,8 +1,8 @@
 // src/utils/storage.js
 // Handles all localStorage persistence
 
-const KEY = 'dulygo_state';
-const PROFILE_KEY = 'dulygo_profile';
+const KEY = 'minhenglish_state';
+const PROFILE_KEY = 'minhenglish_profile';
 
 export const saveState = (state) => {
   try {

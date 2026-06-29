@@ -12,7 +12,7 @@ export default function DuoMascot({ message, size = 'md', mood = 'happy', animat
   return (
     <div className={`duo-mascot ${sizeClass} ${animate ? 'float-anim' : ''} mood-${mood}`}>
       <img
-        src="/dulygo/mascot.png"
+        src="/minhenglish/mascot.png"
         alt="MinhTi"
         className="duo-img"
       />
