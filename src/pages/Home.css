@@ -57,6 +57,13 @@
   padding: 4px 0 4px;
 }
 
+/* ─── One node group: connector + row ───────────────────── */
+.map-node-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
 /* Each row holds ONE node, positioned by justify-content */
 .map-row {
   display: flex;
@@ -66,15 +73,12 @@
 
 /* ─── Path connector between nodes ──────────────────────── */
 .path-connector {
-  position: absolute;
-  /* Horizontal center of the connector bar, adjusted per lean direction */
+  /* sits in normal flow between node rows */
   width: 6px;
   height: 28px;
   border-radius: 3px;
-  top: -24px;
-  /* Default: center of the row */
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
+  pointer-events: none;  /* NEVER block node clicks */
 }
 
 /* Lean LEFT connector (from right-side to center or left) */

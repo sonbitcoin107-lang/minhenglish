@@ -159,6 +159,16 @@
   box-shadow: none;
 }
 
+.guidebook-speak-btn.speaking {
+  background: #0082BB;
+  animation: speak-pulse 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes speak-pulse {
+  from { transform: scale(1); }
+  to   { transform: scale(1.08); }
+}
+
 .guidebook-phrase-texts {
   display: flex;
   flex-direction: column;

@@ -2,12 +2,13 @@
 // Props:
 //   unit:    course object (title, emoji, color, guidebook[])
 //   onClose: function to close the modal
+//   onStart: function(courseId) called when "BẮT ĐẦU HỌC" is tapped
 
 import { useState } from 'react';
 import { speakText } from '../../utils/speech';
 import './Guidebook.css';
 
-export default function Guidebook({ unit, onClose }) {
+export default function Guidebook({ unit, onClose, onStart }) {
   const [speaking, setSpeaking] = useState(null);
 
   const handleSpeak = (phrase, idx) => {
@@ -15,7 +16,12 @@ export default function Guidebook({ unit, onClose }) {
     speakText(phrase.en, () => setSpeaking(null));
   };
 
-  // Close on overlay click (not on sheet click)
+  const handleStart = () => {
+    onClose?.();
+    onStart?.(unit.id);
+  };
+
+  // Close on overlay click
   const handleOverlayClick = (e) => {
     if (e.target === e.currentTarget) onClose?.();
   };
@@ -25,7 +31,6 @@ export default function Guidebook({ unit, onClose }) {
       <div className="guidebook-sheet">
         {/* Header */}
         <div className="guidebook-header">
-          {/* Try to load mascot image, fallback to emoji */}
           <img
             className="guidebook-mascot"
             src="/dulygo/mascot.png"
@@ -40,7 +45,7 @@ export default function Guidebook({ unit, onClose }) {
           </div>
 
           <div className="guidebook-header-text">
-            <span className="guidebook-header-label">Sổ tay</span>
+            <span className="guidebook-header-label">Sổ tay từ vựng</span>
             <span className="guidebook-header-title">{unit.title}</span>
           </div>
 
@@ -56,12 +61,11 @@ export default function Guidebook({ unit, onClose }) {
           {(unit.guidebook || []).map((phrase, idx) => (
             <div key={idx} className="guidebook-phrase-card">
               <button
-                className="guidebook-speak-btn"
+                className={`guidebook-speak-btn ${speaking === idx ? 'speaking' : ''}`}
                 onClick={() => handleSpeak(phrase, idx)}
                 aria-label={`Nghe phát âm: ${phrase.en}`}
-                style={speaking === idx ? { opacity: 0.7 } : {}}
               >
-                🔊
+                {speaking === idx ? '🔉' : '🔊'}
               </button>
 
               <div className="guidebook-phrase-texts">
@@ -72,10 +76,10 @@ export default function Guidebook({ unit, onClose }) {
           ))}
         </div>
 
-        {/* Footer CTA */}
+        {/* Footer CTA — navigates to lesson */}
         <div className="guidebook-footer">
-          <button className="guidebook-start-btn" onClick={onClose}>
-            BẮT ĐẦU HỌC →
+          <button className="guidebook-start-btn" onClick={handleStart}>
+            🚀 BẮT ĐẦU HỌC
           </button>
         </div>
       </div>

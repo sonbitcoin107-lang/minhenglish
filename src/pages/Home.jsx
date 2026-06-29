@@ -69,6 +69,11 @@ export default function Home() {
     navigate('/lesson', { state: { courseId: course.id } });
   };
 
+  // Called from Guidebook footer button
+  const handleStartFromGuidebook = (courseId) => {
+    navigate('/lesson', { state: { courseId } });
+  };
+
   return (
     <div className="map-page">
       <div className="map-scroll">
@@ -111,12 +116,8 @@ export default function Home() {
                   const isFirstActive = nodeIdx === firstActiveIdx;
 
                   return (
-                    <div
-                      key={nodeIdx}
-                      className="map-row"
-                      style={{ justifyContent: zz.justify }}
-                    >
-                      {/* Connecting path segment drawn ABOVE node (except first) */}
+                    <div key={nodeIdx} className="map-node-group">
+                      {/* Connector BETWEEN previous node and this one */}
                       {nodeIdx > 0 && (
                         <PathConnector
                           fromPos={ZIGZAG[nodeIdx - 1].justify}
@@ -125,19 +126,23 @@ export default function Home() {
                         />
                       )}
 
+                      {/* Node row */}
                       <div
-                        style={{
-                          marginLeft:  zz.marginLeft  || undefined,
-                          marginRight: zz.marginRight || undefined,
-                        }}
+                        className="map-row"
+                        style={{ justifyContent: zz.justify }}
                         ref={isFirstActive ? activeRef : null}
                       >
-                        <PathNode
-                          nodeType={NODE_TYPES[nodeIdx]}
-                          status={status}
-                          stars={stars}
-                          onClick={() => handleNodeClick(course)}
-                        />
+                        <div style={{
+                          marginLeft:  zz.marginLeft  || undefined,
+                          marginRight: zz.marginRight || undefined,
+                        }}>
+                          <PathNode
+                            nodeType={NODE_TYPES[nodeIdx]}
+                            status={status}
+                            stars={stars}
+                            onClick={() => handleNodeClick(course)}
+                          />
+                        </div>
                       </div>
                     </div>
                   );
@@ -153,7 +158,11 @@ export default function Home() {
 
       {/* Guidebook modal */}
       {guidebookUnit && (
-        <Guidebook unit={guidebookUnit} onClose={() => setGuidebookUnit(null)} />
+        <Guidebook
+          unit={guidebookUnit}
+          onClose={() => setGuidebookUnit(null)}
+          onStart={handleStartFromGuidebook}
+        />
       )}
     </div>
   );
