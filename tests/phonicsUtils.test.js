@@ -7,7 +7,7 @@ const testCases = [
   { word: "boat", expected: ["b", "oa", "t"] },
   { word: "train", expected: ["t", "r", "ai", "n"] },
   { word: "sheep", expected: ["sh", "ee", "p"] },
-  { word: "night", expected: ["n", "i", "g", "h", "t"] }, // Wait, 'igh' is not in the array, so it splits to i-g-h-t. That's correct per the array.
+  { word: "night", expected: ["n", "igh", "t"] }, // Trigraph 'igh'
   { word: "queen", expected: ["qu", "ee", "n"] },
   { word: "moon", expected: ["m", "oo", "n"] },
   { word: "singer", expected: ["s", "i", "ng", "er"] },

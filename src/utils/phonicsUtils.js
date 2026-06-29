@@ -1,5 +1,5 @@
 export const JOLLY_PHONICS_PATTERNS = [
-  "oo", "ai", "oa", "ie", "ee", "or", "ng", "ch", "sh", "th", "qu", "ou", "oi", "ue", "er", "ar", // Âm kép (Digraphs)
+  "igh", "oo", "ai", "oa", "ie", "ee", "or", "ng", "ch", "sh", "th", "qu", "ou", "oi", "ue", "er", "ar", // Trigraph & Digraphs
   "s", "a", "t", "i", "p", "n", "c", "k", "e", "h", "r", "m", "d", "g", "o", "u", "l", "f", "b", "z", "w", "v", "y", "x", "j" // Âm đơn (Monophthongs) - added 'j' which was missing in user's prompt
 ];
 
