@@ -13,7 +13,7 @@ createRoot(document.getElementById('root')).render(
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
-      .register('/minhenglish/sw.js')
+      .register('/sw.js')
       .then((reg) => {
         // Khi có SW mới, kích hoạt ngay (skipWaiting đã set)
         reg.addEventListener('updatefound', () => {

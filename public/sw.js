@@ -9,10 +9,10 @@
 
 const CACHE_VERSION = 'minhenglish-v3';
 const STATIC_ASSETS = [
-  '/minhenglish/',
-  '/minhenglish/index.html',
-  '/minhenglish/mascot.png',
-  '/minhenglish/manifest.json',
+  '/',
+  '/index.html',
+  '/mascot.png',
+  '/manifest.json',
 ];
 
 // ── INSTALL ────────────────────────────────────────────────────
@@ -55,15 +55,15 @@ self.addEventListener('fetch', (event) => {
   // index.html — Network first (để app luôn mới nhất khi mở lại)
   if (
     request.mode === 'navigate' ||
-    url.pathname === '/minhenglish/' ||
-    url.pathname === '/minhenglish/index.html'
+    url.pathname === '/' ||
+    url.pathname === '/index.html'
   ) {
     event.respondWith(networkFirstWithCache(request));
     return;
   }
 
   // /assets/* — Cache first (Vite hash tên file nên cache an toàn)
-  if (url.pathname.startsWith('/minhenglish/assets/')) {
+  if (url.pathname.startsWith('/assets/')) {
     event.respondWith(cacheFirstWithNetwork(request));
     return;
   }

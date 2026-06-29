@@ -215,7 +215,7 @@ export default function Speaking() {
     return (
       <div className="speaking-page">
         <div className="speaking-header">
-          <img src="/minhenglish/mascot.png" alt="MinhTi" className="sp-header-mascot" />
+          <img src="/mascot.png" alt="MinhTi" className="sp-header-mascot" />
           <div>
             <h1 className="sp-header-title">Luyện Nói</h1>
             <p className="sp-header-sub">Family &amp; Friends 1</p>
@@ -246,7 +246,7 @@ export default function Speaking() {
   if (screen === S.INTRO) {
     return (
       <div className="speaking-page sp-center">
-        <img src="/minhenglish/mascot.png" alt="MinhTi" className="sp-intro-mascot bounce-in" />
+        <img src="/mascot.png" alt="MinhTi" className="sp-intro-mascot bounce-in" />
         <h2 className="sp-intro-title">Unit {selectedUnit.unit}: {selectedUnit.title}</h2>
         <p className="sp-intro-desc">{selectedUnit.description}</p>
         <div className="sp-intro-tips">
@@ -269,7 +269,7 @@ export default function Speaking() {
     return (
       <div className="speaking-page sp-center">
         <div className="sp-complete-emoji">🎉</div>
-        <img src="/minhenglish/mascot.png" alt="MinhTi" className="sp-complete-mascot bounce-in" />
+        <img src="/mascot.png" alt="MinhTi" className="sp-complete-mascot bounce-in" />
         <h2 className="sp-complete-title">Hoàn thành Unit {selectedUnit.unit}!</h2>
         <p className="sp-complete-sub">Con đã luyện xong tất cả {totalTurns} câu!</p>
         <div className="sp-complete-xp"><span>⚡ +{sessionXp} XP</span></div>
@@ -315,7 +315,7 @@ export default function Speaking() {
           <div key={idx} className="sp-history-block">
             {/* MinhTi đã nói */}
             <div className="sp-turn sp-turn-mascot sp-turn-done">
-              <img src="/minhenglish/mascot.png" alt="MinhTi" className="sp-turn-avatar sp-avatar-sm" />
+              <img src="/mascot.png" alt="MinhTi" className="sp-turn-avatar sp-avatar-sm" />
               <div className="sp-bubble sp-bubble-mascot sp-bubble-done">
                 <p>{h.mascotText}</p>
               </div>
@@ -340,7 +340,7 @@ export default function Speaking() {
         <div className="sp-current-block">
           {/* MinhTi nói */}
           <div className={`sp-turn sp-turn-mascot ${screen === S.MASCOT_SPEAK ? 'active' : ''}`}>
-            <img src="/minhenglish/mascot.png" alt="MinhTi" className="sp-turn-avatar" />
+            <img src="/mascot.png" alt="MinhTi" className="sp-turn-avatar" />
             <div className="sp-bubble sp-bubble-mascot">
               <p>{currentTurn?.mascot.text}</p>
               {screen === S.MASCOT_SPEAK && (
