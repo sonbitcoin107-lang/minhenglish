@@ -66,12 +66,12 @@ export default function Home() {
   }, []);
 
   const handleNodeClick = (course) => {
-    navigate('/lesson', { state: { courseId: course.id } });
+    navigate(`/lesson/${course.id}`);
   };
 
   // Called from Guidebook footer button
   const handleStartFromGuidebook = (courseId) => {
-    navigate('/lesson', { state: { courseId } });
+    navigate(`/lesson/${courseId}`);
   };
 
   return (
