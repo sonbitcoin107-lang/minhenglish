@@ -2,6 +2,7 @@
 // Chủ đề 3: Động vật
 
 export default [
+  // --- Câu 1-8: Giữ nguyên câu cũ ---
   {
     id: 'ani-1',
     type: 'multiple_choice',
@@ -88,26 +89,182 @@ export default [
       { text: 'Con gà', emoji: '🐔', correct: false },
     ],
   },
+
+  // --- Câu 9-12: multiple_choice mới ---
   {
     id: 'ani-9',
     type: 'multiple_choice',
-    question: 'Con bướm trong tiếng Anh là?',
+    question: '"Tiger" có nghĩa là gì?',
+    audio: 'Tiger',
     options: [
-      { text: 'Butterfly', emoji: '🦋', correct: true },
-      { text: 'Dragonfly', emoji: '🪲', correct: false },
-      { text: 'Honeybee', emoji: '🐝', correct: false },
-      { text: 'Ladybug', emoji: '🐞', correct: false },
+      { text: 'Con hổ', emoji: '🐯', correct: true },
+      { text: 'Con sư tử', emoji: '🦁', correct: false },
+      { text: 'Con báo', emoji: '🐆', correct: false },
+      { text: 'Con gấu', emoji: '🐻', correct: false },
     ],
   },
   {
     id: 'ani-10',
+    type: 'multiple_choice',
+    question: '"Horse" có nghĩa là gì?',
+    audio: 'Horse',
+    options: [
+      { text: 'Con ngựa', emoji: '🐴', correct: true },
+      { text: 'Con bò', emoji: '🐄', correct: false },
+      { text: 'Con cừu', emoji: '🐑', correct: false },
+      { text: 'Con dê', emoji: '🐐', correct: false },
+    ],
+  },
+  {
+    id: 'ani-11',
+    type: 'multiple_choice',
+    question: '"Snake" có nghĩa là gì?',
+    audio: 'Snake',
+    options: [
+      { text: 'Con rắn', emoji: '🐍', correct: true },
+      { text: 'Con thằn lằn', emoji: '🦎', correct: false },
+      { text: 'Con ếch', emoji: '🐸', correct: false },
+      { text: 'Con rùa', emoji: '🐢', correct: false },
+    ],
+  },
+  {
+    id: 'ani-12',
+    type: 'multiple_choice',
+    question: '"Duck" có nghĩa là gì?',
+    audio: 'Duck',
+    options: [
+      { text: 'Con vịt', emoji: '🦆', correct: true },
+      { text: 'Con gà', emoji: '🐔', correct: false },
+      { text: 'Con chim cánh cụt', emoji: '🐧', correct: false },
+      { text: 'Con thiên nga', emoji: '🦢', correct: false },
+    ],
+  },
+
+  // --- Câu 13-16: fill_blank mới ---
+  {
+    id: 'ani-13',
+    type: 'fill_blank',
+    question: 'Điền vào chỗ trống: "The ___ roars loudly" (Con sư tử gầm to)',
+    audio: 'The lion roars loudly',
+    answer: 'lion',
+    hint: 'l..n',
+    options: ['lion', 'loin', 'lime', 'line'],
+  },
+  {
+    id: 'ani-14',
+    type: 'fill_blank',
+    question: 'Điền vào chỗ trống: "I have a pet ___" (Tôi có một con mèo cưng)',
+    audio: 'I have a pet cat',
+    answer: 'cat',
+    hint: 'c_t',
+    options: ['cat', 'bat', 'hat', 'rat'],
+  },
+  {
+    id: 'ani-15',
+    type: 'fill_blank',
+    question: 'Con bướm: "_utterfly"',
+    audio: 'Butterfly',
+    answer: 'Butterfly',
+    hint: 'B...y',
+    options: ['Butterfly', 'Bumblebee', 'Dragonfly', 'Firefly'],
+  },
+  {
+    id: 'ani-16',
+    type: 'fill_blank',
+    question: 'Điền vào chỗ trống: "The ___ swims in the river" (Con cá bơi dưới sông)',
+    audio: 'The fish swims in the river',
+    answer: 'fish',
+    hint: 'f..h',
+    options: ['fish', 'dish', 'wish', 'rich'],
+  },
+
+  // --- Câu 17-20: tap_words mới ---
+  {
+    id: 'ani-17',
+    type: 'tap_words',
+    question: 'Sắp xếp: "Con mèo ngủ trên ghế"',
+    answer: ['The', 'cat', 'sleeps', 'on', 'the', 'chair'],
+    wordBank: ['The', 'cat', 'sleeps', 'on', 'the', 'chair', 'dog', 'bed'],
+  },
+  {
+    id: 'ani-18',
+    type: 'tap_words',
+    question: 'Sắp xếp: "Con chim hót trên cây"',
+    answer: ['The', 'bird', 'sings', 'in', 'the', 'tree'],
+    wordBank: ['The', 'bird', 'sings', 'in', 'the', 'tree', 'fish', 'river'],
+  },
+  {
+    id: 'ani-19',
+    type: 'tap_words',
+    question: 'Sắp xếp: "Tôi thích động vật"',
+    answer: ['I', 'love', 'animals'],
+    wordBank: ['I', 'love', 'animals', 'hate', 'plants', 'food'],
+  },
+  {
+    id: 'ani-20',
+    type: 'tap_words',
+    question: 'Sắp xếp: "Con voi sống ở rừng"',
+    answer: ['The', 'elephant', 'lives', 'in', 'the', 'forest'],
+    wordBank: ['The', 'elephant', 'lives', 'in', 'the', 'forest', 'ocean', 'city'],
+  },
+
+  // --- Câu 21-24: multiple_choice nâng cao ---
+  {
+    id: 'ani-21',
+    type: 'multiple_choice',
+    question: 'Con vật nào sống dưới nước?',
+    options: [
+      { text: 'Fish (Cá)', emoji: '🐟', correct: true },
+      { text: 'Horse (Ngựa)', emoji: '🐴', correct: false },
+      { text: 'Tiger (Hổ)', emoji: '🐯', correct: false },
+      { text: 'Monkey (Khỉ)', emoji: '🐒', correct: false },
+    ],
+  },
+  {
+    id: 'ani-22',
+    type: 'multiple_choice',
+    question: 'Con vật nào biết bay?',
+    options: [
+      { text: 'Bird (Chim)', emoji: '🐦', correct: true },
+      { text: 'Dog (Chó)', emoji: '🐶', correct: false },
+      { text: 'Snake (Rắn)', emoji: '🐍', correct: false },
+      { text: 'Rabbit (Thỏ)', emoji: '🐰', correct: false },
+    ],
+  },
+  {
+    id: 'ani-23',
+    type: 'multiple_choice',
+    question: '"Cow" có nghĩa là gì?',
+    audio: 'Cow',
+    options: [
+      { text: 'Con bò', emoji: '🐄', correct: true },
+      { text: 'Con dê', emoji: '🐐', correct: false },
+      { text: 'Con cừu', emoji: '🐑', correct: false },
+      { text: 'Con lợn', emoji: '🐷', correct: false },
+    ],
+  },
+  {
+    id: 'ani-24',
+    type: 'multiple_choice',
+    question: 'Con vật nào là "vua của rừng xanh"?',
+    options: [
+      { text: 'Lion (Sư tử)', emoji: '🦁', correct: true },
+      { text: 'Tiger (Hổ)', emoji: '🐯', correct: false },
+      { text: 'Elephant (Voi)', emoji: '🐘', correct: false },
+      { text: 'Bear (Gấu)', emoji: '🐻', correct: false },
+    ],
+  },
+
+  // --- Câu 25: match_pairs ---
+  {
+    id: 'ani-25',
     type: 'match_pairs',
-    question: 'Nối động vật',
+    question: 'Nối động vật với tên tiếng Việt',
     pairs: [
-      { en: 'Tiger 🐯', vi: 'Con hổ' },
-      { en: 'Elephant 🐘', vi: 'Con voi' },
-      { en: 'Monkey 🐒', vi: 'Con khỉ' },
-      { en: 'Rabbit 🐰', vi: 'Con thỏ' },
+      { en: 'Horse 🐴', vi: 'Con ngựa' },
+      { en: 'Snake 🐍', vi: 'Con rắn' },
+      { en: 'Duck 🦆', vi: 'Con vịt' },
+      { en: 'Cow 🐄', vi: 'Con bò' },
     ],
   },
 ];
