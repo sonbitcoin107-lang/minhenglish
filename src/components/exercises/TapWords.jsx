@@ -1,9 +1,21 @@
 // src/components/exercises/TapWords.jsx
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import './TapWords.css';
 
+// Fisher-Yates shuffle — trộn ngẫu nhiên mỗi lần render câu mới
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 export default function TapWords({ question, answer, wordBank, onAnswer, disabled }) {
-  const [selected, setSelected] = useState([]); // [{word, idx}]
+  // Shuffle một lần khi câu hỏi thay đổi (key prop ở Lesson.jsx reset component)
+  const shuffledBank = useMemo(() => shuffle(wordBank), [wordBank]);
+  const [selected, setSelected] = useState([]);
 
   const handleWordBankClick = (word, idx) => {
     if (disabled) return;
@@ -48,9 +60,9 @@ export default function TapWords({ question, answer, wordBank, onAnswer, disable
 
       <div className="tapwords-divider" />
 
-      {/* Word bank */}
+      {/* Word bank — đã được shuffle ngẫu nhiên */}
       <div className="tapwords-bank">
-        {wordBank.map((word, idx) => (
+        {shuffledBank.map((word, idx) => (
           <button
             key={idx}
             id={`bank-word-${idx}`}
