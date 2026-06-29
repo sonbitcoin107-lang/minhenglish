@@ -579,7 +579,7 @@
       {
         "word": "media",
         "ipa": "/ˈmiːdiə/",
-        "vi": "truyền thông",
+        "vi": "truyền thông đại chúng",
         "emoji": "📺"
       },
       {
@@ -591,13 +591,13 @@
       {
         "word": "previous",
         "ipa": "/ˈpriːviəs/",
-        "vi": "lần trước đó",
+        "vi": "lần trước đó/trước đây",
         "emoji": "⬅️"
       },
       {
         "word": "region",
         "ipa": "/ˈriːdʒən/",
-        "vi": "vùng miền",
+        "vi": "vùng miền địa phương",
         "emoji": "🗺️"
       },
       {
@@ -609,18 +609,18 @@
       {
         "word": "genius",
         "ipa": "/ˈdʒiːniəs/",
-        "vi": "nhà thiên tài",
+        "vi": "nhà thiên tài sáng dạ",
         "emoji": "💡"
       },
       {
         "word": "comedian",
         "ipa": "/kəˈmiːdiən/",
-        "vi": "diễn viên hài",
+        "vi": "diễn viên hài vui tính",
         "emoji": "🤡"
       },
       {
         "word": "devious",
-        "ipa": "/ˈdiːviəs/",
+        "ipa": "/ˈmiːdiət/",
         "vi": "gian xảo xảo quyệt",
         "emoji": "🦊"
       }
@@ -660,7 +660,7 @@
       {
         "word": "huge",
         "ipa": "/hjuːdʒ/",
-        "vi": "khổng lồ to bự",
+        "vi": "khổng lồ khổng to",
         "emoji": "🦖"
       },
       {
@@ -693,7 +693,7 @@
       {
         "word": "bus",
         "ipa": "/bʌs/",
-        "vi": "xe buýt đưa đón",
+        "vi": "xe buýt đưa đón học sinh",
         "emoji": "🚌"
       },
       {
@@ -705,7 +705,7 @@
       {
         "word": "duck",
         "ipa": "/dʌk/",
-        "vi": "con vịt bơi hồ",
+        "vi": "con vịt bơi dưới hồ",
         "emoji": "🦆"
       },
       {
@@ -723,7 +723,7 @@
       {
         "word": "bug",
         "ipa": "/bʌg/",
-        "vi": "con bọ cánh cứng",
+        "vi": "con bọ cánh cứng nhỏ",
         "emoji": "🐞"
       },
       {
@@ -734,8 +734,8 @@
       },
       {
         "word": "nut",
-        "ipa": "/nʊt/",
-        "vi": "quả hạt dẻ",
+        "ipa": "/nʌt/",
+        "vi": "quả hạt dẻ bổ dưỡng",
         "emoji": "🥜"
       }
     ]
@@ -756,13 +756,13 @@
       {
         "word": "butter",
         "ipa": "/ˈbʌtər/",
-        "vi": "bơ béo ăn bánh",
+        "vi": "bơ béo ăn kèm bánh mì",
         "emoji": "🧈"
       },
       {
         "word": "public",
         "ipa": "/ˈpʌblɪk/",
-        "vi": "nơi công cộng",
+        "vi": "nơi công cộng/mọi người",
         "emoji": "🌐"
       },
       {
@@ -774,13 +774,13 @@
       {
         "word": "puppet",
         "ipa": "/ˈpʌpɪt/",
-        "vi": "con rối kịch",
+        "vi": "con rối biểu diễn kịch",
         "emoji": "🧸"
       },
       {
         "word": "sunset",
         "ipa": "/ˈsʌnset/",
-        "vi": "buổi chiều hoàng hôn",
+        "vi": "buổi chiều hoàng hôn buông",
         "emoji": "🌇"
       },
       {
@@ -792,7 +792,7 @@
       {
         "word": "muffin",
         "ipa": "/ˈmʌfɪn/",
-        "vi": "bánh nướng xốp",
+        "vi": "bánh nướng xốp bông",
         "emoji": "🧁"
       }
     ]
@@ -837,7 +837,7 @@
       {
         "word": "juice",
         "ipa": "/dʒuːs/",
-        "vi": "nước ép trái cây",
+        "vi": "nước ép trái cây ngọt",
         "emoji": "🍹"
       },
       {
@@ -849,7 +849,7 @@
       {
         "word": "space",
         "ipa": "/speɪs/",
-        "vi": "vũ trụ bao la",
+        "vi": "vũ trụ bao la rộng",
         "emoji": "🚀"
       }
     ]
@@ -864,7 +864,7 @@
       {
         "word": "city",
         "ipa": "/ˈsɪti/",
-        "vi": "thành phố tấp nập",
+        "vi": "thành phố tấp nập xe",
         "emoji": "🏙️"
       },
       {
@@ -876,7 +876,7 @@
       {
         "word": "cinema",
         "ipa": "/ˈsɪnəmə/",
-        "vi": "rạp chiếu phim",
+        "vi": "rạp chiếu phim to rộng",
         "emoji": "🍿"
       },
       {
@@ -900,13 +900,13 @@
       {
         "word": "recipe",
         "ipa": "/ˈresəpi/",
-        "vi": "công thức nấu ăn",
+        "vi": "công thức nấu ăn hay",
         "emoji": "📖"
       },
       {
         "word": "vaccine",
         "ipa": "/ˈvæksiːn/",
-        "vi": "mũi tiêm bảo vệ",
+        "vi": "mũi tiêm bảo vệ sức khỏe",
         "emoji": "💉"
       }
     ]
@@ -921,7 +921,7 @@
       {
         "word": "fancy",
         "ipa": "/ˈfænsi/",
-        "vi": "kiêu sa/đẹp lạ",
+        "vi": "kiêu sa/đẹp lạ lùng",
         "emoji": "✨"
       },
       {
@@ -939,7 +939,7 @@
       {
         "word": "cycle",
         "ipa": "/ˈsaɪkl/",
-        "vi": "vòng quay/chu kỳ",
+        "vi": "vòng quay/chu kỳ đạp xe",
         "emoji": "🚲"
       },
       {
@@ -963,7 +963,7 @@
       {
         "word": "policy",
         "ipa": "/ˈpɒləsi/",
-        "vi": "quy định chính sách",
+        "vi": "quy định chính sách chung",
         "emoji": "📜"
       }
     ]
@@ -978,7 +978,7 @@
       {
         "word": "cat",
         "ipa": "/kæt/",
-        "vi": "con mèo con",
+        "vi": "con mèo con kêu meo",
         "emoji": "🐱"
       },
       {
@@ -990,13 +990,13 @@
       {
         "word": "cup",
         "ipa": "/kʌp/",
-        "vi": "cái ly tách nhỏ",
+        "vi": "cái ly tách nhỏ uống trà",
         "emoji": "☕"
       },
       {
         "word": "clock",
         "ipa": "/klɒk/",
-        "vi": "đồng hồ treo tường",
+        "vi": "đồng hồ treo tường tick tack",
         "emoji": "⏰"
       },
       {
@@ -1035,7 +1035,7 @@
       {
         "word": "fur",
         "ipa": "/fɜːr/",
-        "vi": "bộ lông mềm mịn",
+        "vi": "bộ lông mềm mịn của thú",
         "emoji": "🦊"
       },
       {
@@ -1053,13 +1053,13 @@
       {
         "word": "turn",
         "ipa": "/tɜːrn/",
-        "vi": "lượt quay/rẽ",
+        "vi": "lượt quay/rẽ trái phải",
         "emoji": "🔄"
       },
       {
         "word": "nurse",
         "ipa": "/nɜːrs/",
-        "vi": "cô y tá cứu chữa",
+        "vi": "cô y tá cứu chữa bệnh",
         "emoji": "👩‍⚕️"
       },
       {
@@ -1098,25 +1098,25 @@
       {
         "word": "verb",
         "ipa": "/vɜːrb/",
-        "vi": "từ chỉ hành động",
+        "vi": "từ chỉ hành động (động từ)",
         "emoji": "🏃"
       },
       {
         "word": "germ",
         "ipa": "/dʒɜːrm/",
-        "vi": "vi khuẩn tí hon",
+        "vi": "vi khuẩn tí hon gây bệnh",
         "emoji": "🦠"
       },
       {
         "word": "nerd",
         "ipa": "/nɜːrd/",
-        "vi": "mọt sách mải học",
+        "vi": "mọt sách đeo kính mải học",
         "emoji": "🤓"
       },
       {
         "word": "fern",
         "ipa": "/fɜːrn/",
-        "vi": "cây dương xỉ",
+        "vi": "cây dương xỉ lá răng cưa",
         "emoji": "🌿"
       },
       {
@@ -1134,7 +1134,7 @@
       {
         "word": "jerk",
         "ipa": "/dʒɜːrk/",
-        "vi": "giật nảy mình",
+        "vi": "giật nảy mình bất thình lình",
         "emoji": "😮"
       }
     ]
@@ -1149,25 +1149,25 @@
       {
         "word": "bird",
         "ipa": "/bɜːrd/",
-        "vi": "con chim nhỏ hót",
+        "vi": "con chim nhỏ ca hót líu lo",
         "emoji": "🐦"
       },
       {
         "word": "girl",
         "ipa": "/gɜːrl/",
-        "vi": "bé gái thắt bím",
+        "vi": "bé gái thắt bím xinh xắn",
         "emoji": "👧"
       },
       {
         "word": "shirt",
         "ipa": "/ʃɜːrt/",
-        "vi": "áo sơ mi cổ cồn",
+        "vi": "áo sơ mi cổ cồn thanh lịch",
         "emoji": "👔"
       },
       {
         "word": "skirt",
         "ipa": "/skɜːrt/",
-        "vi": "chân váy xòe điệu",
+        "vi": "chân váy xòe điệu đà",
         "emoji": "👗"
       },
       {
@@ -1179,7 +1179,7 @@
       {
         "word": "first",
         "ipa": "/fɜːrst/",
-        "vi": "vị trí số một",
+        "vi": "đứng ở vị trí số một đầu tiên",
         "emoji": "🥇"
       },
       {
@@ -1214,49 +1214,49 @@
       {
         "word": "enjoy",
         "ipa": "/ɪnˈdʒɔɪ/",
-        "vi": "thích thú tận hưởng",
+        "vi": "thích thú tận hưởng trò vui",
         "emoji": "🤩"
       },
       {
         "word": "enroll",
         "ipa": "/ɪnˈroʊl/",
-        "vi": "đăng ký lớp học",
+        "vi": "đăng ký lớp học/nhập học",
         "emoji": "📝"
       },
       {
         "word": "ensure",
         "ipa": "/ɪnˈʃʊr/",
-        "vi": "bảo đảm chắc chắn",
+        "vi": "bảo đảm chắc chắn hoàn toàn",
         "emoji": "🔒"
       },
       {
         "word": "engage",
         "ipa": "/ɪnˈgeɪdʒ/",
-        "vi": "tham gia/đính hôn",
+        "vi": "tham gia/đính hôn cưới",
         "emoji": "💍"
       },
       {
         "word": "enlarge",
         "ipa": "/ɪnˈlɑːrdʒ/",
-        "vi": "phóng to bức ảnh",
+        "vi": "phóng to bức ảnh ra",
         "emoji": "🔍"
       },
       {
         "word": "entire",
         "ipa": "/ɪnˈtaɪər/",
-        "vi": "toàn bộ nguyên vẹn",
+        "vi": "toàn bộ nguyên vẹn cả thảy",
         "emoji": "🌎"
       },
       {
         "word": "entrust",
         "ipa": "/ɪnˈtrʌst/",
-        "vi": "giao phó tin cậy",
+        "vi": "giao phó tin cậy bàn giao",
         "emoji": "🤝"
       },
       {
         "word": "enclose",
         "ipa": "/ɪnˈkloʊz/",
-        "vi": "đóng tệp kèm thư",
+        "vi": "đóng tệp kèm thư dán kín",
         "emoji": "📎"
       }
     ]
@@ -1271,31 +1271,31 @@
       {
         "word": "inside",
         "ipa": "/ɪnˈsaɪd/",
-        "vi": "ở bên trong hộp",
+        "vi": "ở bên trong hộp kín",
         "emoji": "📦"
       },
       {
         "word": "invent",
         "ipa": "/ɪnˈvent/",
-        "vi": "phát minh ra máy mới",
+        "vi": "phát minh ra máy móc mới",
         "emoji": "💡"
       },
       {
         "word": "invest",
         "ipa": "/ɪnˈvest/",
-        "vi": "đầu tư tiền bạc",
+        "vi": "đầu tư tiền bạc sinh lời",
         "emoji": "💵"
       },
       {
         "word": "invite",
         "ipa": "/ɪnˈvaɪt/",
-        "vi": "mời bạn đến ăn",
+        "vi": "mời bạn đến ăn sinh nhật",
         "emoji": "💌"
       },
       {
         "word": "indeed",
         "ipa": "/ɪnˈdiːd/",
-        "vi": "thực sự đúng thế",
+        "vi": "thực sự đúng là như thế",
         "emoji": "👌"
       },
       {
@@ -1307,13 +1307,13 @@
       {
         "word": "insane",
         "ipa": "/ɪnˈseɪn/",
-        "vi": "điên rồ kỳ quặc",
+        "vi": "điên rồ kỳ quặc lạ kỳ",
         "emoji": "🤪"
       },
       {
         "word": "incline",
         "ipa": "/ɪnˈklaɪn/",
-        "vi": "con dốc nghiêng",
+        "vi": "con dốc nghiêng nghiêng",
         "emoji": "📈"
       }
     ]
@@ -1328,49 +1328,49 @@
       {
         "word": "encompass",
         "ipa": "/ɪnˈkʌmpəs/",
-        "vi": "bao phủ vây quanh",
+        "vi": "bao phủ vây quanh trọn",
         "emoji": "🌐"
       },
       {
         "word": "encourage",
         "ipa": "/ɪnˈkʌrɪdʒ/",
-        "vi": "khích lệ/động viên",
+        "vi": "khích lệ/động viên cố lên",
         "emoji": "👏"
       },
       {
         "word": "encounter",
         "ipa": "/ɪnˈkaʊntər/",
-        "vi": "chạm trán đụng độ",
+        "vi": "chạm trán đụng độ đối đầu",
         "emoji": "⚔️"
       },
       {
         "word": "enjoyment",
         "ipa": "/ɪnˈdʒɔɪmənt/",
-        "vi": "sự vui vẻ thích thú",
+        "vi": "sự vui vẻ sướng thích cực",
         "emoji": "🎉"
       },
       {
         "word": "enclosure",
         "ipa": "/ɪnˈkloʊʒər/",
-        "vi": "hàng rào quây quanh",
+        "vi": "hàng rào quây xung quanh",
         "emoji": "🚧"
       },
       {
         "word": "environment",
         "ipa": "/ɪnˈvaɪrənmənt/",
-        "vi": "môi trường tự nhiên",
+        "vi": "môi trường tự nhiên xanh sạch",
         "emoji": "🌱"
       },
       {
         "word": "enlighten",
         "ipa": "/ɪnˈlaɪtən/",
-        "vi": "khai sáng giải nghĩa",
+        "vi": "khai sáng giải nghĩa cho hiểu",
         "emoji": "💡"
       },
       {
         "word": "endanger",
         "ipa": "/ɪnˈdeɪndʒər/",
-        "vi": "gây nguy hiểm đe dọa",
+        "vi": "gây nguy hiểm rủi ro đe dọa",
         "emoji": "⚠️"
       }
     ]
@@ -1380,54 +1380,54 @@
     "pattern": "ge",
     "sound": "/dʒ/",
     "rule": "Phụ âm chữ 'g' khi đứng ngay trước nguyên âm chữ 'e' thì phát âm thành âm /dʒ/",
-    "tip": "Phát âm giống âm 'gi' hay 'ch' mạnh nhưng có rung mạnh thanh quản ở họng.",
+    "tip": "Phát âm giống âm 'gi' hay 'ch' mạnh trong tiếng Việt nhưng có rung mạnh thanh quản ở họng.",
     "words": [
       {
         "word": "page",
         "ipa": "/peɪdʒ/",
-        "vi": "trang sách trang giấy",
+        "vi": "trang sách trang giấy tập",
         "emoji": "📄"
       },
       {
         "word": "cage",
         "ipa": "/keɪdʒ/",
-        "vi": "cái lồng nhốt chim",
+        "vi": "cái lồng nhốt chim nhỏ",
         "emoji": "🕸️"
       },
       {
         "word": "orange",
         "ipa": "/ˈɒrɪndʒ/",
-        "vi": "quả cam ngọt mọng",
+        "vi": "quả cam ngọt mọng nước",
         "emoji": "🍊"
       },
       {
         "word": "village",
         "ipa": "/ˈvɪlɪdʒ/",
-        "vi": "ngôi làng nhỏ yên bình",
+        "vi": "ngôi làng nhỏ yên bình yên",
         "emoji": "🏡"
       },
       {
         "word": "large",
         "ipa": "/lɑːrdʒ/",
-        "vi": "to bự khổng lồ",
+        "vi": "to bự khổng lồ to lớn",
         "emoji": "🐘"
       },
       {
         "word": "change",
         "ipa": "/tʃeɪndʒ/",
-        "vi": "thay đổi cái mới",
+        "vi": "thay đổi cái mới đổi thay",
         "emoji": "🔄"
       },
       {
         "word": "huge",
         "ipa": "/hjuːdʒ/",
-        "vi": "to đùng khổng lồ",
+        "vi": "to đùng vô cùng khổng lồ",
         "emoji": "🦖"
       },
       {
         "word": "fridge",
         "ipa": "/frɪdʒ/",
-        "vi": "tủ lạnh chứa đồ ăn",
+        "vi": "tủ lạnh chứa đồ ăn mát",
         "emoji": "❄️"
       }
     ]
@@ -1442,31 +1442,31 @@
       {
         "word": "giant",
         "ipa": "/ˈdʒaɪənt/",
-        "vi": "gã khổng lồ cao",
+        "vi": "gã khổng lồ cao cao",
         "emoji": "👹"
       },
       {
         "word": "ginger",
         "ipa": "/ˈdʒɪndʒər/",
-        "vi": "củ gừng vàng cay",
+        "vi": "củ gừng vàng cay nóng ấm",
         "emoji": "🫚"
       },
       {
         "word": "magic",
         "ipa": "/ˈmædʒɪk/",
-        "vi": "phép ảo thuật kỳ diệu",
+        "vi": "phép ảo thuật kỳ diệu thần kỳ",
         "emoji": "🪄"
       },
       {
         "word": "giraffe",
         "ipa": "/dʒɪˈræf/",
-        "vi": "con hươu cao cổ",
+        "vi": "con hươu cao cổ cao ngất",
         "emoji": "🦒"
       },
       {
         "word": "engine",
         "ipa": "/ˈendʒɪn/",
-        "vi": "động cơ xe chạy",
+        "vi": "động cơ xe chạy vù vù",
         "emoji": "⚙️"
       },
       {
@@ -1478,13 +1478,13 @@
       {
         "word": "origin",
         "ipa": "/ˈɒrɪdʒɪn/",
-        "vi": "nguồn gốc bắt đầu",
+        "vi": "nguồn gốc bắt đầu xuất phát",
         "emoji": "🌱"
       },
       {
         "word": "religion",
         "ipa": "/rɪˈlɪdʒən/",
-        "vi": "tôn giáo đức tin",
+        "vi": "tôn giáo đức tin kính Chúa",
         "emoji": "⛪"
       }
     ]
@@ -1499,25 +1499,25 @@
       {
         "word": "table",
         "ipa": "/ˈteɪbl/",
-        "vi": "cái bàn học bài",
-        "emoji": "🪵"
+        "vi": "cái bàn học bài nhỏ",
+        "emoji": "table"
       },
       {
         "word": "apple",
         "ipa": "/ˈæpl/",
-        "vi": "quả táo chín đỏ mọng",
+        "vi": "quả táo chín đỏ mọng ngọt",
         "emoji": "🍎"
       },
       {
         "word": "candle",
         "ipa": "/ˈkændl/",
-        "vi": "cây nến lung linh",
+        "vi": "cây nến thắp sáng lung linh",
         "emoji": "🕯️"
       },
       {
         "word": "cradle",
         "ipa": "/ˈkreɪdl/",
-        "vi": "cái nôi ru em bé",
+        "vi": "cái nôi ru em bé ngủ",
         "emoji": "👶"
       },
       {
@@ -1529,19 +1529,19 @@
       {
         "word": "angle",
         "ipa": "/ˈæŋgl/",
-        "vi": "góc hình học/góc rẽ",
+        "vi": "góc hình học/góc rẽ góc",
         "emoji": "📐"
       },
       {
         "word": "stable",
         "ipa": "/ˈsteɪbl/",
-        "vi": "vững chắc vững bền",
+        "vi": "vững chắc vững bền/chuồng ngựa",
         "emoji": "🐴"
       },
       {
         "word": "staple",
         "ipa": "/ˈsteɪpl/",
-        "vi": "ghim bấm vở",
+        "vi": "ghim bấm vở/thực phẩm chính",
         "emoji": "📎"
       }
     ]
@@ -1568,7 +1568,7 @@
       {
         "word": "staple",
         "ipa": "/ˈsteɪpl/",
-        "vi": "đồ ghim giấy vở",
+        "vi": "đồ ghim ghim giấy vở",
         "emoji": "📎"
       },
       {
@@ -1580,25 +1580,25 @@
       {
         "word": "cable",
         "ipa": "/ˈkeɪbl/",
-        "vi": "sợi dây cáp internet",
+        "vi": "sợi dây cáp internet dây",
         "emoji": "🔌"
       },
       {
         "word": "fable",
         "ipa": "/ˈfeɪbl/",
-        "vi": "truyện ngụ ngôn",
+        "vi": "truyện ngụ ngôn đạo lý xưa",
         "emoji": "📖"
       },
       {
         "word": "cradle",
         "ipa": "/ˈkreɪdl/",
-        "vi": "chiếc nôi em bé",
+        "vi": "chiếc nôi gỗ bé sơ sinh",
         "emoji": "👶"
       },
       {
         "word": "ladle",
         "ipa": "/ˈleɪdl/",
-        "vi": "chiếc muôi múc canh",
+        "vi": "chiếc muôi lớn múc canh",
         "emoji": "🥄"
       }
     ]
@@ -1613,49 +1613,49 @@
       {
         "word": "apple",
         "ipa": "/ˈæpl/",
-        "vi": "quả táo đỏ ngon giòn",
+        "vi": "quả táo đỏ ngon giòn ngọt",
         "emoji": "🍎"
       },
       {
         "word": "candle",
         "ipa": "/ˈkændl/",
-        "vi": "ngọn nến thắp sáng",
+        "vi": "ngọn nến thơm thắp sáng",
         "emoji": "🕯️"
       },
       {
         "word": "handle",
         "ipa": "/ˈhændl/",
-        "vi": "tay nắm quai xách",
+        "vi": "quai xách túi/tay nắm tay",
         "emoji": "🚪"
       },
       {
         "word": "angle",
         "ipa": "/ˈæŋgl/",
-        "vi": "góc độ/nhìn theo góc",
+        "vi": "góc độ/nhìn theo góc góc",
         "emoji": "📐"
       },
       {
         "word": "saddle",
         "ipa": "/ˈsædl/",
-        "vi": "yên da cưỡi ngựa",
+        "vi": "yên da cưỡi ngựa thong dong",
         "emoji": "🏇"
       },
       {
         "word": "baffle",
         "ipa": "/ˈbæfl/",
-        "vi": "làm cho bối rối",
+        "vi": "làm cho bối rối ú ớ",
         "emoji": "😵"
       },
       {
         "word": "ramble",
         "ipa": "/ˈræmbl/",
-        "vi": "dạo chơi thong thả",
+        "vi": "dạo chơi thong thả đồng xanh",
         "emoji": "🚶"
       },
       {
         "word": "tangle",
         "ipa": "/ˈtæŋgl/",
-        "vi": "búi tóc rối bòng bong",
+        "vi": "búi tóc rối bòng bong rối",
         "emoji": "🧶"
       }
     ]
@@ -1670,49 +1670,49 @@
       {
         "word": "bible",
         "ipa": "/ˈbaɪbl/",
-        "vi": "sách Kinh Thánh",
+        "vi": "sách Kinh Thánh thiêng liêng",
         "emoji": "⛪"
       },
       {
         "word": "cycle",
         "ipa": "/ˈsaɪkl/",
-        "vi": "chu trình vòng tròn",
+        "vi": "chu trình vòng tròn lặp lại",
         "emoji": "🔄"
       },
       {
         "word": "title",
         "ipa": "/ˈtaɪtl/",
-        "vi": "tiêu đề bài viết",
+        "vi": "tiêu đề bài viết tên sách",
         "emoji": "📛"
       },
       {
         "word": "little",
         "ipa": "/ˈlɪtl/",
-        "vi": "bé nhỏ xíu nhỏ",
+        "vi": "bé nhỏ xíu nhỏ tí ti",
         "emoji": "🍼"
       },
       {
         "word": "middle",
         "ipa": "/ˈmɪdl/",
-        "vi": "ở giữa trung tâm",
+        "vi": "ở giữa trung tâm vị trí",
         "emoji": "🎯"
       },
       {
         "word": "riddle",
         "ipa": "/ˈrɪdl/",
-        "vi": "câu đố mẹo trí khôn",
+        "vi": "câu đố mẹo thử trí khôn",
         "emoji": "🧩"
       },
       {
         "word": "single",
         "ipa": "/ˈsɪŋgl/",
-        "vi": "đơn lẻ/chỉ một chiếc",
+        "vi": "đơn lẻ/chỉ có một chiếc",
         "emoji": "👤"
       },
       {
         "word": "simple",
         "ipa": "/ˈsɪmpl/",
-        "vi": "đơn giản dễ làm",
+        "vi": "đơn giản dễ làm vô cùng",
         "emoji": "✅"
       }
     ]
@@ -1727,49 +1727,49 @@
       {
         "word": "bible",
         "ipa": "/ˈbaɪbl/",
-        "vi": "sách Kinh Thánh",
+        "vi": "quyển Kinh Thánh thánh",
         "emoji": "⛪"
       },
       {
         "word": "cycle",
         "ipa": "/ˈsaɪkl/",
-        "vi": "đạp xe dạo chơi",
+        "vi": "đạp xe dạo chơi công viên",
         "emoji": "🚲"
       },
       {
         "word": "title",
         "ipa": "/ˈtaɪtl/",
-        "vi": "tiêu đề bài viết",
+        "vi": "tên chương tiêu đề đầu đuôi",
         "emoji": "📛"
       },
       {
         "word": "rifle",
         "ipa": "/ˈraɪfl/",
-        "vi": "khẩu súng trường",
+        "vi": "khẩu súng trường săn bắn",
         "emoji": "🔫"
       },
       {
         "word": "idle",
         "ipa": "/ˈaɪdl/",
-        "vi": "thảnh thơi nhàn rỗi",
+        "vi": "thảnh thơi nhàn rỗi chẳng làm",
         "emoji": "🦥"
       },
       {
         "word": "sidle",
         "ipa": "/ˈsaɪdl/",
-        "vi": "đi len lén nhẹ nhàng",
+        "vi": "đi len lén nhẹ nhàng nghiêng",
         "emoji": "🚶"
       },
       {
         "word": "stifle",
         "ipa": "/ˈstaɪfl/",
-        "vi": "làm ngột ngạt",
+        "vi": "làm ngột ngạt ngột ngạt ngột",
         "emoji": "🥵"
       },
       {
         "word": "bridle",
         "ipa": "/ˈbraɪdl/",
-        "vi": "dây cương dắt ngựa",
+        "vi": "dây cương dắt ngựa kéo cương",
         "emoji": "🐴"
       }
     ]
@@ -1784,7 +1784,7 @@
       {
         "word": "little",
         "ipa": "/ˈlɪtl/",
-        "vi": "chút ít nhỏ bé",
+        "vi": "chút ít nhỏ bé xíu",
         "emoji": "🍼"
       },
       {
@@ -1796,7 +1796,7 @@
       {
         "word": "riddle",
         "ipa": "/ˈrɪdl/",
-        "vi": "trò chơi đố vui",
+        "vi": "trò chơi đố vui đố",
         "emoji": "🧩"
       },
       {
@@ -1808,25 +1808,25 @@
       {
         "word": "simple",
         "ipa": "/ˈsɪmpl/",
-        "vi": "dễ dàng dễ hiểu",
+        "vi": "dễ dàng dễ hiểu không khó",
         "emoji": "✅"
       },
       {
         "word": "dimple",
         "ipa": "/ˈdɪmpl/",
-        "vi": "lúm đồng tiền xinh",
+        "vi": "lúm đồng tiền sâu cười xinh",
         "emoji": "☺️"
       },
       {
         "word": "wiggle",
         "ipa": "/ˈwɪgl/",
-        "vi": "lắc lư ngọ nguậy",
+        "vi": "lắc lư ngoáy ngọ nguậy người",
         "emoji": "💃"
       },
       {
         "word": "tingle",
         "ipa": "/ˈtɪŋgl/",
-        "vi": "tê râm ran tay",
+        "vi": "tê râm ran nhè nhẹ tay",
         "emoji": "⚡"
       }
     ]
@@ -1841,49 +1841,49 @@
       {
         "word": "bubble",
         "ipa": "/ˈbʌbl/",
-        "vi": "bong bóng xà phòng",
+        "vi": "bong bóng xà phòng bay bay",
         "emoji": "🧼"
       },
       {
         "word": "jungle",
         "ipa": "/ˈdʒʌŋgl/",
-        "vi": "rừng rậm nhiệt đới",
+        "vi": "rừng rậm nhiệt đới hoang dã",
         "emoji": "🌳"
       },
       {
         "word": "purple",
         "ipa": "/ˈpɜːrpl/",
-        "vi": "màu tím mộng mơ",
+        "vi": "màu tím sim mộng mơ tím",
         "emoji": "💜"
       },
       {
         "word": "turtle",
         "ipa": "/ˈtɜːrtl/",
-        "vi": "con rùa bơi chậm",
+        "vi": "con rùa bơi biển chậm chạp",
         "emoji": "🐢"
       },
       {
         "word": "uncle",
         "ipa": "/ˈʌŋkl/",
-        "vi": "chú ruột/bác trai",
+        "vi": "chú ruột/bác trai mến yêu",
         "emoji": "👨"
       },
       {
         "word": "double",
         "ipa": "/ˈdʌbl/",
-        "vi": "gấp đôi số lượng",
+        "vi": "gấp đôi số lượng lên đôi",
         "emoji": "2️⃣"
       },
       {
         "word": "muscle",
         "ipa": "/ˈmʌsl/",
-        "vi": "cơ bắp cuồn cuộn",
+        "vi": "cơ bắp cuồn cuộn lực lưỡng",
         "emoji": "💪"
       },
       {
         "word": "bundle",
         "ipa": "/ˈbʌndl/",
-        "vi": "bó củi/bọc quần áo",
+        "vi": "bó củi/bọc quần áo gói gọn",
         "emoji": "📦"
       }
     ]
@@ -1898,49 +1898,49 @@
       {
         "word": "bugle",
         "ipa": "/ˈbjuːgl/",
-        "vi": "chiếc kèn trumpet đồng",
+        "vi": "chiếc kèn kèn trumpet đồng vàng",
         "emoji": "🎺"
       },
       {
         "word": "scruple",
         "ipa": "/ˈskruːpl/",
-        "vi": "sự đắn đo ngần ngại",
+        "vi": "sự đắn đo băn khoăn lương tâm",
         "emoji": "🤔"
       },
       {
         "word": "tubule",
         "ipa": "/ˈtjuːbjuːl/",
-        "vi": "ống vi thể cực nhỏ",
+        "vi": "ống vi thể cực nhỏ nhỏ tí",
         "emoji": "🧪"
       },
       {
         "word": "duple",
         "ipa": "/ˈdjuːpl/",
-        "vi": "nhịp đôi hai phách",
+        "vi": "nhịp đôi hai phách đều đều",
         "emoji": "🎵"
       },
       {
         "word": "crucial",
         "ipa": "/ˈkruːʃl/",
-        "vi": "vô cùng cốt yếu",
+        "vi": "quyết định vô cùng cốt yếu",
         "emoji": "⚠️"
       },
       {
         "word": "pupil",
         "ipa": "/ˈpjuːpl/",
-        "vi": "bạn học sinh nhỏ",
+        "vi": "bạn học sinh nhỏ đi học",
         "emoji": "🎒"
       },
       {
         "word": "scuba",
         "ipa": "/ˈskuːbə/",
-        "vi": "bình dưỡng khí lặn",
+        "vi": "bình dưỡng khí lặn sâu sâu",
         "emoji": "🤿"
       },
       {
         "word": "ruby",
         "ipa": "/ˈruːbi/",
-        "vi": "viên ngọc hồng ngọc",
+        "vi": "viên ngọc hồng ngọc rực đỏ",
         "emoji": "💎"
       }
     ]
@@ -1955,49 +1955,49 @@
       {
         "word": "baby",
         "ipa": "/ˈbeɪbi/",
-        "vi": "em bé sơ sinh",
+        "vi": "em bé sơ sinh khóc oe",
         "emoji": "👶"
       },
       {
         "word": "lady",
         "ipa": "/ˈleɪdi/",
-        "vi": "quý cô thanh lịch",
+        "vi": "quý cô thanh lịch duyên dáng",
         "emoji": "👩"
       },
       {
         "word": "candy",
         "ipa": "/ˈkændi/",
-        "vi": "viên kẹo ngọt",
+        "vi": "viên kẹo ngọt bọc giấy màu",
         "emoji": "🍬"
       },
       {
         "word": "puppy",
         "ipa": "/ˈpʌpi/",
-        "vi": "chó con dễ thương",
+        "vi": "chú chó con tinh nghịch quẩy đuôi",
         "emoji": "🐶"
       },
       {
         "word": "happy",
         "ipa": "/ˈhæpi/",
-        "vi": "vui vẻ hạnh phúc",
+        "vi": "niềm vui vẻ cười híp mắt",
         "emoji": "😊"
       },
       {
         "word": "funny",
         "ipa": "/ˈfʌni/",
-        "vi": "vui nhộn ngộ nghĩnh",
-        "emoji": "😂"
+        "vi": "buồn cười ngộ nghĩnh vui tươi",
+        "emoji": "🤣"
       },
       {
         "word": "sunny",
         "ipa": "/ˈsʌni/",
-        "vi": "nhiều nắng ấm áp",
+        "vi": "trời rực nắng ấm áp vàng",
         "emoji": "☀️"
       },
       {
         "word": "party",
         "ipa": "/ˈpɑːrti/",
-        "vi": "bữa tiệc vui nhộn",
+        "vi": "bữa tiệc sinh nhật vui vẻ",
         "emoji": "🎉"
       }
     ]
@@ -2006,55 +2006,55 @@
     "id": 37,
     "pattern": "a_y",
     "sound": "/eɪ/",
-    "rule": "Trong từ 2 âm tiết có dạng 'a + 1 phụ âm + y' ở cuối, chữ 'a' phát âm thành /eɪ/",
+    "rule": "Từ hai âm tiết có dạng 'a + 1 phụ âm + y' ở cuối từ, chữ 'a' phát âm thành /eɪ/",
     "tip": "Đọc kéo dài nguyên âm 'a' thành âm /eɪ/ giống như 'ây-y' dài.",
     "words": [
       {
         "word": "baby",
         "ipa": "/ˈbeɪbi/",
-        "vi": "em bé sơ sinh",
+        "vi": "em bé nhỏ xíu khóc oe",
         "emoji": "👶"
       },
       {
         "word": "lady",
         "ipa": "/ˈleɪdi/",
-        "vi": "quý bà sang trọng",
+        "vi": "quý bà sang trọng điệu",
         "emoji": "👩"
       },
       {
         "word": "shaky",
         "ipa": "/ˈʃeɪki/",
-        "vi": "run rẩy lo lắng",
+        "vi": "run rẩy lo lắng lắc lư",
         "emoji": "🫨"
       },
       {
         "word": "hazy",
         "ipa": "/ˈheɪzi/",
-        "vi": "mơ màng đầy sương",
+        "vi": "mơ màng đầy sương mù mù",
         "emoji": "🌫️"
       },
       {
         "word": "wavy",
         "ipa": "/ˈweɪvi/",
-        "vi": "lượn sóng dập dềnh",
+        "vi": "lượn sóng dập dềnh gợn sóng",
         "emoji": "🌊"
       },
       {
         "word": "lazy",
         "ipa": "/ˈleɪzi/",
-        "vi": "lười biếng nằm ườn",
+        "vi": "lười biếng nằm ườn lười nhác",
         "emoji": "🦥"
       },
       {
         "word": "crazy",
         "ipa": "/ˈkreɪzi/",
-        "vi": "ngộ nghĩnh ngớ ngẩn",
+        "vi": "ngộ nghĩnh ngớ ngẩn kỳ lạ",
         "emoji": "🤪"
       },
       {
         "word": "navy",
         "ipa": "/ˈneɪvi/",
-        "vi": "hải quân đi tàu",
+        "vi": "hải quân đi tàu chiến xanh",
         "emoji": "⚓"
       }
     ]
@@ -2069,49 +2069,49 @@
       {
         "word": "candy",
         "ipa": "/ˈkændi/",
-        "vi": "viên kẹo ngọt ngon",
+        "vi": "viên kẹo ngọt ngon ngọt",
         "emoji": "🍬"
       },
       {
         "word": "angry",
         "ipa": "/ˈæŋgri/",
-        "vi": "tức giận bừng bừng",
+        "vi": "tức giận bừng bừng đỏ mặt",
         "emoji": "😡"
       },
       {
         "word": "happy",
         "ipa": "/ˈhæpi/",
-        "vi": "hạnh phúc ngập tràn",
+        "vi": "hạnh phúc ngập tràn vui",
         "emoji": "😊"
       },
       {
         "word": "daddy",
         "ipa": "/ˈdædi/",
-        "vi": "bố yêu thương bé",
+        "vi": "bố yêu thương bé vô cùng",
         "emoji": "👨"
       },
       {
         "word": "nanny",
         "ipa": "/ˈnæni/",
-        "vi": "vú nuôi trông trẻ",
+        "vi": "vú nuôi trông trẻ chu đáo",
         "emoji": "👩‍🍼"
       },
       {
         "word": "pantry",
         "ipa": "/ˈpæntri/",
-        "vi": "tủ đựng thức ăn",
+        "vi": "tủ đựng thức ăn nhà bếp",
         "emoji": "🥫"
       },
       {
         "word": "shabby",
         "ipa": "/ˈʃæbi/",
-        "vi": "sờn rách cũ kỹ",
+        "vi": "sờn rách cũ kỹ lôi thôi",
         "emoji": "🏚️"
       },
       {
         "word": "sassy",
         "ipa": "/ˈsæsi/",
-        "vi": "láu lỉnh tinh ranh",
+        "vi": "nghịch ngợm láu lỉnh tinh ranh",
         "emoji": "😜"
       }
     ]
@@ -2132,43 +2132,43 @@
       {
         "word": "dead",
         "ipa": "/ded/",
-        "vi": "đã mất/héo tàn",
+        "vi": "đã mất/héo tàn héo khô",
         "emoji": "💀"
       },
       {
         "word": "bread",
         "ipa": "/bred/",
-        "vi": "ổ bánh mì giòn",
+        "vi": "ổ bánh mì giòn vàng ươm",
         "emoji": "🍞"
       },
       {
         "word": "deaf",
         "ipa": "/def/",
-        "vi": "bị điếc tai",
+        "vi": "bị điếc tai khó nghe thấy",
         "emoji": "🧏"
       },
       {
         "word": "heavy",
         "ipa": "/ˈhevi/",
-        "vi": "nặng trĩu xách mỏi",
+        "vi": "nặng trĩu xách mỏi cả tay",
         "emoji": "🏋️"
       },
       {
         "word": "ready",
-        "ipa": "/ˈre&i/",
-        "vi": "sẵn sàng rồi",
-        "emoji": "🚀"
+        "ipa": "/ˈredi/",
+        "vi": "chuẩn bị sẵn sàng xuất phát",
+        "emoji": "🏃"
       },
       {
         "word": "health",
         "ipa": "/helθ/",
-        "vi": "sức khỏe dồi dào",
+        "vi": "sức khỏe dồi dào khỏe mạnh",
         "emoji": "💪"
       },
       {
         "word": "weather",
         "ipa": "/ˈweðər/",
-        "vi": "thời tiết nắng mưa",
+        "vi": "thời tiết nắng mưa thất thường",
         "emoji": "🌤️"
       }
     ]
@@ -2183,1190 +2183,50 @@
       {
         "word": "tea",
         "ipa": "/tiː/",
-        "vi": "ly trà xanh thơm ngát",
+        "vi": "ly trà xanh thơm ngát mát",
         "emoji": "🍵"
       },
       {
         "word": "sea",
         "ipa": "/siː/",
-        "vi": "bãi biển xanh cát trắng",
+        "vi": "bãi biển xanh cát trắng nắng",
         "emoji": "🌊"
       },
       {
         "word": "meat",
         "ipa": "/miːt/",
-        "vi": "miếng thịt tươi bổ",
+        "vi": "miếng thịt tươi ngon bổ dưỡng",
         "emoji": "🥩"
       },
       {
         "word": "read",
         "ipa": "/riːd/",
-        "vi": "đọc quyển sách hay",
+        "vi": "đọc quyển sách hay lý thú",
         "emoji": "📖"
       },
       {
         "word": "peach",
         "ipa": "/piːtʃ/",
-        "vi": "quả đào chín chín hồng",
+        "vi": "quả đào tiên chín hồng ngọt",
         "emoji": "🍑"
       },
       {
         "word": "beach",
         "ipa": "/biːtʃ/",
-        "vi": "bãi cát bờ biển chơi",
+        "vi": "bãi cát bờ biển dạo chơi",
         "emoji": "🏖️"
       },
       {
         "word": "clean",
         "ipa": "/kliːn/",
-        "vi": "lau dọn nhà cửa sạch",
+        "vi": "lau dọn nhà cửa sạch bóng",
         "emoji": "🧹"
       },
       {
         "word": "dream",
         "ipa": "/driːm/",
-        "vi": "mơ giấc mơ đẹp",
+        "vi": "mơ giấc mơ đẹp đẽ ngủ ngon",
         "emoji": "💭"
-      }
-    ]
-  },
-  {
-    "id": 41,
-    "pattern": "sh",
-    "sound": "/ʃ/",
-    "rule": "Tổ hợp phụ âm 'sh' luôn được phát âm thành âm gió /ʃ/ (âm s nặng)",
-    "tip": "Hãy chu môi dẹt ra và đẩy hơi gió thật mạnh từ kẽ răng ra ngoài.",
-    "words": [
-      {
-        "word": "ship",
-        "ipa": "/ʃɪp/",
-        "vi": "con tàu thủy",
-        "emoji": "🚢"
-      },
-      {
-        "word": "fish",
-        "ipa": "/fɪʃ/",
-        "vi": "con cá bơi",
-        "emoji": "🐟"
-      },
-      {
-        "word": "shop",
-        "ipa": "/ʃɒp/",
-        "vi": "cửa hàng mua sắm",
-        "emoji": "🛍️"
-      },
-      {
-        "word": "shell",
-        "ipa": "/ʃel/",
-        "vi": "vỏ sò bãi biển",
-        "emoji": "🐚"
-      },
-      {
-        "word": "shoe",
-        "ipa": "/ʃuː/",
-        "vi": "chiếc giày của bé",
-        "emoji": "👞"
-      },
-      {
-        "word": "sheep",
-        "ipa": "/ʃiːp/",
-        "vi": "con cừu lông trắng",
-        "emoji": "🐑"
-      },
-      {
-        "word": "dish",
-        "ipa": "/dɪʃ/",
-        "vi": "cái đĩa đựng đồ ăn",
-        "emoji": "🍽️"
-      },
-      {
-        "word": "brush",
-        "ipa": "/brʌʃ/",
-        "vi": "bàn chải đánh răng",
-        "emoji": "🪥"
-      }
-    ]
-  },
-  {
-    "id": 42,
-    "pattern": "ch",
-    "sound": "/tʃ/",
-    "rule": "Tổ hợp chữ 'ch' thường được phát âm thành /tʃ/ (chờ bật hơi)",
-    "tip": "Chu môi dẹt, cong lưỡi lên chạm vòm họng rồi bật hơi dứt khoát.",
-    "words": [
-      {
-        "word": "chin",
-        "ipa": "/tʃɪn/",
-        "vi": "cái cằm của bé",
-        "emoji": "👤"
-      },
-      {
-        "word": "chip",
-        "ipa": "/tʃɪp/",
-        "vi": "khoai tây chiên",
-        "emoji": "🍟"
-      },
-      {
-        "word": "rich",
-        "ipa": "/rɪtʃ/",
-        "vi": "giàu có nhiều tiền",
-        "emoji": "💰"
-      },
-      {
-        "word": "much",
-        "ipa": "/mʌtʃ/",
-        "vi": "nhiều vô cùng",
-        "emoji": "📈"
-      },
-      {
-        "word": "lunch",
-        "ipa": "/lʌntʃ/",
-        "vi": "bữa ăn trưa ngon",
-        "emoji": "🍱"
-      },
-      {
-        "word": "chick",
-        "ipa": "/tʃɪk/",
-        "vi": "con gà con màu vàng",
-        "emoji": "🐥"
-      },
-      {
-        "word": "peach",
-        "ipa": "/piːtʃ/",
-        "vi": "quả đào chín ngọt",
-        "emoji": "🍑"
-      },
-      {
-        "word": "chair",
-        "ipa": "/tʃeər/",
-        "vi": "cái ghế tựa ngồi",
-        "emoji": "🪑"
-      }
-    ]
-  },
-  {
-    "id": 43,
-    "pattern": "th_unvoiced",
-    "sound": "/θ/",
-    "rule": "Tổ hợp phụ âm 'th' không rung (unvoiced) phát âm thành /θ/",
-    "tip": "Đặt nhẹ đầu lưỡi giữa hai hàm răng và thổi luồng hơi nhẹ ra ngoài (không rung cổ họng).",
-    "words": [
-      {
-        "word": "thin",
-        "ipa": "/θɪn/",
-        "vi": "gầy gò/mỏng manh",
-        "emoji": "🧍"
-      },
-      {
-        "word": "think",
-        "ipa": "/θɪŋk/",
-        "vi": "suy nghĩ suy tư",
-        "emoji": "💭"
-      },
-      {
-        "word": "thank",
-        "ipa": "/θæŋk/",
-        "vi": "cảm ơn chân thành",
-        "emoji": "🙏"
-      },
-      {
-        "word": "bath",
-        "ipa": "/bɑːθ/",
-        "vi": "bồn tắm em bé",
-        "emoji": "🛁"
-      },
-      {
-        "word": "path",
-        "ipa": "/pɑːθ/",
-        "vi": "lối đi nhỏ xinh",
-        "emoji": "🛣️"
-      },
-      {
-        "word": "tooth",
-        "ipa": "/tuːθ/",
-        "vi": "cái răng trắng tinh",
-        "emoji": "🦷"
-      },
-      {
-        "word": "teeth",
-        "ipa": "/tiːθ/",
-        "vi": "hàm răng cười xinh",
-        "emoji": "🦷"
-      },
-      {
-        "word": "math",
-        "ipa": "/mæθ/",
-        "vi": "môn toán số học",
-        "emoji": "➕"
-      }
-    ]
-  },
-  {
-    "id": 44,
-    "pattern": "th_voiced",
-    "sound": "/ð/",
-    "rule": "Tổ hợp phụ âm 'th' rung (voiced) phát âm thành /ð/",
-    "tip": "Đặt nhẹ đầu lưỡi giữa hai hàm răng, thổi luồng hơi và rung mạnh dây thanh quản ở cổ họng.",
-    "words": [
-      {
-        "word": "this",
-        "ipa": "/ðɪs/",
-        "vi": "cái này/đây nè",
-        "emoji": "👉"
-      },
-      {
-        "word": "that",
-        "ipa": "/ðæt/",
-        "vi": "cái kia/đằng xa",
-        "emoji": "👈"
-      },
-      {
-        "word": "these",
-        "ipa": "/ðiːz/",
-        "vi": "những cái này đây",
-        "emoji": "👇"
-      },
-      {
-        "word": "those",
-        "ipa": "/ðoʊz/",
-        "vi": "những cái kia xa",
-        "emoji": "👆"
-      },
-      {
-        "word": "mother",
-        "ipa": "/ˈmʌðər/",
-        "vi": "mẹ hiền yêu dấu",
-        "emoji": "👩"
-      },
-      {
-        "word": "father",
-        "ipa": "/ˈfɑːðər/",
-        "vi": "bố yêu thương bé",
-        "emoji": "👨"
-      },
-      {
-        "word": "brother",
-        "ipa": "/ˈbrʌðər/",
-        "vi": "anh trai/em trai",
-        "emoji": "👦"
-      },
-      {
-        "word": "with",
-        "ipa": "/wɪð/",
-        "vi": "cùng với bạn bè",
-        "emoji": "🧑‍🤝‍🧑"
-      }
-    ]
-  },
-  {
-    "id": 45,
-    "pattern": "ph",
-    "sound": "/f/",
-    "rule": "Tổ hợp phụ âm 'ph' luôn được phát âm thành âm /f/ (như âm 'ph' tiếng Việt)",
-    "tip": "Đặt răng cửa trên chạm nhẹ môi dưới và thổi hơi mạnh ra.",
-    "words": [
-      {
-        "word": "phone",
-        "ipa": "/foʊn/",
-        "vi": "điện thoại alo",
-        "emoji": "📱"
-      },
-      {
-        "word": "photo",
-        "ipa": "/ˈfoʊtoʊ/",
-        "vi": "bức ảnh chụp kỷ niệm",
-        "emoji": "📷"
-      },
-      {
-        "word": "dolphin",
-        "ipa": "/ˈdɒlfɪn/",
-        "vi": "con cá heo thông minh",
-        "emoji": "🐬"
-      },
-      {
-        "word": "elephant",
-        "ipa": "/ˈelɪfənt/",
-        "vi": "con voi to bự",
-        "emoji": "🐘"
-      },
-      {
-        "word": "alphabet",
-        "ipa": "/ˈælfəbet/",
-        "vi": "bảng chữ cái tiếng Anh",
-        "emoji": "🔤"
-      },
-      {
-        "word": "nephew",
-        "ipa": "/ˈnefjuː/",
-        "vi": "cháu trai của chú",
-        "emoji": "👦"
-      },
-      {
-        "word": "orphan",
-        "ipa": "/ˈɔːrfən/",
-        "vi": "trẻ mồ côi tội nghiệp",
-        "emoji": "🧒"
-      },
-      {
-        "word": "phase",
-        "ipa": "/feɪz/",
-        "vi": "giai đoạn/bước làm",
-        "emoji": "🗓️"
-      }
-    ]
-  },
-  {
-    "id": 46,
-    "pattern": "wh",
-    "sound": "/w/",
-    "rule": "Tổ hợp chữ 'wh' thường phát âm thành /w/ (âm h là âm câm)",
-    "tip": "Chỉ phát âm chữ 'w' bằng cách chu tròn môi mở rộng ra, bỏ qua chữ 'h'.",
-    "words": [
-      {
-        "word": "white",
-        "ipa": "/waɪt/",
-        "vi": "màu trắng sữa",
-        "emoji": "⚪"
-      },
-      {
-        "word": "whale",
-        "ipa": "/weɪl/",
-        "vi": "con cá voi khổng lồ",
-        "emoji": "🐋"
-      },
-      {
-        "word": "wheel",
-        "ipa": "/wiːl/",
-        "vi": "bánh xe tròn quay",
-        "emoji": "🛞"
-      },
-      {
-        "word": "whip",
-        "ipa": "/wɪp/",
-        "vi": "cây roi da nhỏ",
-        "emoji": "🪢"
-      },
-      {
-        "word": "wheat",
-        "ipa": "/wiːt/",
-        "vi": "cây lúa mì vàng",
-        "emoji": "🌾"
-      },
-      {
-        "word": "whisper",
-        "ipa": "/ˈwɪspər/",
-        "vi": "thì thầm nhỏ nhẹ",
-        "emoji": "🤫"
-      },
-      {
-        "word": "whistle",
-        "ipa": "/ˈwɪsl/",
-        "vi": "chiếc còi thổi vang",
-        "emoji": " whistle"
-      },
-      {
-        "word": "what",
-        "ipa": "/wɒt/",
-        "vi": "cái gì cơ?",
-        "emoji": "❓"
-      }
-    ]
-  },
-  {
-    "id": 47,
-    "pattern": "ck",
-    "sound": "/k/",
-    "rule": "Đuôi chữ 'ck' ở cuối từ luôn được phát âm là /k/ (bật hơi k)",
-    "tip": "Đọc cộc dứt khoát bật hơi mạnh từ cổ họng ở cuối từ.",
-    "words": [
-      {
-        "word": "duck",
-        "ipa": "/dʌk/",
-        "vi": "con vịt bơi lội",
-        "emoji": "🦆"
-      },
-      {
-        "word": "sock",
-        "ipa": "/sɒk/",
-        "vi": "chiếc tất ấm áp",
-        "emoji": "🧦"
-      },
-      {
-        "word": "rock",
-        "ipa": "/rɒk/",
-        "vi": "hòn đá tảng vững",
-        "emoji": "🪨"
-      },
-      {
-        "word": "lock",
-        "ipa": "/lɒk/",
-        "vi": "ổ khóa dán kín",
-        "emoji": "🔒"
-      },
-      {
-        "word": "black",
-        "ipa": "/blæk/",
-        "vi": "màu đen huyền bí",
-        "emoji": "⚫"
-      },
-      {
-        "word": "neck",
-        "ipa": "/nek/",
-        "vi": "cái cổ của bé",
-        "emoji": "👤"
-      },
-      {
-        "word": "kick",
-        "ipa": "/kɪk/",
-        "vi": "đá bóng thật mạnh",
-        "emoji": "⚽"
-      },
-      {
-        "word": "pack",
-        "ipa": "/pæk/",
-        "vi": "đóng gói đồ đạc",
-        "emoji": "📦"
-      }
-    ]
-  },
-  {
-    "id": 48,
-    "pattern": "ng_end",
-    "sound": "/ŋ/",
-    "rule": "Chữ 'ng' đứng ở cuối từ phát âm là /ŋ/ (giống âm ng của tiếng Việt)",
-    "tip": "Đẩy luồng hơi đi lên thoát ra bằng đường mũi và kéo nhẹ vần.",
-    "words": [
-      {
-        "word": "ring",
-        "ipa": "/rɪŋ/",
-        "vi": "chiếc nhẫn lấp lánh",
-        "emoji": "💍"
-      },
-      {
-        "word": "king",
-        "ipa": "/kɪŋ/",
-        "vi": "vua quyền lực",
-        "emoji": "👑"
-      },
-      {
-        "word": "sing",
-        "ipa": "/sɪŋ/",
-        "vi": "ca hát líu lo",
-        "emoji": "🎤"
-      },
-      {
-        "word": "song",
-        "ipa": "/sɒŋ/",
-        "vi": "bài hát vui vẻ",
-        "emoji": "🎵"
-      },
-      {
-        "word": "wing",
-        "ipa": "/wɪŋ/",
-        "vi": "đôi cánh thiên thần",
-        "emoji": "🪶"
-      },
-      {
-        "word": "long",
-        "ipa": "/lɒŋ/",
-        "vi": "dài loằng ngoằng",
-        "emoji": "📏"
-      },
-      {
-        "word": "bang",
-        "ipa": "/bæŋ/",
-        "vi": "tiếng nổ đoàng đoàng",
-        "emoji": "💥"
-      },
-      {
-        "word": "hang",
-        "ipa": "/hæŋ/",
-        "vi": "treo móc quần áo",
-        "emoji": "🧗"
-      }
-    ]
-  },
-  {
-    "id": 49,
-    "pattern": "nk",
-    "sound": "/ŋk/",
-    "rule": "Tổ hợp phụ âm 'nk' ở cuối từ phát âm thành âm mũi /ŋk/",
-    "tip": "Đọc giống âm 'ng' bằng mũi rồi nhanh chóng bật hơi gió 'k' cộc ở cuối.",
-    "words": [
-      {
-        "word": "pink",
-        "ipa": "/pɪŋk/",
-        "vi": "màu hồng đào xinh",
-        "emoji": "🩷"
-      },
-      {
-        "word": "bank",
-        "ipa": "/bæŋk/",
-        "vi": "ngân hàng gửi tiền",
-        "emoji": "🏦"
-      },
-      {
-        "word": "sink",
-        "ipa": "/sɪŋk/",
-        "vi": "bồn rửa mặt tay",
-        "emoji": "🚰"
-      },
-      {
-        "word": "tank",
-        "ipa": "/tæŋk/",
-        "vi": "xe tăng chiến đấu",
-        "emoji": "🚜"
-      },
-      {
-        "word": "ink",
-        "ipa": "/ɪŋk/",
-        "vi": "lọ mực viết chữ",
-        "emoji": "✒️"
-      },
-      {
-        "word": "wink",
-        "ipa": "/wɪŋk/",
-        "vi": "nháy mắt tinh nghịch",
-        "emoji": "😉"
-      },
-      {
-        "word": "drink",
-        "ipa": "/drɪŋk/",
-        "vi": "uống nước giải khát",
-        "emoji": "🥤"
-      },
-      {
-        "word": "junk",
-        "ipa": "/dʒʌŋk/",
-        "vi": "đồ rác thải bỏ đi",
-        "emoji": "🗑️"
-      }
-    ]
-  },
-  {
-    "id": 50,
-    "pattern": "kn",
-    "sound": "/n/",
-    "rule": "Chữ 'k' đứng trước chữ 'n' ở đầu từ luôn là âm câm",
-    "tip": "Hoàn toàn bỏ qua chữ 'k', phát âm từ chữ 'n' trở đi.",
-    "words": [
-      {
-        "word": "knee",
-        "ipa": "/niː/",
-        "vi": "cái đầu gối chân",
-        "emoji": "🦵"
-      },
-      {
-        "word": "knife",
-        "ipa": "/naɪf/",
-        "vi": "con dao gọt hoa quả",
-        "emoji": "🔪"
-      },
-      {
-        "word": "knot",
-        "ipa": "/nɒt/",
-        "vi": "nút thắt dây thừng",
-        "emoji": "🪢"
-      },
-      {
-        "word": "knit",
-        "ipa": "/nɪt/",
-        "vi": "đan len ấm áp",
-        "emoji": "🧶"
-      },
-      {
-        "word": "knob",
-        "ipa": "/nɒb/",
-        "vi": "núm vặn cửa tròn",
-        "emoji": "🚪"
-      },
-      {
-        "word": "knock",
-        "ipa": "/nɒk/",
-        "vi": "gõ cửa cốc cốc",
-        "emoji": "🚪"
-      },
-      {
-        "word": "knight",
-        "ipa": "/naɪt/",
-        "vi": "hiệp sĩ dũng cảm",
-        "emoji": "🛡️"
-      },
-      {
-        "word": "knew",
-        "ipa": "/nuː/",
-        "vi": "đã hiểu/đã biết",
-        "emoji": "🧠"
-      }
-    ]
-  },
-  {
-    "id": 51,
-    "pattern": "wr",
-    "sound": "/r/",
-    "rule": "Chữ 'w' đứng trước chữ 'r' ở đầu từ luôn là âm câm",
-    "tip": "Bỏ qua chữ 'w', chỉ phát âm bắt đầu bằng âm 'r' của từ.",
-    "words": [
-      {
-        "word": "write",
-        "ipa": "/raɪt/",
-        "vi": "viết chữ tập viết",
-        "emoji": "✍️"
-      },
-      {
-        "word": "wrong",
-        "ipa": "/rɒŋ/",
-        "vi": "sai rồi/nhầm rồi",
-        "emoji": "❌"
-      },
-      {
-        "word": "wrist",
-        "ipa": "/rɪst/",
-        "vi": "cổ tay đeo đồng hồ",
-        "emoji": "⌚"
-      },
-      {
-        "word": "wrap",
-        "ipa": "/ræp/",
-        "vi": "gói bọc quà xinh",
-        "emoji": "🎁"
-      },
-      {
-        "word": "wreck",
-        "ipa": "/rek/",
-        "vi": "đống đổ nát xe hỏng",
-        "emoji": "💥"
-      },
-      {
-        "word": "wreath",
-        "ipa": "/riːθ/",
-        "vi": "vòng hoa Giáng Sinh",
-        "emoji": "🎄"
-      },
-      {
-        "word": "wrinkle",
-        "ipa": "/ˈrɪŋkl/",
-        "vi": "nếp nhăn da già",
-        "emoji": "👵"
-      },
-      {
-        "word": "writer",
-        "ipa": "/ˈraɪtər/",
-        "vi": "nhà văn viết sách",
-        "emoji": "✍️"
-      }
-    ]
-  },
-  {
-    "id": 52,
-    "pattern": "mb",
-    "sound": "/m/",
-    "rule": "Chữ 'b' đứng sau chữ 'm' ở cuối từ luôn là âm câm",
-    "tip": "Không đọc chữ 'b' ở cuối từ, chỉ phát âm đến âm 'm' rồi dừng hơi.",
-    "words": [
-      {
-        "word": "comb",
-        "ipa": "/koʊm/",
-        "vi": "cái lược chải đầu",
-        "emoji": "🪮"
-      },
-      {
-        "word": "climb",
-        "ipa": "/klaɪm/",
-        "vi": "leo núi leo trèo",
-        "emoji": "🧗"
-      },
-      {
-        "word": "lamb",
-        "ipa": "/læm/",
-        "vi": "con cừu non bé bỏng",
-        "emoji": "🐑"
-      },
-      {
-        "word": "thumb",
-        "ipa": "/θʌm/",
-        "vi": "ngón tay cái số một",
-        "emoji": "👍"
-      },
-      {
-        "word": "bomb",
-        "ipa": "/bɒm/",
-        "vi": "quả bom tròn nổ",
-        "emoji": "💣"
-      },
-      {
-        "word": "dumb",
-        "ipa": "/dʌm/",
-        "vi": "ngốc nghếch dại khờ",
-        "emoji": "🤪"
-      },
-      {
-        "word": "crumb",
-        "ipa": "/krʌm/",
-        "vi": "vụn bánh mì rơi",
-        "emoji": "🍞"
-      },
-      {
-        "word": "numb",
-        "ipa": "/nʌm/",
-        "vi": "tê cóng tay chân",
-        "emoji": "🥶"
-      }
-    ]
-  },
-  {
-    "id": 53,
-    "pattern": "oy_oi",
-    "sound": "/ɔɪ/",
-    "rule": "Tổ hợp vần 'oi' và 'oy' luôn phát âm thành nguyên âm đôi /ɔɪ/",
-    "tip": "Đọc vần 'oi' giống tiếng Việt nhưng tròn môi dẹt miệng tròn về âm 'i' kéo dài.",
-    "words": [
-      {
-        "word": "toy",
-        "ipa": "/tɔɪ/",
-        "vi": "đồ chơi của bé",
-        "emoji": "🧸"
-      },
-      {
-        "word": "boy",
-        "ipa": "/bɔɪ/",
-        "vi": "cậu bé con trai",
-        "emoji": "👦"
-      },
-      {
-        "word": "joy",
-        "ipa": "/dʒɔɪ/",
-        "vi": "niềm vui mừng rỡ",
-        "emoji": "🎉"
-      },
-      {
-        "word": "coin",
-        "ipa": "/kɔɪn/",
-        "vi": "đồng tiền xu vàng",
-        "emoji": "🪙"
-      },
-      {
-        "word": "oil",
-        "ipa": "/ɔɪl/",
-        "vi": "dầu ăn nhà bếp",
-        "emoji": "🛢️"
-      },
-      {
-        "word": "soil",
-        "ipa": "/sɔɪl/",
-        "vi": "đất trồng cây cối",
-        "emoji": "🌱"
-      },
-      {
-        "word": "join",
-        "ipa": "/dʒɔɪn/",
-        "vi": "tham gia cùng nhóm",
-        "emoji": "🤝"
-      },
-      {
-        "word": "point",
-        "ipa": "/pɔɪnt/",
-        "vi": "chỉ tay trỏ ngón",
-        "emoji": "👉"
-      }
-    ]
-  },
-  {
-    "id": 54,
-    "pattern": "oo_long",
-    "sound": "/uː/",
-    "rule": "Tổ hợp vần 'oo' phần lớn được phát âm kéo dài thành âm /uː/",
-    "tip": "Chu tròn môi thật nhỏ nhô nhẹ ra trước giống như đang huýt sáo kéo dài.",
-    "words": [
-      {
-        "word": "moon",
-        "ipa": "/muːn/",
-        "vi": "ông trăng tròn sáng",
-        "emoji": "🌕"
-      },
-      {
-        "word": "spoon",
-        "ipa": "/spuːn/",
-        "vi": "chiếc thìa xúc cơm",
-        "emoji": "🥄"
-      },
-      {
-        "word": "food",
-        "ipa": "/fuːd/",
-        "vi": "thức ăn bổ dưỡng",
-        "emoji": "🍔"
-      },
-      {
-        "word": "cool",
-        "ipa": "/kuːl/",
-        "vi": "mát mẻ dễ chịu/ngầu",
-        "emoji": "😎"
-      },
-      {
-        "word": "pool",
-        "ipa": "/puːl/",
-        "vi": "bể bơi mát lịm",
-        "emoji": "🏊"
-      },
-      {
-        "word": "zoo",
-        "ipa": "/zuː/",
-        "vi": "vườn bách thú chơi",
-        "emoji": "🦁"
-      },
-      {
-        "word": "boot",
-        "ipa": "/buːt/",
-        "vi": "chiếc ủng đi mưa",
-        "emoji": "👢"
-      },
-      {
-        "word": "roof",
-        "ipa": "/ruːf/",
-        "vi": "mái nhà ngói đỏ",
-        "emoji": "🏠"
-      }
-    ]
-  },
-  {
-    "id": 55,
-    "pattern": "oo_short",
-    "sound": "/ʊ/",
-    "rule": "Tổ hợp vần 'oo' đứng trước chữ 'k' phát âm ngắn gọn thành /ʊ/",
-    "tip": "Đọc dứt khoát hơi ngắn giống âm 'ư' lai 'u' nhẹ trong tiếng Việt.",
-    "words": [
-      {
-        "word": "book",
-        "ipa": "/bʊk/",
-        "vi": "quyển sách tranh kể chuyện",
-        "emoji": "📖"
-      },
-      {
-        "word": "look",
-        "ipa": "/lʊk/",
-        "vi": "nhìn xem kìa mắt dòm",
-        "emoji": "👁️"
-      },
-      {
-        "word": "foot",
-        "ipa": "/fʊt/",
-        "vi": "bàn chân bước đi",
-        "emoji": "👣"
-      },
-      {
-        "word": "good",
-        "ipa": "/gʊd/",
-        "vi": "tốt lắm giỏi lắm",
-        "emoji": "👍"
-      },
-      {
-        "word": "cook",
-        "ipa": "/kʊk/",
-        "vi": "nấu nướng đồ ăn ngon",
-        "emoji": "🍳"
-      },
-      {
-        "word": "wood",
-        "ipa": "/wʊd/",
-        "vi": "khúc gỗ cây sồi",
-        "emoji": "🪵"
-      },
-      {
-        "word": "wool",
-        "ipa": "/wʊl/",
-        "vi": "cuộn len ấm dệt áo",
-        "emoji": "🧶"
-      },
-      {
-        "word": "shook",
-        "ipa": "/ʃʊk/",
-        "vi": "đã lắc lư đầu",
-        "emoji": "🫨"
-      }
-    ]
-  },
-  {
-    "id": 56,
-    "pattern": "ay",
-    "sound": "/eɪ/",
-    "rule": "Tổ hợp vần 'ay' ở cuối từ một âm tiết luôn phát âm thành /eɪ/",
-    "tip": "Đọc giống âm 'ây' kéo dài hơi khóe miệng mở cười tươi.",
-    "words": [
-      {
-        "word": "play",
-        "ipa": "/pleɪ/",
-        "vi": "vui chơi cùng bạn",
-        "emoji": "⚽"
-      },
-      {
-        "word": "day",
-        "ipa": "/deɪ/",
-        "vi": "ngày sáng tươi nắng",
-        "emoji": "☀️"
-      },
-      {
-        "word": "say",
-        "ipa": "/seɪ/",
-        "vi": "nói chuyện giãi bày",
-        "emoji": "🗣️"
-      },
-      {
-        "word": "may",
-        "ipa": "/meɪ/",
-        "vi": "tháng Năm rực rỡ",
-        "emoji": "📅"
-      },
-      {
-        "word": "way",
-        "ipa": "/weɪ/",
-        "vi": "con đường đi lối",
-        "emoji": "🛣️"
-      },
-      {
-        "word": "clay",
-        "ipa": "/kleɪ/",
-        "vi": "đất sét tạo nặn",
-        "emoji": "🧱"
-      },
-      {
-        "word": "grey",
-        "ipa": "/greɪ/",
-        "vi": "màu xám tro",
-        "emoji": "🩶"
-      },
-      {
-        "word": "tray",
-        "ipa": "/treɪ/",
-        "vi": "cái khay đựng chén",
-        "emoji": "📥"
-      }
-    ]
-  },
-  {
-    "id": 57,
-    "pattern": "aw",
-    "sound": "/ɔː/",
-    "rule": "Tổ hợp chữ cái 'aw' luôn phát âm thành âm tròn môi kéo dài /ɔː/",
-    "tip": "Há to cằm hình bầu dục dọc, chu nhẹ môi kéo dài hơi giống oooo.",
-    "words": [
-      {
-        "word": "saw",
-        "ipa": "/sɔː/",
-        "vi": "chiếc cưa gỗ bén",
-        "emoji": "🪚"
-      },
-      {
-        "word": "law",
-        "ipa": "/lɔː/",
-        "vi": "luật pháp nghiêm minh",
-        "emoji": "📜"
-      },
-      {
-        "word": "raw",
-        "ipa": "/rɔː/",
-        "vi": "thức ăn sống chưa chín",
-        "emoji": "🥩"
-      },
-      {
-        "word": "jaw",
-        "ipa": "/dʒɔː/",
-        "vi": "khớp xương hàm quai",
-        "emoji": "💀"
-      },
-      {
-        "word": "paw",
-        "ipa": "/pɔː/",
-        "vi": "bàn chân thú cưng",
-        "emoji": "🐾"
-      },
-      {
-        "word": "draw",
-        "ipa": "/drɔː/",
-        "vi": "vẽ tranh nghệ thuật",
-        "emoji": "🎨"
-      },
-      {
-        "word": "straw",
-        "ipa": "/strɔː/",
-        "vi": "ống hút uống nước",
-        "emoji": "🥤"
-      },
-      {
-        "word": "claw",
-        "ipa": "/klɔː/",
-        "vi": "móng vuốt sắc nhọn",
-        "emoji": "🦅"
-      }
-    ]
-  },
-  {
-    "id": 58,
-    "pattern": "ow",
-    "sound": "/aʊ/",
-    "rule": "Tổ hợp chữ cái 'ow' ở cuối từ thường phát âm thành âm /aʊ/ (giống ao)",
-    "tip": "Đọc hạ cằm mở to miệng rồi khép dần tròn môi thành u nhanh mượt.",
-    "words": [
-      {
-        "word": "cow",
-        "ipa": "/kaʊ/",
-        "vi": "con bò sữa béo",
-        "emoji": "🐄"
-      },
-      {
-        "word": "how",
-        "ipa": "/haʊ/",
-        "vi": "làm thế nào nhỉ?",
-        "emoji": "❓"
-      },
-      {
-        "word": "now",
-        "ipa": "/naʊ/",
-        "vi": "ngay bây giờ lập tức",
-        "emoji": "⏳"
-      },
-      {
-        "word": "town",
-        "ipa": "/taʊn/",
-        "vi": "thị trấn nhỏ xinh",
-        "emoji": "🏡"
-      },
-      {
-        "word": "down",
-        "ipa": "/daʊn/",
-        "vi": "đi xuống cầu trượt",
-        "emoji": "👇"
-      },
-      {
-        "word": "brown",
-        "ipa": "/braʊn/",
-        "vi": "màu nâu hạt dẻ",
-        "emoji": "🟫"
-      },
-      {
-        "word": "owl",
-        "ipa": "/aʊl/",
-        "vi": "chim cú mèo đêm",
-        "emoji": "🦉"
-      },
-      {
-        "word": "crown",
-        "ipa": "/kraʊn/",
-        "vi": "vương vương miện lấp",
-        "emoji": "👑"
-      }
-    ]
-  },
-  {
-    "id": 59,
-    "pattern": "ed_t",
-    "sound": "/t/",
-    "rule": "Đuôi '-ed' đứng sau phụ âm vô thanh (/s, p, k, f, ʃ, tʃ/) phát âm thành âm /t/",
-    "tip": "Chỉ bật nhẹ hơi gió âm t ở cuối răng bật thật khẽ, không tạo âm rõ.",
-    "words": [
-      {
-        "word": "walked",
-        "ipa": "/wɔːkt/",
-        "vi": "đã đi bộ rèn luyện",
-        "emoji": "🚶"
-      },
-      {
-        "word": "jumped",
-        "ipa": "/dʒʌmpt/",
-        "vi": "đã nhảy cao lên",
-        "emoji": "🦘"
-      },
-      {
-        "word": "cooked",
-        "ipa": "/kʊkt/",
-        "vi": "đã nấu ăn xong xuôi",
-        "emoji": "🍳"
-      },
-      {
-        "word": "washed",
-        "ipa": "/wɒʃt/",
-        "vi": "đã rửa tay sạch sẽ",
-        "emoji": "🧼"
-      },
-      {
-        "word": "brushed",
-        "ipa": "/brʌʃt/",
-        "vi": "đã chải răng sạch",
-        "emoji": "🪥"
-      },
-      {
-        "word": "liked",
-        "ipa": "/laɪkt/",
-        "vi": "đã thích lắm nha",
-        "emoji": "👍"
-      },
-      {
-        "word": "stopped",
-        "ipa": "/stɒpt/",
-        "vi": "đã dừng xe đứng lại",
-        "emoji": "🛑"
-      },
-      {
-        "word": "laughed",
-        "ipa": "/læft/",
-        "vi": "đã cười toe vui tươi",
-        "emoji": "😀"
-      }
-    ]
-  },
-  {
-    "id": 60,
-    "pattern": "ed_id",
-    "sound": "/ɪd/",
-    "rule": "Đuôi '-ed' đứng sau phụ âm t hoặc d phát âm rõ thành âm tiết nhẹ /ɪd/",
-    "tip": "Đọc thêm một âm nhẹ nhàng là 'ịt' nhẹ dứt khoát ở cuối từ.",
-    "words": [
-      {
-        "word": "wanted",
-        "ipa": "/ˈwɒntɪd/",
-        "vi": "đã mong muốn mong cầu",
-        "emoji": "⭐"
-      },
-      {
-        "word": "needed",
-        "ipa": "/ˈniːdɪd/",
-        "vi": "đã rất cần gấp đồ",
-        "emoji": "🆘"
-      },
-      {
-        "word": "painted",
-        "ipa": "/ˈpeɪntɪd/",
-        "vi": "đã vẽ tranh màu",
-        "emoji": "🎨"
-      },
-      {
-        "word": "shouted",
-        "ipa": "/ˈʃaʊtɪd/",
-        "vi": "đã hét to tiếng vang",
-        "emoji": "🗣️"
-      },
-      {
-        "word": "waited",
-        "ipa": "/ˈweɪtɪd/",
-        "vi": "đã kiên nhẫn đợi chờ",
-        "emoji": "⏳"
-      },
-      {
-        "word": "started",
-        "ipa": "/ˈstɑːrtɪd/",
-        "vi": "đã bắt đầu xuất phát",
-        "emoji": "🏁"
-      },
-      {
-        "word": "ended",
-        "ipa": "/ˈendɪd/",
-        "vi": "đã kết thúc hoàn thành",
-        "emoji": "🏁"
-      },
-      {
-        "word": "sorted",
-        "ipa": "/ˈsɔːrtɪd/",
-        "vi": "đã sắp xếp phân loại",
-        "emoji": "🗂️"
       }
     ]
   }
