@@ -3,9 +3,9 @@
 // Uses browser built-in APIs — 100% free, no API key needed
 
 // ─── CONSTANTS ────────────────────────────────────────────────
-const WORD_TIME_MS = 600;     // ms per word for dynamic mic timeout
-const MIN_MIC_MS   = 5000;   // minimum mic wait
-const MAX_MIC_MS   = 12000;  // maximum mic wait
+const WORD_TIME_MS = 900;     // ms per word for dynamic mic timeout (x1.5)
+const MIN_MIC_MS   = 7500;   // minimum mic wait (x1.5)
+const MAX_MIC_MS   = 18000;  // maximum mic wait (x1.5)
 
 // ─── HELPERS ──────────────────────────────────────────────────
 // Normalize a word for comparison
@@ -62,7 +62,7 @@ export const speakText = (text, onEnd) => {
   window.speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = 'en-US';
-  utterance.rate = 0.82;
+  utterance.rate = 0.7;   // chậm hơn cho trẻ em
   utterance.pitch = 1.05;
   utterance.volume = 1;
 
