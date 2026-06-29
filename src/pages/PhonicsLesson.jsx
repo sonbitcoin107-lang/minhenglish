@@ -40,7 +40,7 @@ export default function PhonicsLesson() {
     return (
       <div className="phonics-lesson-page">
         <div className="phonics-top-bar">
-          <button className="btn-close-lesson" onClick={() => navigate('/phonics')}>✕</button>
+          <button className="btn-close-lesson" onClick={() => navigate('/phonics-rules')}>✕</button>
         </div>
         <div style={{color: 'white', padding: '20px'}}>Không tìm thấy bài học!</div>
       </div>
@@ -55,7 +55,7 @@ export default function PhonicsLesson() {
   return (
     <div className="phonics-lesson-page">
       <div className="phonics-top-bar">
-        <button className="btn-close-lesson" onClick={() => navigate('/phonics')}>✕</button>
+        <button className="btn-close-lesson" onClick={() => navigate('/phonics-rules')}>✕</button>
         <span className="lesson-title">Bài {rule.id}</span>
       </div>
 

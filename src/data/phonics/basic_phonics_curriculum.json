@@ -1,0 +1,941 @@
+[
+  {
+    "group_id": 1,
+    "group_name": "Nhóm 1: s, a, t, i, p, n",
+    "description": "Bé bắt đầu học các âm đơn vỡ lòng, nhận diện âm thanh của chữ cái và luyện ghép những vần 3 chữ cái (CVC) đầu tiên vô cùng dễ dàng.",
+    "sounds": [
+      {
+        "letter": "s",
+        "sound": "/s/",
+        "action": "Uốn tay hình con rắn bò từ trái sang phải và phát âm 'ssssss'.",
+        "mnemonic_story": "Bé đi dã ngoại trong vườn và thấy một chú rắn nhỏ đang phát tiếng kêu ssssss ẩn dưới bãi cỏ.",
+        "example_word": {
+          "word": "sun",
+          "ipa": "/sʌn/",
+          "vi": "mặt trời",
+          "emoji": "☀️"
+        }
+      },
+      {
+        "letter": "a",
+        "sound": "/æ/",
+        "action": "Dùng các ngón tay gõ nhẹ lên cánh tay như đàn kiến đang bò lên và kêu 'æ, æ, æ'.",
+        "mnemonic_story": "Bé nhìn thấy một đàn kiến đen tinh nghịch đang bâu vào quả táo ngọt lịm rơi dưới đất.",
+        "example_word": {
+          "word": "ant",
+          "ipa": "/ænt/",
+          "vi": "con kiến",
+          "emoji": "🐜"
+        }
+      },
+      {
+        "letter": "t",
+        "sound": "/t/",
+        "action": "Quay đầu sang trái, sang phải giống như đang xem bóng bàn và kêu 't, t, t'.",
+        "mnemonic_story": "Bé cùng cả nhà đi xem một trận đấu bóng bàn vô cùng gay cấn ở nhà thi đấu.",
+        "example_word": {
+          "word": "tap",
+          "ipa": "/tæp/",
+          "vi": "vòi nước",
+          "emoji": "🚰"
+        }
+      },
+      {
+        "letter": "i",
+        "sound": "/ɪ/",
+        "action": "Giả vờ vẩy râu của chú chuột bằng hai tay hai bên má và kêu 'i, i, i'.",
+        "mnemonic_story": "Chú chuột nhỏ Inky nghịch ngợm làm đổ lọ mực ra bàn, mực bắn lên khắp râu của chú.",
+        "example_word": {
+          "word": "ink",
+          "ipa": "/ɪŋk/",
+          "vi": "lọ mực",
+          "emoji": "✒️"
+        }
+      },
+      {
+        "letter": "p",
+        "sound": "/p/",
+        "action": "Đưa ngón trỏ lên trước miệng như thổi nến và phát âm bật hơi 'p, p, p'.",
+        "mnemonic_story": "Bé thổi nến trên chiếc bánh sinh nhật rực rỡ có hình chú heo hồng xinh xắn.",
+        "example_word": {
+          "word": "pig",
+          "ipa": "/pɪɡ/",
+          "vi": "con heo",
+          "emoji": "🐷"
+        }
+      },
+      {
+        "letter": "n",
+        "sound": "/n/",
+        "action": "Giang hai tay sang hai bên giống như cánh máy bay và kêu 'nnnnnnnn'.",
+        "mnemonic_story": "Bé nghe thấy tiếng chiếc máy bay phản lực khổng lồ gầm rú rít trên bầu trời xanh.",
+        "example_word": {
+          "word": "net",
+          "ipa": "/net/",
+          "vi": "cái lưới",
+          "emoji": "🕸️"
+        }
+      }
+    ],
+    "blending_words": [
+      {
+        "word": "sat",
+        "ipa": "/sæt/",
+        "vi": "đã ngồi",
+        "emoji": "🪑"
+      },
+      {
+        "word": "pat",
+        "ipa": "/pæt/",
+        "vi": "vỗ nhẹ đầu",
+        "emoji": "👋"
+      },
+      {
+        "word": "pan",
+        "ipa": "/pæn/",
+        "vi": "cái chảo",
+        "emoji": "🍳"
+      },
+      {
+        "word": "tap",
+        "ipa": "/tæp/",
+        "vi": "vòi nước",
+        "emoji": "🚰"
+      },
+      {
+        "word": "pin",
+        "ipa": "/pɪn/",
+        "vi": "cái ghim",
+        "emoji": "📌"
+      },
+      {
+        "word": "tin",
+        "ipa": "/tɪn/",
+        "vi": "hộp thiếc",
+        "emoji": "🥫"
+      },
+      {
+        "word": "sit",
+        "ipa": "/sɪt/",
+        "vi": "ngồi xuống",
+        "emoji": "🧘"
+      },
+      {
+        "word": "ant",
+        "ipa": "/ænt/",
+        "vi": "con kiến",
+        "emoji": "🐜"
+      }
+    ],
+    "app_game_ideas": [
+      {
+        "game_name": "🔍 Truy tìm âm thất lạc",
+        "description": "App phát âm thanh '/s/', trên màn hình xuất hiện bong bóng chứa các chữ cái 's', 'a', 't'. Bé chạm trúng chữ 's' để làm bong bóng nổ tung kèm pháo hoa rực rỡ."
+      },
+      {
+        "game_name": "🧩 Kéo thả ghép vần (CVC Blending)",
+        "description": "Hiển thị hình quả chảo 'pan' rực rỡ và 3 ô trống kèm các mảnh ghép chữ cái 'p', 'a', 'n'. Bé kéo các chữ cái vào ô để ghép thành công từ vựng đầu tiên."
+      }
+    ]
+  },
+  {
+    "group_id": 2,
+    "group_name": "Nhóm 2: c/k, e, h, r, m, d",
+    "description": "Nhóm âm mở rộng này giúp bé học nguyên tắc đặc biệt: hai chữ cái khác nhau là c và k nhưng phát âm giống nhau là /k/. Bé làm quen với các từ vựng về động vật quen thuộc như mèo, chó, gà mái.",
+    "sounds": [
+      {
+        "letter": "c/k",
+        "sound": "/k/",
+        "action": "Giơ hai tay lên giả vờ gõ cặp phách gỗ (castanets) và kêu 'k, k, k'.",
+        "mnemonic_story": "Bé được mẹ mua cho bộ gõ gỗ rất vui tai, bé gõ theo nhịp nhạc phát ra tiếng lách cách vui tai.",
+        "words": []
+      },
+      {
+        "id": 2,
+        "letter": "e",
+        "sound": "/e/",
+        "action": "Giả vờ đang cầm quả trứng, đập nhẹ vào bát rồi tách vỏ ra và phát âm 'e, e, e'.",
+        "words": []
+      },
+      {
+        "id": 3,
+        "letter": "h",
+        "sound": "/h/",
+        "action": "Mở miệng hà hơi ra lòng bàn tay ấm áp giống như sau khi chạy mệt và kêu 'h, h, h'."
+      },
+      {
+        "id": 4,
+        "letter": "r",
+        "sound": "/r/",
+        "action": "Giả vờ lắc đầu tinh nghịch như chú cún cưng đang chơi giật giẻ rách và kêu 'rrrrrrr'."
+      },
+      {
+        "id": 5,
+        "letter": "m",
+        "sound": "/m/",
+        "action": "Xoa nhẹ bụng tròn của mình bằng một tay như vừa được ăn món ngon và nói 'mmm'."
+      },
+      {
+        "id": 6,
+        "letter": "d",
+        "sound": "/d/",
+        "action": "Khua tay gõ nhịp như đang đánh trống nhỏ: d-d-d."
+      }
+    ],
+    "words": [
+      {
+        "word": "cat",
+        "ipa": "/kæt/",
+        "vi": "con mèo",
+        "emoji": "🐱"
+      },
+      {
+        "word": "hat",
+        "ipa": "/hæt/",
+        "vi": "cái mũ",
+        "emoji": "👒"
+      },
+      {
+        "word": "hen",
+        "ipa": "/hen/",
+        "vi": "con gà mái",
+        "emoji": "🐔"
+      },
+      {
+        "word": "red",
+        "ipa": "/red/",
+        "vi": "màu đỏ",
+        "emoji": "🔴"
+      },
+      {
+        "word": "dog",
+        "ipa": "/dɒɡ/",
+        "vi": "con chó",
+        "emoji": "🐶"
+      },
+      {
+        "word": "sad",
+        "ipa": "/sæd/",
+        "vi": "buồn bã",
+        "emoji": "😢"
+      },
+      {
+        "word": "map",
+        "ipa": "/mæp/",
+        "vi": "bản đồ",
+        "emoji": "🗺️"
+      },
+      {
+        "word": "cup",
+        "ipa": "/kʌp/",
+        "vi": "cái cốc",
+        "emoji": "🥛"
+      }
+    ],
+    "app_game_ideas": [
+      {
+        "game_name": "🥁 Gõ trống bập bùng",
+        "description": "Trò chơi nhịp điệu. Bong bóng chứa chữ d và c rơi xuống, bé chạm vào màn hình gõ nhịp tạo ra tiếng trống 'd-d-d' rộn rã."
+      },
+      {
+        "game_name": "🍳 Đầu bếp tí hon đập trứng",
+        "description": "Bé nhấn liên tục vào quả trứng 'e' để đập vỡ vỏ, mỗi lần đập, trứng phát âm 'e, e, e' và nhảy ra một từ vựng thú vị như egg, elf."
+      }
+    ]
+  },
+  {
+    "group_id": 3,
+    "group_name": "Nhóm 3: g, o, u, l, f, b",
+    "description": "Nhóm này hoàn tất việc học toàn bộ các nguyên âm ngắn đơn (a, e, i, o, u). Bé có thể tự đọc được hàng chục từ tiếng Anh quanh mình.",
+    "sounds": [
+      {
+        "letter": "g",
+        "sound": "/ɡ/",
+        "action": "Áp bàn tay vào cổ họng, xoay nhẹ mô phỏng rốn nước xoáy phát tiếng 'g-g-g'.",
+        "mnemonic_story": "Nước bồn rửa bát chảy xuôi xoáy tròn xuống cống phát ra âm thanh òng ọc gh-gh-gh.",
+        "example_word": {
+          "word": "pig",
+          "ipa": "/pɪɡ/",
+          "vi": "con heo",
+          "emoji": "🐷"
+        }
+      },
+      {
+        "letter": "o",
+        "sound": "/ɒ/",
+        "action": "Giơ tay giả vờ bấm công tắc điện lên/xuống liên tục và phát âm 'o, o, o'.",
+        "mnemonic_story": "Bé hào hứng giúp mẹ bật chiếc đèn ngủ nhỏ ấm áp trước khi đi ngủ.",
+        "example_word": {
+          "word": "on",
+          "ipa": "/ɒn/",
+          "vi": "bật đèn",
+          "emoji": "💡"
+        }
+      },
+      {
+        "letter": "u",
+        "sound": "/ʌ/",
+        "action": "Giơ hai tay hướng lên trời giống như đang bật bung chiếc ô ra che mưa: 'ʌ, ʌ, ʌ'.",
+        "mnemonic_story": "Cơn mưa rào bất chợt rơi, bé vội vàng mở chiếc ô nhỏ màu hồng xinh xắn che đầu.",
+        "example_word": {
+          "word": "up",
+          "ipa": "/ʌp/",
+          "vi": "đi lên",
+          "emoji": "🆙"
+        }
+      },
+      {
+        "letter": "l",
+        "sound": "/l/",
+        "action": "Giả vờ đang cầm chiếc kẹo mút khổng lồ ngọt ngào liếm nhẹ và kêu 'llllll'.",
+        "mnemonic_story": "Mẹ thưởng cho bé chiếc kẹo mút xoắn ốc tuyệt đẹp sau khi bé dọn dẹp đồ chơi.",
+        "example_word": {
+          "word": "lip",
+          "ipa": "/lɪp/",
+          "vi": "bờ môi",
+          "emoji": "👄"
+        }
+      },
+      {
+        "letter": "f",
+        "sound": "/f/",
+        "action": "Áp sát hai tay vào hai hông giả vờ như phao bơi xì hơi dần từ từ kêu 'fffff'.",
+        "mnemonic_story": "Chiếc phao bơi hình con vịt bị thủng một lỗ li ti, phát tiếng xì xì ffff trong bồn tắm.",
+        "example_word": {
+          "word": "fun",
+          "ipa": "/fʌn/",
+          "vi": "vui vẻ",
+          "emoji": "🎉"
+        }
+      },
+      {
+        "letter": "b",
+        "sound": "/b/",
+        "action": "Khua tay đánh nhẹ gậy vào quả bóng tưởng tượng: b-b-b.",
+        "mnemonic_story": "Bố và bé cùng nhau ra công viên chơi bóng chày, quả bóng bay cao tít lên trời xanh.",
+        "example_word": {
+          "word": "bus",
+          "ipa": "/bʌs/",
+          "vi": "xe buýt",
+          "emoji": "🚌"
+        }
+      }
+    ],
+    "blending_words": [
+      {
+        "word": "big",
+        "ipa": "/bɪɡ/",
+        "vi": "to lớn",
+        "emoji": "🐘"
+      },
+      {
+        "word": "dog",
+        "ipa": "/dɒɡ/",
+        "vi": "con chó",
+        "emoji": "🐶"
+      },
+      {
+        "word": "cup",
+        "ipa": "/kʌp/",
+        "vi": "cái cốc",
+        "emoji": "🥛"
+      },
+      {
+        "word": "bus",
+        "ipa": "/bʌs/",
+        "vi": "xe buýt",
+        "emoji": "🚌"
+      },
+      {
+        "word": "log",
+        "ipa": "/lɒɡ/",
+        "vi": "khúc gỗ",
+        "emoji": "🪵"
+      },
+      {
+        "word": "bug",
+        "ipa": "/bʌɡ/",
+        "vi": "con bọ",
+        "emoji": "🪲"
+      },
+      {
+        "word": "bed",
+        "ipa": "/bed/",
+        "vi": "cái giường",
+        "emoji": "🛏️"
+      },
+      {
+        "word": "leg",
+        "ipa": "/leɡ/",
+        "vi": "cái chân",
+        "emoji": "🦵"
+      }
+    ],
+    "app_game_ideas": [
+      {
+        "game_name": "🎈 Thổi phao bơi sắc màu (Âm F)",
+        "description": "Bé thổi vào micro điện thoại để bơm căng quả bóng hình thú trên màn hình. Sau đó bé bấm xì hơi bóng tạo tiếng kêu 'fffff' vui tai."
+      },
+      {
+        "game_name": "🚌 Chuyến xe buýt ghép vần",
+        "description": "Mỗi hành khách mang một thẻ chữ cái b, u, s bước lên xe. Bé sắp xếp đúng thứ tự để xe khởi hành và phát âm thanh còi bíp bíp."
+      }
+    ]
+  },
+  {
+    "group_id": 4,
+    "group_name": "Nhóm 4: ai, j, oa, ie, ee, or",
+    "description": "Nhóm âm đặc biệt làm quen với 'Nguyên âm đôi song sinh' (Digraphs). Bé bắt đầu đọc các vần dài hơn như mưa (rain), con thuyền (boat), con ong mật (bee).",
+    "sounds": [
+      {
+        "letter": "ai",
+        "sound": "/eɪ/",
+        "action": "Khum bàn tay áp vào tai hướng về phía trước như không nghe rõ và kêu 'ai? ai?' (như eh?).",
+        "mnemonic_story": "Gió biển thổi rít mạnh làm bé không thể nghe rõ tiếng mẹ đang vẫy gọi ăn cơm.",
+        "example_word": {
+          "word": "rain",
+          "ipa": "/reɪn/",
+          "vi": "mưa rơi",
+          "emoji": "🌧️"
+        }
+      },
+      {
+        "letter": "j",
+        "sound": "/dʒ/",
+        "action": "Lắc lư cơ thể sang hai bên giống miếng thạch núng nính dẻo dai đang nảy lên kêu 'j, j, j'.",
+        "mnemonic_story": "Mẹ làm cho bé một đĩa thạch rau câu dâu tây ngọt mát, đĩa thạch dẻo cứ rung rinh trên tay bé.",
+        "example_word": {
+          "word": "jug",
+          "ipa": "/dʒʌɡ/",
+          "vi": "bình nước",
+          "emoji": "🏺"
+        }
+      },
+      {
+        "letter": "oa",
+        "sound": "/əʊ/",
+        "action": "Đưa bàn tay nhỏ lên che miệng ngạc nhiên thốt lên 'oa! oa!'.",
+        "mnemonic_story": "Bé bất ngờ thích thú khi thấy một con thuyền gỗ rực rỡ lướt phăng phăng trên sóng hồ.",
+        "example_word": {
+          "word": "boat",
+          "ipa": "/bəʊt/",
+          "vi": "thuyền gỗ",
+          "emoji": "⛵"
+        }
+      },
+      {
+        "letter": "ie",
+        "sound": "/aɪ/",
+        "action": "Đứng thẳng người nghiêm trang giơ tay chào kiểu chú lính hải quân và phát âm 'ie! ie!'.",
+        "mnemonic_story": "Chú hải quân dũng cảm đứng gác nghiêm trang, hướng mắt chào lá cờ tổ quốc kiêu hãnh.",
+        "example_word": {
+          "word": "tie",
+          "ipa": "/taɪ/",
+          "vi": "cà vạt",
+          "emoji": "👔"
+        }
+      },
+      {
+        "letter": "ee",
+        "sound": "/i:/",
+        "action": "Giơ hai ngón tay lên đỉnh đầu làm tai chú lừa ngộ nghĩnh gật gù kêu 'ee, ee'.",
+        "mnemonic_story": "Bé nhìn thấy bầy ong vàng đang tíu tít hút mật hoa ngọt lịm trong vườn hoa cúc.",
+        "example_word": {
+          "word": "bee",
+          "ipa": "/biː/",
+          "vi": "con ong",
+          "emoji": "🐝"
+        }
+      },
+      {
+        "letter": "or",
+        "sound": "/ɔː/",
+        "action": "Cụppp hai khuỷu tay xuống hông rồi giơ lên giống như tai chú lừa đang phe phẩy kêu 'or, or'.",
+        "mnemonic_story": "Chú lừa xám ngoan ngoãn đang cụp tai ăn cỏ khô rơm vàng dưới ánh nắng chiều.",
+        "example_word": {
+          "word": "fork",
+          "ipa": "/fɔːk/",
+          "vi": "cái nĩa",
+          "emoji": "🍴"
+        }
+      }
+    ],
+    "blending_words": [
+      {
+        "word": "rain",
+        "ipa": "/reɪn/",
+        "vi": "cơn mưa",
+        "emoji": "🌧️"
+      },
+      {
+        "word": "boat",
+        "ipa": "/bəʊt/",
+        "vi": "con thuyền",
+        "emoji": "⛵"
+      },
+      {
+        "word": "bee",
+        "ipa": "/biː/",
+        "vi": "con ong",
+        "emoji": "🐝"
+      },
+      {
+        "word": "seed",
+        "ipa": "/siːd/",
+        "vi": "hạt mầm",
+        "emoji": "🌱"
+      },
+      {
+        "word": "goat",
+        "ipa": "/ɡəʊt/",
+        "vi": "con dê",
+        "emoji": "🐐"
+      },
+      {
+        "word": "tie",
+        "ipa": "/taɪ/",
+        "vi": "cà vạt",
+        "emoji": "👔"
+      },
+      {
+        "word": "horn",
+        "ipa": "/hɔːn/",
+        "vi": "cái sừng",
+        "emoji": "🦏"
+      },
+      {
+        "word": "feet",
+        "ipa": "/fiːt/",
+        "vi": "bàn chân",
+        "emoji": "👣"
+      }
+    ],
+    "app_game_ideas": [
+      {
+        "game_name": "⛵ Con thuyền vượt sóng (Vần OA)",
+        "description": "Để giúp thuyền bơi vượt qua cơn bão, bé phải chọn đúng mảnh ghép chữ cái 'oa' để điền đầy đủ các từ khóa như boat, goat."
+      },
+      {
+        "game_name": "🌱 Hạt mầm nhảy múa (Vần EE)",
+        "description": "Bé phát âm đúng từ 'seed' thì hạt mầm nhỏ trên màn hình sẽ nhảy múa, nảy ra chồi non và nở thành bông hoa rực rỡ sắc màu."
+      }
+    ]
+  },
+  {
+    "group_id": 5,
+    "group_name": "Nhóm 5: z, w, ng, v, oo (dài), oo (ngắn)",
+    "description": "Nhóm học phân biệt sự biến đổi đặc biệt của âm đôi 'oo' (oo phát âm dài như mặt trăng, oo phát âm ngắn cụt lủn như cuốn sách).",
+    "sounds": [
+      {
+        "letter": "z",
+        "sound": "/z/",
+        "action": "Giang cánh tay hai bên bay lượn bắt chước chú ong vo ve kêu 'zzzzzz'.",
+        "mnemonic_story": "Đàn ong vàng ríu rít tìm nhụy hoa ngọt mát trong vườn cải nở hoa rực rỡ.",
+        "example_word": {
+          "word": "zoo",
+          "ipa": "/zuː/",
+          "vi": "vườn bách thú",
+          "emoji": "🦁"
+        }
+      },
+      {
+        "letter": "w",
+        "sound": "/w/",
+        "action": "Mở miệng tròn, thổi hơi nhẹ ra như gió thổi xào xạc kêu 'w-w-w'.",
+        "mnemonic_story": "Cơn gió đông bấc rít từng đợt lạnh buốt thổi lá bàng khô rơi rụng xào xạc.",
+        "example_word": {
+          "word": "wing",
+          "ipa": "/wɪŋ/",
+          "vi": "cánh chim",
+          "emoji": "🪶"
+        }
+      },
+      {
+        "letter": "ng",
+        "sound": "/ng/",
+        "action": "Gồng nhẹ khuỷu tay mô phỏng nâng tạ nặng nhọc phát âm 'ng-ng-ng' khục khịt ở mũi.",
+        "mnemonic_story": "Chú hề béo ú đang cố gắng gồng mình nâng quả tạ sắt khổng lồ nhưng không nổi.",
+        "example_word": {
+          "word": "ring",
+          "ipa": "/rɪŋ/",
+          "vi": "chiếc nhẫn",
+          "emoji": "💍"
+        }
+      },
+      {
+        "letter": "v",
+        "sound": "/v/",
+        "action": "Hai tay xoay tròn trước ngực giả vờ lái vô lăng xe tải bon phăng phăng kêu 'vvvvv'.",
+        "mnemonic_story": "Chú tài xế lái chiếc xe tải chở đầy sữa tươi bổ dưỡng đến trường mẫu giáo.",
+        "example_word": {
+          "word": "van",
+          "ipa": "/væn/",
+          "vi": "xe tải nhỏ",
+          "emoji": "🚐"
+        }
+      },
+      {
+        "letter": "oo (dài)",
+        "sound": "/uː/",
+        "action": "Gật nhẹ đầu hướng lên cao giống chim cúc cu gáy ngân dài 'oo-oo-oo'.",
+        "mnemonic_story": "Mặt trăng rằm sáng vằng vặc trên đỉnh trời cao gieo ánh sáng dịu mát xuống vườn nhà.",
+        "example_word": {
+          "word": "moon",
+          "ipa": "/muːn/",
+          "vi": "mặt trăng",
+          "emoji": "🌙"
+        }
+      },
+      {
+        "letter": "oo (ngắn)",
+        "sound": "/ʊ/",
+        "action": "Gật nhẹ đầu nhanh, dứt khoát dứt âm cúc cu ngắn kêu 'oo, oo'.",
+        "mnemonic_story": "Bé vô cùng thích thú ngồi trong lòng bố nghe bố lật từng trang truyện cổ tích đầy sắc màu.",
+        "example_word": {
+          "word": "book",
+          "ipa": "/bʊk/",
+          "vi": "cuốn sách",
+          "emoji": "📖"
+        }
+      }
+    ],
+    "blending_words": [
+      {
+        "word": "moon",
+        "ipa": "/muːn/",
+        "vi": "mặt trăng",
+        "emoji": "🌙"
+      },
+      {
+        "word": "book",
+        "ipa": "/bʊk/",
+        "vi": "cuốn sách",
+        "emoji": "📖"
+      },
+      {
+        "word": "ring",
+        "ipa": "/rɪŋ/",
+        "vi": "chiếc nhẫn",
+        "emoji": "💍"
+      },
+      {
+        "word": "sing",
+        "ipa": "/sɪŋ/",
+        "vi": "ca hát",
+        "emoji": "🎤"
+      },
+      {
+        "word": "wing",
+        "ipa": "/wɪŋ/",
+        "vi": "cánh chim",
+        "emoji": "🪶"
+      },
+      {
+        "word": "van",
+        "ipa": "/væn/",
+        "vi": "xe bán tải",
+        "emoji": "🚐"
+      },
+      {
+        "word": "foot",
+        "ipa": "/fʊt/",
+        "vi": "bàn chân",
+        "emoji": "🦶"
+      },
+      {
+        "word": "wood",
+        "ipa": "/wʊd/",
+        "vi": "khúc gỗ",
+        "emoji": "🪵"
+      }
+    ],
+    "app_game_ideas": [
+      {
+        "game_name": "🌙 Vầng trăng cúc cu vui nhộn (oo dài vs oo ngắn)",
+        "description": "Bé nghe từ phát ra từ máy rồi kéo thả đồ vật vào rổ 'oo dài' (như moon, spoon) hoặc rổ 'oo ngắn' (như book, foot) để lấy kẹo ngọt."
+      },
+      {
+        "game_name": "💍 Chiếc nhẫn lấp lánh (Âm NG)",
+        "description": "Bé đọc chuẩn từ 'ring', chiếc nhẫn vàng trên màn hình sẽ tỏa ánh hào quang lấp lánh và bay thẳng vào hộp quà bí mật của bé."
+      }
+    ]
+  },
+  {
+    "group_id": 6,
+    "group_name": "Nhóm 6: y, x, ch, sh, th (tỏ), th (suy)",
+    "description": "Nhóm phụ âm đặc biệt khó nhất với học sinh Việt Nam. App sẽ chuẩn hóa tuyệt đối cách phát âm hơi gió sh, ch, th từ nhỏ cho bé một cách tự nhiên.",
+    "sounds": [
+      {
+        "letter": "y",
+        "sound": "/j/",
+        "action": "Giả vờ đang dùng thìa múc thìa sữa chua thạch mát lành đút vào miệng kêu 'y, y, y'.",
+        "mnemonic_story": "Ly sữa chua xoài thơm ngậy béo bùi mát lạnh luôn là món ăn dã ngoại khoái khẩu của bé.",
+        "example_word": {
+          "word": "yoyo",
+          "ipa": "/ˈjəʊ.jəʊ/",
+          "vi": "đồ chơi yoyo",
+          "emoji": "🪀"
+        }
+      },
+      {
+        "letter": "x",
+        "sound": "/ks/",
+        "action": "Hai ngón trỏ bắt chéo giả vờ như đang cầm chiếc máy ảnh bấm chụp tách tách kêu 'ks, ks, ks'.",
+        "mnemonic_story": "Cả nhà bé cùng đứng xếp hàng cười tươi trước quảng trường để chụp bức ảnh gia đình xinh đẹp.",
+        "example_word": {
+          "word": "box",
+          "ipa": "/bɒks/",
+          "vi": "cái hộp",
+          "emoji": "📦"
+        }
+      },
+      {
+        "letter": "ch",
+        "sound": "/tʃ/",
+        "action": "Gập hai khuỷu tay vuông hông nhịp nhàng đưa giật lên xuống như bánh xích tàu hỏa kêu 'ch, ch, ch'.",
+        "mnemonic_story": "Đoàn tàu hỏa hơi nước xình xịch chầm chậm lăn bánh chở đầy than đá đi vào ga.",
+        "example_word": {
+          "word": "chin",
+          "ipa": "/tʃɪn/",
+          "vi": "cái cằm",
+          "emoji": "🧑"
+        }
+      },
+      {
+        "letter": "sh",
+        "sound": "/ʃ/",
+        "action": "Đặt ngón trỏ lên trước làn môi mỏng mảnh nhẹ nhàng ra hiệu im lặng kêu 'shhhhhhhh'.",
+        "mnemonic_story": "Em bé sơ sinh đang ngủ giấc say nồng ấm áp, bé hãy đi thật khẽ, cười thật nhẹ nhé.",
+        "example_word": {
+          "word": "ship",
+          "ipa": "/ʃɪp/",
+          "vi": "tàu thủy lớn",
+          "emoji": "🚢"
+        }
+      },
+      {
+        "letter": "th (tỏ/voiced)",
+        "sound": "/ð/",
+        "action": "Đặt đầu lưỡi chạm vào răng cửa trên thổi hơi rung rung cổ họng phát tiếng dẹt dẹt 'đ-đ-đ'.",
+        "mnemonic_story": "Bé hãnh diện chỉ tay giới thiệu: 'Đây là ngôi nhà nhỏ xinh xắn của ông bà nội con'.",
+        "example_word": {
+          "word": "this",
+          "ipa": "/ðɪs/",
+          "vi": "cái này",
+          "emoji": "👉"
+        }
+      },
+      {
+        "letter": "th (suy/unvoiced)",
+        "sound": "/θ/",
+        "action": "Đặt đầu lưỡi chạm nhẹ răng trên thổi luồng hơi mát rượi qua kẽ răng không rung cổ kêu 'th-th-th'.",
+        "mnemonic_story": "Bé kiên nhẫn đút từng đồng tiền tiết kiệm vào chú lợn đất mập ú để chuẩn bị đi học.",
+        "example_word": {
+          "word": "thin",
+          "ipa": "/θɪn/",
+          "vi": "gầy gò/mỏng",
+          "emoji": "🧍"
+        }
+      }
+    ],
+    "blending_words": [
+      {
+        "word": "cat",
+        "ipa": "/kæt/",
+        "vi": "con mèo",
+        "emoji": "🐱"
+      },
+      {
+        "word": "dog",
+        "ipa": "/dɒɡ/",
+        "vi": "con chó",
+        "emoji": "🐶"
+      },
+      {
+        "word": "chick",
+        "ipa": "/tʃɪk/",
+        "vi": "gà con",
+        "emoji": "🐥"
+      },
+      {
+        "word": "ship",
+        "ipa": "/ʃɪp/",
+        "vi": "tàu thủy",
+        "emoji": "🚢"
+      },
+      {
+        "word": "this",
+        "ipa": "/ðɪs/",
+        "vi": "đây/này",
+        "emoji": "👈"
+      },
+      {
+        "word": "thin",
+        "ipa": "/θɪn/",
+        "vi": "mỏng manh",
+        "emoji": "🧍"
+      },
+      {
+        "word": "chop",
+        "ipa": "/tʃɒp/",
+        "vi": "chặt/băm",
+        "emoji": "🪓"
+      },
+      {
+        "word": "fish",
+        "ipa": "/fɪʃ/",
+        "vi": "con cá",
+        "emoji": "🐟"
+      }
+    ],
+    "app_game_ideas": [
+      {
+        "game_name": "🚂 Tàu hỏa lướt bánh (Vần CH & SH)",
+        "description": "Bé nghe loa phát âm và kéo đúng chiếc toa tàu mang chữ 'ch' hoặc 'sh' lắp vào đoàn tàu đang chờ ga."
+      },
+      {
+        "game_name": "🐟 Giải cứu cá vàng (Vần SH)",
+        "description": "Chú cá nhỏ bị kẹt trong lưới đánh cá. Bé phát âm đúng từ 'ship' (con tàu) để thợ lặn nhảy xuống giải cứu cá nhỏ bơi về với biển khơi."
+      }
+    ]
+  },
+  {
+    "group_id": 7,
+    "group_name": "Nhóm 7: qu, ou, oi, ue, er, ar",
+    "description": "Nhóm âm cuối cùng của Phonics vỡ lòng. Giúp bé hoàn thành toàn bộ 42 âm và tự tin làm chủ nền tảng ghép vần căn bản trước khi tiến lên học 60 quy tắc.",
+    "sounds": [
+      {
+        "letter": "qu",
+        "sound": "/kw/",
+        "action": "Chụm các đầu ngón tay hai tay dập lên dập xuống như mỏ chú vịt đang cạp cạp kêu 'qu-qu-qu'.",
+        "mnemonic_story": "Đàn vịt bầu màu vàng xinh xắn rủ nhau tung tăng bơi lội dưới bóng hoa sen ngào ngạt.",
+        "example_word": {
+          "word": "queen",
+          "ipa": "/kwiːn/",
+          "vi": "nữ hoàng",
+          "emoji": "👑"
+        }
+      },
+      {
+        "letter": "ou",
+        "sound": "/aʊ/",
+        "action": "Giả vờ giật ngón tay đau đớn khi bị chiếc gai châm và thốt tiếng 'au! au!'.",
+        "mnemonic_story": "Bé vô ý đụng ngón tay hồng vào chiếc gai sắc nhọn trên cành hoa hồng nhung đỏ rực.",
+        "example_word": {
+          "word": "out",
+          "ipa": "/aʊt/",
+          "vi": "đi ra ngoài",
+          "emoji": "🚪"
+        }
+      },
+      {
+        "letter": "oi",
+        "sound": "/ɔɪ/",
+        "action": "Đưa bàn tay khum khum áp sát miệng loa vang gọi vọng bạn mình từ xa 'oi! oi!' (như ơi!).",
+        "mnemonic_story": "Chú thủy thủ đứng trên đài quan sát rướn người gọi loa lớn báo bão lớn đang đến.",
+        "example_word": {
+          "word": "oil",
+          "ipa": "/ɔɪl/",
+          "vi": "dầu ăn",
+          "emoji": "🛢️"
+        }
+      },
+      {
+        "letter": "ue",
+        "sound": "/juː/",
+        "action": "Chỉ ngón tay thẳng về phía bạn đối diện mừng rỡ nói vang 'ue! ue!' (như you!).",
+        "mnemonic_story": "Bé hãnh diện khoe với cô giáo: 'Chính là bạn nhỏ này đã giúp đỡ con nhặt bút màu rơi'.",
+        "example_word": {
+          "word": "blue",
+          "ipa": "/bluː/",
+          "vi": "màu xanh dương",
+          "emoji": "🔵"
+        }
+      },
+      {
+        "letter": "er",
+        "sound": "/ə(r)/",
+        "action": "Xoay tròn hai cánh tay sang ngang giống cánh quạt mát rượi đang quay tít kêu 'errrrrrr'.",
+        "mnemonic_story": "Mẹ cắm chiếc máy sinh tố xay nhuyễn xoài ngọt lịm thơm phức cho cả nhà giải khát.",
+        "example_word": {
+          "word": "sister",
+          "ipa": "/ˈsɪs.tə(r)/",
+          "vi": "chị/em gái",
+          "emoji": "👧"
+        }
+      },
+      {
+        "letter": "ar",
+        "sound": "/ɑː/",
+        "action": "Há to miệng ranh giống như đang đi khám răng kêu 'arrrrrrr'.",
+        "mnemonic_story": "Bác sĩ nha khoa ân cần bảo bé há to miệng 'Aaa' để khám xem chú sâu răng có ngoan không nhé.",
+        "example_word": {
+          "word": "car",
+          "ipa": "/kɑː(r)/",
+          "vi": "xe ô tô",
+          "emoji": "🚗"
+        }
+      }
+    ],
+    "blending_words": [
+      {
+        "word": "queen",
+        "ipa": "/kwiːn/",
+        "vi": "nữ hoàng",
+        "emoji": "👑"
+      },
+      {
+        "word": "cloud",
+        "ipa": "/klaʊd/",
+        "vi": "đám mây",
+        "emoji": "☁️"
+      },
+      {
+        "word": "coin",
+        "ipa": "/kɔɪn/",
+        "vi": "đồng xu",
+        "emoji": "🪙"
+      },
+      {
+        "word": "blue",
+        "ipa": "/bluː/",
+        "vi": "màu xanh",
+        "emoji": "🔵"
+      },
+      {
+        "word": "car",
+        "ipa": "/kɑːr/",
+        "vi": "xe hơi",
+        "emoji": "🚗"
+      },
+      {
+        "word": "star",
+        "ipa": "/stɑːr/",
+        "vi": "ngôi sao",
+        "emoji": "⭐"
+      },
+      {
+        "word": "park",
+        "ipa": "/pɑːrk/",
+        "vi": "công viên",
+        "emoji": "🛝"
+      },
+      {
+        "word": "mixer",
+        "ipa": "/ˈmɪk.sər/",
+        "vi": "máy xay",
+        "emoji": "🥣"
+      }
+    ],
+    "app_game_ideas": [
+      {
+        "game_name": "🦆 Đàn vịt vàng cạp cạp (Âm QU)",
+        "description": "Bé giả tiếng chú vịt kêu 'qu-qu-qu' vào micro để triệu hồi đàn vịt con bơi lạc bơi về cùng vịt mẹ."
+      },
+      {
+        "game_name": "⭐ Hái sao ước nguyện (Âm AR)",
+        "description": "Mỗi ngôi sao bay qua mang một từ khóa (như star, car, park). Bé đọc đúng âm ar kéo dài, ngôi sao sáng lên rơi vào rổ ước mơ."
+      }
+    ]
+  }
+]

@@ -1,0 +1,114 @@
+/* src/pages/PhonicsHub.css */
+
+.phonics-hub-page {
+  background: #0F172A;
+  min-height: 100%;
+  padding: 24px 16px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hub-header {
+  text-align: center;
+  margin-bottom: 32px;
+  margin-top: 20px;
+}
+
+.hub-header h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.hub-header p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+}
+
+.hub-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+}
+
+.hub-card {
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.hub-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 100%);
+  border-radius: 24px;
+  pointer-events: none;
+}
+
+.hub-card:active {
+  transform: scale(0.96);
+}
+
+.basic-card {
+  background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.rules-card {
+  background: linear-gradient(135deg, #3B82F6 0%, #6366F1 100%);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.hub-card-icon {
+  font-size: 48px;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+}
+
+.hub-card-content {
+  flex: 1;
+  color: white;
+}
+
+.hub-card-content h2 {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 4px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.hub-card-subtitle {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  backdrop-filter: blur(4px);
+}
+
+.hub-card-content p {
+  font-size: 13px;
+  line-height: 1.4;
+  color: rgba(255,255,255,0.9);
+}
+
+.hub-card-arrow {
+  font-size: 32px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.6);
+}

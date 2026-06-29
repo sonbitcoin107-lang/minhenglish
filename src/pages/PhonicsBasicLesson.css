@@ -1,0 +1,247 @@
+/* src/pages/PhonicsBasicLesson.css */
+
+.phonics-basic-lesson-page {
+  background: #FAFAF9; /* Off-white / warm gray */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #1C1917;
+}
+
+.basic-lesson-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.btn-nav {
+  background: white;
+  border: 2px solid #E7E5E4;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #57534E;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #E7E5E4;
+}
+
+.btn-nav:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 #E7E5E4;
+}
+
+.lesson-progress {
+  font-weight: 800;
+  color: #78716C;
+  background: #F5F5F4;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.slide-container {
+  flex: 1;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  overflow-y: auto;
+  padding-bottom: 24px;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeInSlide 0.3s ease-out;
+}
+
+@keyframes fadeInSlide {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.letter-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.huge-letter {
+  font-size: 140px;
+  font-weight: 900;
+  color: #EF4444; /* Red */
+  line-height: 1;
+  margin: 0;
+  text-shadow: 0 8px 0 rgba(239, 68, 68, 0.2);
+}
+
+.sound-ipa-box {
+  background: #DBEAFE;
+  color: #1D4ED8;
+  padding: 8px 24px;
+  border-radius: 24px;
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #BFDBFE;
+  margin-top: 8px;
+}
+
+.sound-ipa-box:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 #BFDBFE;
+}
+
+.btn-speaker-small {
+  background: none;
+  border: none;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Info Cards */
+.info-card {
+  width: 100%;
+  border-radius: 20px;
+  padding: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.05);
+}
+
+.info-card-header {
+  font-weight: 800;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.info-card p {
+  font-weight: 500;
+}
+
+.story-card {
+  background: #FEF3C7;
+  color: #92400E;
+  border: 2px solid #FDE68A;
+}
+
+.story-card .info-card-header {
+  color: #D97706;
+}
+
+.action-card {
+  background: #ECFCCB;
+  color: #3F6212;
+  border: 2px solid #D9F99D;
+}
+
+.action-card .info-card-header {
+  color: #65A30D;
+}
+
+/* Example Word */
+.example-word-card {
+  width: 100%;
+  background: white;
+  border: 2px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 6px 0 #E2E8F0;
+  cursor: pointer;
+  position: relative;
+}
+
+.example-word-card:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #E2E8F0;
+}
+
+.ex-emoji {
+  font-size: 48px;
+  background: #F1F5F9;
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ex-details {
+  flex: 1;
+}
+
+.ex-word {
+  font-size: 24px;
+  font-weight: 900;
+  color: #0F172A;
+}
+
+.ex-ipa {
+  font-family: monospace;
+  color: #64748B;
+  font-size: 14px;
+}
+
+.ex-vi {
+  font-weight: 600;
+  color: #475569;
+  margin-top: 4px;
+}
+
+.btn-speaker-card {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #F1F5F9;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #3B82F6;
+  cursor: pointer;
+}
+
+/* Bottom Nav */
+.basic-lesson-bottom {
+  padding: 16px;
+  background: white;
+  border-top: 2px solid #F5F5F4;
+}
+
+.btn-primary-huge {
+  width: 100%;
+  background: #10B981; /* Green */
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+  border: none;
+  border-radius: 24px;
+  padding: 16px;
+  box-shadow: 0 8px 0 #059669;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.btn-primary-huge:active {
+  transform: translateY(6px);
+  box-shadow: 0 2px 0 #059669;
+}

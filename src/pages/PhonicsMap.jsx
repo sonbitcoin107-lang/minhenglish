@@ -18,7 +18,7 @@ export default function PhonicsMap() {
           <div
             key={rule.id}
             className="phonics-rule-item"
-            onClick={() => navigate(`/phonics/${rule.id}`)}
+            onClick={() => navigate(`/phonics-rules/${rule.id}`)}
           >
             <div className="rule-item-badge">
               Bài {rule.id}

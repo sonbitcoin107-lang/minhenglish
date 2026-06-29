@@ -12,6 +12,9 @@ import Profile from './pages/Profile';
 import Speaking from './pages/Speaking';
 import PhonicsMap from './pages/PhonicsMap';
 import PhonicsLesson from './pages/PhonicsLesson';
+import PhonicsHub from './pages/PhonicsHub';
+import PhonicsBasicMap from './pages/PhonicsBasicMap';
+import PhonicsBasicLesson from './pages/PhonicsBasicLesson';
 
 function AppLayout({ children, showNav = true }) {
   return (
@@ -101,6 +104,39 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <AppLayout>
+                  <PhonicsHub />
+                </AppLayout>
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/phonics-basic"
+            element={
+              <ProtectedRoute>
+                <AppLayout>
+                  <PhonicsBasicMap />
+                </AppLayout>
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/phonics-basic/:groupId"
+            element={
+              <ProtectedRoute>
+                <AppLayout showNav={false}>
+                  <PhonicsBasicLesson />
+                </AppLayout>
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/phonics-rules"
+            element={
+              <ProtectedRoute>
+                <AppLayout>
                   <PhonicsMap />
                 </AppLayout>
               </ProtectedRoute>
@@ -108,7 +144,7 @@ export default function App() {
           />
 
           <Route
-            path="/phonics/:id"
+            path="/phonics-rules/:id"
             element={
               <ProtectedRoute>
                 <AppLayout showNav={false}>
