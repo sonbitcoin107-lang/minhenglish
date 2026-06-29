@@ -10,6 +10,7 @@ import Lesson from './pages/Lesson';
 import Result from './pages/Result';
 import Profile from './pages/Profile';
 import Shop from './pages/Shop';
+import Speaking from './pages/Speaking';
 
 function AppLayout({ children, showNav = true }) {
   return (
@@ -100,6 +101,17 @@ export default function App() {
               <ProtectedRoute>
                 <AppLayout>
                   <Shop />
+                </AppLayout>
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/speaking"
+            element={
+              <ProtectedRoute>
+                <AppLayout>
+                  <Speaking />
                 </AppLayout>
               </ProtectedRoute>
             }

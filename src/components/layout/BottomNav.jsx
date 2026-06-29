@@ -3,9 +3,10 @@ import { NavLink } from 'react-router-dom';
 import './BottomNav.css';
 
 const NAV_ITEMS = [
-  { to: '/', icon: '🏠', label: 'Học', id: 'nav-home' },
-  { to: '/profile', icon: '👤', label: 'Hồ sơ', id: 'nav-profile' },
-  { to: '/shop', icon: '🛍️', label: 'Cửa hàng', id: 'nav-shop' },
+  { to: '/',         icon: '🏠',  label: 'Học',      id: 'nav-home' },
+  { to: '/speaking', icon: '🎙️', label: 'Luyện nói', id: 'nav-speaking' },
+  { to: '/profile',  icon: '👤',  label: 'Hồ sơ',    id: 'nav-profile' },
+  { to: '/shop',     icon: '🛍️', label: 'Cửa hàng',  id: 'nav-shop' },
 ];
 
 export default function BottomNav() {
