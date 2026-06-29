@@ -35,7 +35,8 @@ export default function PhonicsLesson() {
   const [showMouth, setShowMouth] = useState(false);
   
   const rule = rules.find((r) => r.id === parseInt(id));
-  const mouthShape = rule ? allShapes.find(s => s.ipa === rule.sound || s.ipa === rule.sound.replace(':', 'ː')) : null;
+  const primarySound = rule && rule.sound ? (rule.sound.match(/\/[^/]+\//) ? rule.sound.match(/\/[^/]+\//)[0] : rule.sound) : '';
+  const mouthShape = rule ? allShapes.find(s => s.ipa === primarySound || s.ipa === primarySound.replace(':', 'ː')) : null;
 
   if (!rule) {
     return (
