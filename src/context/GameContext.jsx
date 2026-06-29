@@ -88,11 +88,14 @@ function reducer(state, action) {
     }
 
     case 'COMPLETE_LESSON': {
-      const { courseId, lessonIndex, xpEarned, perfect } = action;
-      const prev = state.completedLessons[courseId] || [];
-      const completed = [...new Set([...prev, lessonIndex])];
-      const courseData = action.courseLength;
-      const progress = Math.round((completed.length / courseData) * 100);
+      const { courseId, xpEarned, perfect } = action;
+      
+      const currentProgress = state.courseProgress[courseId] || 0;
+      const progress = Math.min(100, currentProgress + 25);
+
+      const prevCompleted = state.completedLessons[courseId] || [];
+      // Keep track of how many times they completed (can be just an array of numbers)
+      const completed = [...prevCompleted, Date.now()];
 
       const today = new Date().toDateString();
       const isNewDay = checkNewDay(state.lastStudyDate);
