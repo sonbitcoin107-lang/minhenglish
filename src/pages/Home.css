@@ -1,82 +1,106 @@
 /* src/pages/Home.css */
 /* Duolingo-style Learning Path Map */
 
-/* ─── Page Container ───────────────────────────────────────── */
+/* ─── Page & Scroll container ───────────────────────────── */
 .map-page {
   background: #0F172A;
   min-height: 100%;
-  min-height: 100dvh;
-  width: 100%;
-  position: relative;
   overflow-x: hidden;
 }
 
-/* ─── Scrollable column ─────────────────────────────────────── */
 .map-scroll {
-  padding: 16px 16px 80px;
+  padding: 16px 12px 80px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0;
+  align-items: stretch;
+  max-width: 440px;
+  margin: 0 auto;
 }
 
-/* ─── Section: one Unit Banner + 4 nodes ────────────────────── */
+/* ─── One unit section ───────────────────────────────────── */
 .map-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 400px;
-  gap: 0;
-  margin-bottom: 24px;
+  align-items: stretch;
+  margin-bottom: 8px;
 }
 
-/* ─── Nodes column ──────────────────────────────────────────── */
+/* ─── Section divider (between PHẦN 1 and PHẦN 2 etc.) ───── */
+.map-section-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0 16px;
+}
+
+.map-section-line {
+  flex: 1;
+  height: 2px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 2px;
+}
+
+.map-section-label {
+  font-size: 12px;
+  font-weight: 800;
+  color: rgba(255,255,255,0.35);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+/* ─── Nodes column ───────────────────────────────────────── */
 .map-nodes {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-  padding: 8px 0 0;
-  position: relative;
+  align-items: stretch;
+  padding: 4px 0 4px;
 }
 
-/* ─── Individual node wrapper (zigzag positioning) ──────────── */
-.map-node-position {
+/* Each row holds ONE node, positioned by justify-content */
+.map-row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
   position: relative;
-  padding: 4px 0;
 }
 
-/* ─── Connector line between nodes ─────────────────────────── */
-.map-connector {
-  width: 3px;
-  height: 20px;
-  border-radius: 2px;
-  margin: 0 auto;
-  margin-bottom: 4px;
+/* ─── Path connector between nodes ──────────────────────── */
+.path-connector {
+  position: absolute;
+  /* Horizontal center of the connector bar, adjusted per lean direction */
+  width: 6px;
+  height: 28px;
+  border-radius: 3px;
+  top: -24px;
+  /* Default: center of the row */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.map-connector.done {
+/* Lean LEFT connector (from right-side to center or left) */
+.path-connector.path-connector-left {
+  left: 60%;
+  transform: translateX(-50%) rotate(-12deg);
+}
+
+/* Lean RIGHT connector (from left-side to center or right) */
+.path-connector.path-connector-right {
+  left: 40%;
+  transform: translateX(-50%) rotate(12deg);
+}
+
+/* Straight connector */
+.path-connector.path-connector-straight {
+  left: 50%;
+}
+
+/* Colors */
+.path-connector.done {
   background: linear-gradient(180deg, #1CB0F6, #0082BB);
+  box-shadow: 0 0 6px rgba(28,176,246,0.35);
 }
 
-.map-connector.locked {
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px dashed rgba(255, 255, 255, 0.15);
-}
-
-/* ─── Responsive tweaks ─────────────────────────────────────── */
-@media (max-width: 360px) {
-  .map-scroll {
-    padding: 12px 8px 80px;
-  }
-}
-
-@media (min-width: 480px) {
-  .map-section {
-    max-width: 440px;
-  }
+.path-connector.pending {
+  background: rgba(255,255,255,0.10);
+  border: 1.5px dashed rgba(255,255,255,0.18);
 }

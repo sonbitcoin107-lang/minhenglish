@@ -1,101 +1,122 @@
 /* src/components/map/PathNode.css */
 
+/* ── Wrapper ─────────────────────────────────────────── */
 .path-node-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   cursor: pointer;
   user-select: none;
-  transition: transform 0.15s ease;
+  position: relative;
+  /* give room for the pulsing ring to breathe */
+  padding: 10px;
 }
 
-.path-node-wrapper:active {
+.path-node-wrapper:active .path-node {
   transform: scale(0.92);
 }
 
-/* The circle node */
+/* ── Circle ──────────────────────────────────────────── */
 .path-node {
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
   position: relative;
-  transition: box-shadow 0.2s ease;
+  transition: transform 0.15s ease;
 }
 
-/* Completed */
+.path-node-icon {
+  font-size: 32px;
+  line-height: 1;
+  z-index: 2;
+  position: relative;
+}
+
+/* Completed — vivid blue */
 .path-node.completed {
-  background: #1CB0F6;
-  box-shadow: 0 4px 0 #0082BB, 0 6px 12px rgba(28,176,246,0.35);
+  background: linear-gradient(145deg, #1CB0F6, #0091CC);
+  box-shadow: 0 6px 0 #0060A0, 0 8px 20px rgba(28,176,246,0.45);
 }
 
-/* Active */
+/* Active — vivid green (like Duolingo's current-lesson node) */
 .path-node.active {
-  background: #FF4B4B;
-  box-shadow: 0 4px 0 #CC3C3C, 0 6px 14px rgba(255,75,75,0.4);
+  background: linear-gradient(145deg, #58CC02, #3D9900);
+  box-shadow: 0 6px 0 #2A7000, 0 8px 20px rgba(88,204,2,0.5);
 }
 
-/* Locked */
+/* Locked — grey */
 .path-node.locked {
-  background: #AFAFAF;
-  box-shadow: 0 4px 0 #888888, 0 4px 8px rgba(0,0,0,0.2);
+  background: linear-gradient(145deg, #5C6B7A, #4A5568);
+  box-shadow: 0 5px 0 #2D3748, 0 6px 12px rgba(0,0,0,0.3);
   cursor: not-allowed;
-  opacity: 0.75;
+  opacity: 0.7;
 }
 
-/* Pulsing dashed ring for active node */
+/* ── Pulsing ring (active only) ──────────────────────── */
 .path-node-ring {
   position: absolute;
-  width: 80px;
-  height: 80px;
+  inset: -12px;
   border-radius: 50%;
-  border: 3px dashed #FF4B4B;
-  animation: pulse-ring 1.5s ease-in-out infinite;
+  border: 3px dashed rgba(88, 204, 2, 0.7);
+  animation: pulse-ring 1.6s ease-in-out infinite;
   pointer-events: none;
+  z-index: 1;
 }
 
 @keyframes pulse-ring {
-  0% {
-    transform: scale(0.92);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 0.5;
-  }
-  100% {
-    transform: scale(0.92);
-    opacity: 1;
-  }
+  0%   { transform: scale(0.9);  opacity: 0.9; }
+  50%  { transform: scale(1.12); opacity: 0.4; }
+  100% { transform: scale(0.9);  opacity: 0.9; }
 }
 
-/* Stars row */
+/* ── "BẮT ĐẦU!" badge above active node ─────────────── */
+.path-node-badge {
+  background: #58CC02;
+  color: white;
+  font-size: 13px;
+  font-weight: 900;
+  padding: 5px 12px;
+  border-radius: 10px;
+  box-shadow: 0 3px 0 #3D9900;
+  letter-spacing: 0.5px;
+  position: relative;
+  white-space: nowrap;
+  animation: badge-bounce 2s ease-in-out infinite;
+}
+
+.path-node-badge-arrow {
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 8px solid #58CC02;
+}
+
+@keyframes badge-bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-4px); }
+}
+
+/* ── Stars ───────────────────────────────────────────── */
 .path-node-stars {
   display: flex;
   gap: 2px;
-  height: 14px;
-  align-items: center;
 }
 
 .path-node-stars .star {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1;
 }
 
 .path-node-stars .star.empty {
-  opacity: 0.25;
+  opacity: 0.2;
   filter: grayscale(1);
-}
-
-/* Type label */
-.path-node-label {
-  font-size: 10px;
-  font-weight: 700;
-  color: rgba(255,255,255,0.6);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
