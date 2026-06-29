@@ -39,7 +39,11 @@ export default function PhonicsBasicLesson() {
     }
   };
 
-  const speakSound = () => speakText(currentSound.letter);
+  const speakSound = () => {
+    const exampleWord = currentSound.example_word ? currentSound.example_word.word : '';
+    // Spell the letter, then "as in", then the word.
+    speakText(`${currentSound.letter.split('').join(' ')}, as in, ${exampleWord}`);
+  };
   const speakWord = () => speakText(currentSound.example_word.word);
 
   return (

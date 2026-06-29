@@ -76,7 +76,10 @@ export default function PhonicsLesson() {
               <button 
                 className="btn-speaker-card" 
                 style={{position: 'relative', top: '0', right: '0'}} 
-                onClick={() => speakText(rule.pattern)}
+                onClick={() => {
+                  const exampleWord = rule.words && rule.words.length > 0 ? rule.words[0].word : '';
+                  speakText(`${rule.pattern.split('').join(' ')}, as in, ${exampleWord}`);
+                }}
                 title="Nghe âm này"
               >
                 🔊
