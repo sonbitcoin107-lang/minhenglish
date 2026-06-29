@@ -48,7 +48,9 @@ export default function PhonicsBasicLesson() {
   };
   const speakWord = () => {
     if (isGameSlide) return;
-    speakText(currentSound.example_word.word);
+    if (currentSound?.example_word?.word) {
+      speakText(currentSound.example_word.word);
+    }
   };
 
   return (
@@ -67,7 +69,7 @@ export default function PhonicsBasicLesson() {
         <div className="slide-container fade-in" key="game">
           <PhonicsBlendingGame 
             availableLetters={sounds.map(s => s.letter)} 
-            blendingWords={group.blending_words || []} 
+            blendingWords={group.blending_words || group.words || []} 
           />
         </div>
       ) : (
@@ -83,27 +85,33 @@ export default function PhonicsBasicLesson() {
           </div>
 
           {/* Story Card */}
-          <div className="info-card story-card">
-            <div className="info-card-header">📖 Câu chuyện</div>
-            <p>{currentSound.mnemonic_story}</p>
-          </div>
+          {currentSound.mnemonic_story && (
+            <div className="info-card story-card">
+              <div className="info-card-header">📖 Câu chuyện</div>
+              <p>{currentSound.mnemonic_story}</p>
+            </div>
+          )}
 
           {/* Action Card */}
-          <div className="info-card action-card">
-            <div className="info-card-header">🙌 Hành động</div>
-            <p>{currentSound.action}</p>
-          </div>
+          {currentSound.action && (
+            <div className="info-card action-card">
+              <div className="info-card-header">🙌 Hành động</div>
+              <p>{currentSound.action}</p>
+            </div>
+          )}
 
           {/* Example Word */}
-          <div className="example-word-card" onClick={speakWord}>
-            <div className="ex-emoji">{currentSound.example_word.emoji}</div>
-            <div className="ex-details">
-              <div className="ex-word">{currentSound.example_word.word}</div>
-              <div className="ex-ipa">{currentSound.example_word.ipa}</div>
-              <div className="ex-vi">{currentSound.example_word.vi}</div>
+          {currentSound.example_word && (
+            <div className="example-word-card" onClick={speakWord}>
+              <div className="ex-emoji">{currentSound.example_word.emoji}</div>
+              <div className="ex-details">
+                <div className="ex-word">{currentSound.example_word.word}</div>
+                <div className="ex-ipa">{currentSound.example_word.ipa}</div>
+                <div className="ex-vi">{currentSound.example_word.vi}</div>
+              </div>
+              <button className="btn-speaker-card">🔊</button>
             </div>
-            <button className="btn-speaker-card">🔊</button>
-          </div>
+          )}
 
         </div>
       )}
