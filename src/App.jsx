@@ -20,7 +20,7 @@ function AppLayout({ children, showNav = true }) {
   return (
     <div className="app-shell">
       {showNav && <TopBar />}
-      <main className="page-content">
+      <main className="page-content" style={!showNav ? { paddingTop: 0, paddingBottom: 0 } : {}}>
         {children}
       </main>
       {showNav && <BottomNav />}
