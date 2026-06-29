@@ -12,8 +12,8 @@ export default function DuoMascot({ message, size = 'md', mood = 'happy', animat
   return (
     <div className={`duo-mascot ${sizeClass} ${animate ? 'float-anim' : ''} mood-${mood}`}>
       <img
-        src="/dulygo/favicon.svg"
-        alt="Duo"
+        src="/dulygo/mascot.png"
+        alt="MinhTi"
         className="duo-img"
       />
       {message && (
