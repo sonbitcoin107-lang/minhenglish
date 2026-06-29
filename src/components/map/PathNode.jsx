@@ -8,12 +8,16 @@ const NODE_ICONS = {
   challenge: '⭐',
 };
 
-export default function PathNode({ nodeType, status, stars = 0, onClick, isFirst }) {
-  const icon = status === 'locked' ? '🔒' : NODE_ICONS[nodeType] || '⭐';
+export default function PathNode({ nodeType, status, stars = 0, onClick }) {
+  // ALWAYS show the type icon — locked nodes just look grayed out
+  const icon = NODE_ICONS[nodeType] || '⭐';
 
   return (
-    <div className="path-node-wrapper" onClick={status !== 'locked' ? onClick : undefined}>
-      {/* Active badge "BẮT ĐẦU" */}
+    <div
+      className={`path-node-wrapper ${status}`}
+      onClick={status !== 'locked' ? onClick : undefined}
+    >
+      {/* "BẮT ĐẦU!" badge — only on active node */}
       {status === 'active' && (
         <div className="path-node-badge">
           <span>BẮT ĐẦU!</span>
@@ -21,13 +25,20 @@ export default function PathNode({ nodeType, status, stars = 0, onClick, isFirst
         </div>
       )}
 
-      {/* The circle */}
+      {/* Circle */}
       <div className={`path-node ${status}`}>
+        {/* Pulsing ring for active */}
         {status === 'active' && <div className="path-node-ring" />}
+
         <span className="path-node-icon">{icon}</span>
+
+        {/* Small lock overlay for locked nodes */}
+        {status === 'locked' && (
+          <div className="path-node-lock">🔒</div>
+        )}
       </div>
 
-      {/* Stars below — only for completed */}
+      {/* Stars — only for completed */}
       {status === 'completed' && (
         <div className="path-node-stars">
           {[0, 1, 2].map((i) => (
@@ -35,6 +46,9 @@ export default function PathNode({ nodeType, status, stars = 0, onClick, isFirst
           ))}
         </div>
       )}
+
+      {/* Placeholder height to keep layout stable for non-completed */}
+      {status !== 'completed' && <div className="path-node-stars-placeholder" />}
     </div>
   );
 }

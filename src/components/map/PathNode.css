@@ -9,11 +9,14 @@
   cursor: pointer;
   user-select: none;
   position: relative;
-  /* give room for the pulsing ring to breathe */
   padding: 10px;
 }
 
-.path-node-wrapper:active .path-node {
+.path-node-wrapper.locked {
+  cursor: not-allowed;
+}
+
+.path-node-wrapper:not(.locked):active .path-node {
   transform: scale(0.92);
 }
 
@@ -36,6 +39,11 @@
   position: relative;
 }
 
+/* Stars placeholder to keep vertical spacing consistent */
+.path-node-stars-placeholder {
+  height: 22px;
+}
+
 /* Completed — vivid blue */
 .path-node.completed {
   background: linear-gradient(145deg, #1CB0F6, #0091CC);
@@ -48,12 +56,22 @@
   box-shadow: 0 6px 0 #2A7000, 0 8px 20px rgba(88,204,2,0.5);
 }
 
-/* Locked — grey */
+/* Locked — grey, type icon still visible but dimmed */
 .path-node.locked {
-  background: linear-gradient(145deg, #5C6B7A, #4A5568);
-  box-shadow: 0 5px 0 #2D3748, 0 6px 12px rgba(0,0,0,0.3);
-  cursor: not-allowed;
-  opacity: 0.7;
+  background: linear-gradient(145deg, #374151, #1F2937);
+  box-shadow: 0 5px 0 #111827, 0 6px 12px rgba(0,0,0,0.4);
+  opacity: 0.75;
+}
+
+/* Small lock badge overlaid bottom-right of the circle */
+.path-node-lock {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  font-size: 16px;
+  line-height: 1;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.6));
+  z-index: 3;
 }
 
 /* ── Pulsing ring (active only) ──────────────────────── */
