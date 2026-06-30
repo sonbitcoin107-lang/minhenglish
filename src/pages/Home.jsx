@@ -85,8 +85,6 @@ export default function Home() {
           const sectionNum = Math.floor(courseIdx / SECTION_SIZE) + 1;
           const doorNum    = (courseIdx % SECTION_SIZE) + 1;
 
-          // Only anchor to the globally-first active node
-          const isGlobalFirstActive = `${course.id}-${nodeIdx}` === globalActiveKey;
 
           return (
             <div key={course.id} className="map-section">
