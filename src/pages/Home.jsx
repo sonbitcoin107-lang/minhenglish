@@ -1,7 +1,7 @@
 // src/pages/Home.jsx
 // Duolingo-style Learning Path Map
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useGame } from '../context/GameContext';
 import { COURSES } from '../data/courses';
@@ -46,6 +46,18 @@ export default function Home() {
   const [guidebookUnit, setGuidebookUnit] = useState(null);
   const activeRef   = useRef(null);
 
+  // Find the single first active node across ALL courses (global)
+  const globalActiveKey = useMemo(() => {
+    for (const course of COURSES) {
+      for (const ni of [0, 1, 2, 3]) {
+        if (getNodeStatus(course.id, ni, isNodeCompleted) === 'active') {
+          return `${course.id}-${ni}`;
+        }
+      }
+    }
+    return null;
+  }, [isNodeCompleted]);
+
   // Auto-scroll to first active node
   useEffect(() => {
     if (activeRef.current) {
@@ -73,10 +85,8 @@ export default function Home() {
           const sectionNum = Math.floor(courseIdx / SECTION_SIZE) + 1;
           const doorNum    = (courseIdx % SECTION_SIZE) + 1;
 
-          // First active node: lowest nodeIdx that is 'active' (for scroll anchor)
-          const firstActiveIdx = [0, 1, 2, 3].findIndex(
-            (ni) => getNodeStatus(course.id, ni, isNodeCompleted) === 'active'
-          );
+          // Only anchor to the globally-first active node
+          const isGlobalFirstActive = `${course.id}-${nodeIdx}` === globalActiveKey;
 
           return (
             <div key={course.id} className="map-section">
@@ -103,7 +113,8 @@ export default function Home() {
                   const status = getNodeStatus(course.id, nodeIdx, isNodeCompleted);
                   const stars  = getNodeStars(course.id, nodeIdx, isNodeCompleted);
                   const zz     = ZIGZAG[nodeIdx];
-                  const isFirstActive = nodeIdx === firstActiveIdx;
+                  const isGlobalFirstActive = `${course.id}-${nodeIdx}` === globalActiveKey;
+                  const isFirstActive = isGlobalFirstActive;
 
                   return (
                     <div key={nodeIdx} className="map-node-group">

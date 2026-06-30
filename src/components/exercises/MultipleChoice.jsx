@@ -1,10 +1,16 @@
 // src/components/exercises/MultipleChoice.jsx
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { speakEnglish } from '../../utils/audio';
 import './MultipleChoice.css';
 
 export default function MultipleChoice({ question, options, audio, onAnswer, disabled }) {
   const [selected, setSelected] = useState(null);
+
+  // Shuffle options once per question (keyed by question text)
+  const shuffledOptions = useMemo(() => {
+    return [...options].sort(() => Math.random() - 0.5);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [question]);
 
   const handleSelect = (opt, idx) => {
     if (disabled || selected !== null) return;
@@ -33,7 +39,7 @@ export default function MultipleChoice({ question, options, audio, onAnswer, dis
       </div>
 
       <div className="mc-options">
-        {options.map((opt, idx) => {
+        {shuffledOptions.map((opt, idx) => {
           let statusClass = '';
           if (selected !== null) {
             if (idx === selected) {
