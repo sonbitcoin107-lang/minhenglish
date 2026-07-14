@@ -66,13 +66,48 @@ export const playLevelUp = () => {
 };
 
 // Text-to-speech for English words
+// Tries to find the best en-US voice available on the device
+const getBestEnglishVoice = () => {
+  const voices = window.speechSynthesis.getVoices();
+  if (!voices.length) return null;
+
+  // Priority 1: en-US with "natural" or "enhanced" in name (iOS/macOS)
+  const natural = voices.find(v =>
+    v.lang.startsWith('en-US') && /natural|enhanced|premium/i.test(v.name)
+  );
+  if (natural) return natural;
+
+  // Priority 2: any en-US voice
+  const enUS = voices.find(v => v.lang === 'en-US');
+  if (enUS) return enUS;
+
+  // Priority 3: any English voice
+  return voices.find(v => v.lang.startsWith('en')) || null;
+};
+
 export const speakEnglish = (text) => {
   if (!window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = 'en-US';
-  utterance.rate = 0.85;
-  utterance.pitch = 1.1;
-  utterance.volume = 0.9;
-  window.speechSynthesis.cancel();
-  window.speechSynthesis.speak(utterance);
+  utterance.rate = 0.82;   // chậm rõ ràng cho trẻ em
+  utterance.pitch = 1.0;   // giọng tự nhiên, không chỉnh pitch
+  utterance.volume = 1.0;
+
+  // Voices load async — wait if not ready yet
+  const voices = window.speechSynthesis.getVoices();
+  if (voices.length > 0) {
+    const best = getBestEnglishVoice();
+    if (best) utterance.voice = best;
+    window.speechSynthesis.speak(utterance);
+  } else {
+    // Fallback: wait for voiceschanged event then speak
+    window.speechSynthesis.onvoiceschanged = () => {
+      const best = getBestEnglishVoice();
+      if (best) utterance.voice = best;
+      window.speechSynthesis.speak(utterance);
+      window.speechSynthesis.onvoiceschanged = null;
+    };
+  }
 };
