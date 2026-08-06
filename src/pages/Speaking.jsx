@@ -3,7 +3,7 @@
 // State machine: UNIT_SELECT → INTRO → MASCOT_SPEAK → MIC_ACTIVE → RESULT → (next turn) → COMPLETE
 
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { FF1_UNITS } from '../data/ff1/units';
+import { FF1_UNITS } from '../data/speaking/ff1/units';
 import {
   speakText, stopSpeaking,
   startRecognition, isSpeechSupported,
