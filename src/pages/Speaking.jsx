@@ -19,13 +19,14 @@ const RETRY_COUNTDOWN    = 4;     // seconds to show retry button before auto-sk
 
 // ── State names ───────────────────────────────────────────────
 const S = {
-  SERIES_SELECT: 'SERIES_SELECT',  // ← chọn FF1 / FF2
-  UNIT_SELECT:   'UNIT_SELECT',
-  INTRO:         'INTRO',
-  MASCOT_SPEAK:  'MASCOT_SPEAK',
-  MIC_ACTIVE:    'MIC_ACTIVE',
-  RESULT:        'RESULT',
-  COMPLETE:      'COMPLETE',
+  SERIES_SELECT:  'SERIES_SELECT',  // ← chọn FF1 / FF2
+  UNIT_SELECT:    'UNIT_SELECT',
+  INTRO:          'INTRO',
+  MASCOT_SPEAK:   'MASCOT_SPEAK',
+  LISTEN_READY:   'LISTEN_READY',   // ← mới: chờ bé bấm mic
+  MIC_ACTIVE:     'MIC_ACTIVE',
+  RESULT:         'RESULT',
+  COMPLETE:       'COMPLETE',
 };
 
 export default function Speaking() {
@@ -155,9 +156,10 @@ export default function Speaking() {
     if (!currentTurn) return;
     setScreen(S.MASCOT_SPEAK);
     speakText(currentTurn.mascot.speak, () => {
-      timerRef.current = setTimeout(activateMic, PAUSE_AFTER_MASCOT);
+      // TTS xong → vào LISTEN_READY, bé tự bấm mic
+      setScreen(S.LISTEN_READY);
     });
-  }, [currentTurn, activateMic]);
+  }, [currentTurn]);
 
   // Trigger mascot when turnIdx changes
   useEffect(() => {
@@ -165,6 +167,16 @@ export default function Speaking() {
       runMascotTurn();
     }
   }, [turnIdx]); // eslint-disable-line
+
+  // ── Replay mascot (bé bấm 🔊 trong LISTEN_READY) ─────────────
+  const replayMascot = useCallback(() => {
+    if (!currentTurn) return;
+    stopSpeaking();
+    setScreen(S.MASCOT_SPEAK);
+    speakText(currentTurn.mascot.speak, () => {
+      setScreen(S.LISTEN_READY);
+    });
+  }, [currentTurn]);
 
   // ── Start a unit ─────────────────────────────────────────────
   const startUnit = (unit) => {
@@ -185,7 +197,7 @@ export default function Speaking() {
     setTimeout(() => {
       if (selectedUnit?.dialogues[0]) {
         speakText(selectedUnit.dialogues[0].mascot.speak, () => {
-          timerRef.current = setTimeout(activateMic, PAUSE_AFTER_MASCOT);
+          setScreen(S.LISTEN_READY);
         });
       }
     }, 300);
@@ -297,7 +309,7 @@ export default function Speaking() {
         <h2 className="sp-intro-title">Unit {selectedUnit.unit}: {selectedUnit.title}</h2>
         <p className="sp-intro-desc">{selectedUnit.description}</p>
         <div className="sp-intro-tips">
-          <div className="sp-tip">🎤 Mic tự bật — cứ tự nhiên nói nhé!</div>
+          <div className="sp-tip">🔊 Nghe MinhTi nói mẫu rồi bấm 🎤 để luyện!</div>
           <div className="sp-tip">🟢 Từ đúng sẽ xanh, 🔴 từ sai sẽ đỏ</div>
           <div className="sp-tip">💬 {selectedUnit.dialogues.length} câu hội thoại</div>
         </div>
@@ -387,14 +399,37 @@ export default function Speaking() {
         <div className="sp-current-block">
           {/* MinhTi nói */}
           <div className={`sp-turn sp-turn-mascot ${screen === S.MASCOT_SPEAK ? 'active' : ''}`}>
-            <img src="/mascot.png" alt="MinhTi" className="sp-turn-avatar" />
+            <img src="/mascot.png" alt="MinhTi"
+              className={`sp-turn-avatar ${screen === S.LISTEN_READY ? 'sp-avatar-listen' : ''}`} />
             <div className="sp-bubble sp-bubble-mascot">
               <p>{currentTurn?.mascot.text}</p>
               {screen === S.MASCOT_SPEAK && (
                 <span className="sp-speaking-dot">🔊 đang nói...</span>
               )}
             </div>
+            {/* Nút replay — chỉ hiện khi LISTEN_READY */}
+            {screen === S.LISTEN_READY && (
+              <button className="sp-replay-btn" onClick={replayMascot} title="Nghe lại">
+                🔊
+              </button>
+            )}
           </div>
+
+          {/* LISTEN_READY: nút mic to pulsing */}
+          {screen === S.LISTEN_READY && (
+            <div className="sp-listen-ready-row">
+              <div className="sp-child-prompt">
+                <span className="sp-child-prompt-label">Con nói:</span>
+                <span className="sp-child-prompt-text">{currentTurn?.child.text.replace(/\[.*?\]/g, '...')}</span>
+              </div>
+              <button className="sp-mic-big" onClick={activateMic}>
+                <span className="sp-mic-ring sp-mic-ring-1" />
+                <span className="sp-mic-ring sp-mic-ring-2" />
+                <span className="sp-mic-ring sp-mic-ring-3" />
+                <span className="sp-mic-icon">🎤</span>
+              </button>
+            </div>
+          )}
 
           {/* Con nói */}
           <div className={`sp-turn sp-turn-child ${screen === S.MIC_ACTIVE ? 'active' : ''}`}>
