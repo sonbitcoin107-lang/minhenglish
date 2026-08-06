@@ -45,10 +45,8 @@ export default function Speaking() {
   const [micTimeout, setMicTimeout]       = useState(0);
   const [micElapsed, setMicElapsed]       = useState(0);
   const [history, setHistory]             = useState([]);
-  const [profile, setProfile]             = useState(null); // avatar bé
+  const [profile, setProfile] = useState(() => loadProfile()); // lazy: đọc đồng bộ, không flash
 
-  // Load profile avatar khi mở Speaking
-  useEffect(() => { setProfile(loadProfile()); }, []);
 
   const stopRecRef  = useRef(null);
   const timerRef    = useRef(null);
