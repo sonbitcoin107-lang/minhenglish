@@ -415,21 +415,7 @@ export default function Speaking() {
             )}
           </div>
 
-          {/* LISTEN_READY: nút mic to pulsing */}
-          {screen === S.LISTEN_READY && (
-            <div className="sp-listen-ready-row">
-              <div className="sp-child-prompt">
-                <span className="sp-child-prompt-label">Con nói:</span>
-                <span className="sp-child-prompt-text">{currentTurn?.child.text.replace(/\[.*?\]/g, '...')}</span>
-              </div>
-              <button className="sp-mic-big" onClick={activateMic}>
-                <span className="sp-mic-ring sp-mic-ring-1" />
-                <span className="sp-mic-ring sp-mic-ring-2" />
-                <span className="sp-mic-ring sp-mic-ring-3" />
-                <span className="sp-mic-icon">🎤</span>
-              </button>
-            </div>
-          )}
+          {/* LISTEN_READY: chỉ còn mic pulsing — nằm SAU word boxes */}
 
           {/* Con nói */}
           <div className={`sp-turn sp-turn-child ${screen === S.MIC_ACTIVE ? 'active' : ''}`}>
@@ -446,7 +432,7 @@ export default function Speaking() {
                       const display = isPlaceholder ? w.slice(1, -1) : w;
                       return (
                         <span key={i}
-                          className={`sp-word ${isPlaceholder ? 'sp-word-placeholder' : ''} ${screen === S.MIC_ACTIVE ? 'sp-word-idle' : ''}`}
+                          className={`sp-word ${isPlaceholder ? 'sp-word-placeholder' : ''} ${(screen === S.MIC_ACTIVE || screen === S.LISTEN_READY) ? 'sp-word-idle' : ''}`}
                         >{display}</span>
                       );
                     })
@@ -460,6 +446,18 @@ export default function Speaking() {
               {screen === S.MIC_ACTIVE ? '🎤' : '👦'}
             </div>
           </div>
+
+          {/* Mic pulsing — chỉ hiện LISTEN_READY, nằm dưới word boxes */}
+          {screen === S.LISTEN_READY && (
+            <div className="sp-listen-ready-row">
+              <button className="sp-mic-big" onClick={activateMic}>
+                <span className="sp-mic-ring sp-mic-ring-1" />
+                <span className="sp-mic-ring sp-mic-ring-2" />
+                <span className="sp-mic-ring sp-mic-ring-3" />
+                <span className="sp-mic-icon">🎤</span>
+              </button>
+            </div>
+          )}
 
           {/* Mic progress bar */}
           {screen === S.MIC_ACTIVE && (

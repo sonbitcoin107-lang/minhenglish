@@ -381,11 +381,15 @@
   transition: all 0.3s ease;
 }
 
-/* Avatar 2x khi đang ở LISTEN_READY */
+/* Avatar 2x khi đang ở LISTEN_READY — border cam đồng bộ nút replay */
 .sp-avatar-listen {
   width: 100px;
   height: 100px;
-  padding: 6px;
+  padding: 0;
+  border: 3px solid #FF9600;
+  box-shadow: 0 4px 0 #CC7A00, 0 0 16px rgba(255,150,0,0.25);
+  object-fit: cover;
+  background: var(--gray-50);
 }
 
 /* ── Nút Replay (🔊) — to cùng cỡ avatar ─────────────────── */
