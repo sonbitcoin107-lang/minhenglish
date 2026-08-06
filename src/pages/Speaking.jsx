@@ -1,9 +1,10 @@
 // src/pages/Speaking.jsx
 // Family & Friends — Speaking Practice
-// State machine: SERIES_SELECT → UNIT_SELECT → INTRO → MASCOT_SPEAK → MIC_ACTIVE → RESULT → (next turn) → COMPLETE
+// State machine: SERIES_SELECT → UNIT_SELECT → INTRO → MASCOT_SPEAK → LISTEN_READY → MIC_ACTIVE → RESULT → (next turn) → COMPLETE
 
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { SERIES_LIST } from '../data/speaking/index';
+import { loadProfile } from '../utils/storage';
 import {
   speakText, stopSpeaking,
   startRecognition, isSpeechSupported,
@@ -32,18 +33,22 @@ const S = {
 export default function Speaking() {
   const { addXp } = useGame();
 
-  const [screen, setScreen]             = useState(S.SERIES_SELECT);
+  const [screen, setScreen]               = useState(S.SERIES_SELECT);
   const [selectedSeries, setSelectedSeries] = useState(null);
-  const [selectedUnit, setSelectedUnit] = useState(null);
-  const [turnIdx, setTurnIdx]         = useState(0);
-  const [interimText, setInterimText] = useState('');
-  const [wordResults, setWordResults] = useState(null);
-  const [isCorrect, setIsCorrect]     = useState(null);
+  const [selectedUnit, setSelectedUnit]   = useState(null);
+  const [turnIdx, setTurnIdx]             = useState(0);
+  const [interimText, setInterimText]     = useState('');
+  const [wordResults, setWordResults]     = useState(null);
+  const [isCorrect, setIsCorrect]         = useState(null);
   const [retryCountdown, setRetryCountdown] = useState(null);
-  const [sessionXp, setSessionXp]     = useState(0);
-  const [micTimeout, setMicTimeout]   = useState(0);
-  const [micElapsed, setMicElapsed]   = useState(0);
-  const [history, setHistory]         = useState([]); // completed turns
+  const [sessionXp, setSessionXp]         = useState(0);
+  const [micTimeout, setMicTimeout]       = useState(0);
+  const [micElapsed, setMicElapsed]       = useState(0);
+  const [history, setHistory]             = useState([]);
+  const [profile, setProfile]             = useState(null); // avatar bé
+
+  // Load profile avatar khi mở Speaking
+  useEffect(() => { setProfile(loadProfile()); }, []);
 
   const stopRecRef  = useRef(null);
   const timerRef    = useRef(null);
@@ -443,7 +448,12 @@ export default function Speaking() {
               )}
             </div>
             <div className={`sp-mic-indicator ${screen === S.MIC_ACTIVE ? 'listening' : ''}`}>
-              {screen === S.MIC_ACTIVE ? '🎤' : '👦'}
+              {screen === S.MIC_ACTIVE
+                ? '🎤'
+                : profile?.photo
+                  ? <img src={profile.photo} alt="avatar" className="sp-child-avatar" />
+                  : <span>{profile?.avatar || '👦'}</span>
+              }
             </div>
           </div>
 
