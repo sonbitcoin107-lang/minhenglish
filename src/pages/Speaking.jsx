@@ -1,9 +1,9 @@
 // src/pages/Speaking.jsx
-// Family & Friends 1 — Speaking Practice
-// State machine: UNIT_SELECT → INTRO → MASCOT_SPEAK → MIC_ACTIVE → RESULT → (next turn) → COMPLETE
+// Family & Friends — Speaking Practice
+// State machine: SERIES_SELECT → UNIT_SELECT → INTRO → MASCOT_SPEAK → MIC_ACTIVE → RESULT → (next turn) → COMPLETE
 
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { FF1_UNITS } from '../data/speaking/ff1/units';
+import { SERIES_LIST } from '../data/speaking/index';
 import {
   speakText, stopSpeaking,
   startRecognition, isSpeechSupported,
@@ -19,18 +19,20 @@ const RETRY_COUNTDOWN    = 4;     // seconds to show retry button before auto-sk
 
 // ── State names ───────────────────────────────────────────────
 const S = {
-  UNIT_SELECT:  'UNIT_SELECT',
-  INTRO:        'INTRO',
-  MASCOT_SPEAK: 'MASCOT_SPEAK',
-  MIC_ACTIVE:   'MIC_ACTIVE',
-  RESULT:       'RESULT',
-  COMPLETE:     'COMPLETE',
+  SERIES_SELECT: 'SERIES_SELECT',  // ← chọn FF1 / FF2
+  UNIT_SELECT:   'UNIT_SELECT',
+  INTRO:         'INTRO',
+  MASCOT_SPEAK:  'MASCOT_SPEAK',
+  MIC_ACTIVE:    'MIC_ACTIVE',
+  RESULT:        'RESULT',
+  COMPLETE:      'COMPLETE',
 };
 
 export default function Speaking() {
   const { addXp } = useGame();
 
-  const [screen, setScreen]           = useState(S.UNIT_SELECT);
+  const [screen, setScreen]             = useState(S.SERIES_SELECT);
+  const [selectedSeries, setSelectedSeries] = useState(null);
   const [selectedUnit, setSelectedUnit] = useState(null);
   const [turnIdx, setTurnIdx]         = useState(0);
   const [interimText, setInterimText] = useState('');
@@ -210,20 +212,65 @@ export default function Speaking() {
   // RENDER
   // ════════════════════════════════════════════════════════════
 
-  // UNIT SELECT
-  if (screen === S.UNIT_SELECT) {
+  // ── SERIES SELECT ────────────────────────────────────────────
+  if (screen === S.SERIES_SELECT) {
     return (
       <div className="speaking-page">
         <div className="speaking-header">
           <img src="/mascot.png" alt="MinhTi" className="sp-header-mascot" />
           <div>
             <h1 className="sp-header-title">Luyện Nói</h1>
-            <p className="sp-header-sub">Family &amp; Friends 1</p>
+            <p className="sp-header-sub">Chọn bộ sách</p>
+          </div>
+        </div>
+        <p className="sp-instruction">Chọn sách để bắt đầu luyện hội thoại!</p>
+        <div className="sp-series-list">
+          {SERIES_LIST.map((series) => (
+            <button
+              key={series.id}
+              id={`btn-series-${series.id}`}
+              className={`sp-series-card ${series.locked ? 'sp-series-locked' : ''}`}
+              style={{ '--series-color': series.color, '--series-dark': series.colorDark }}
+              onClick={() => {
+                if (series.locked) return;
+                setSelectedSeries(series);
+                setScreen(S.UNIT_SELECT);
+              }}
+              disabled={series.locked}
+            >
+              <span className="sp-series-emoji">
+                {series.locked ? '🔒' : series.emoji}
+              </span>
+              <div className="sp-series-info">
+                <strong>{series.title}</strong>
+                <span>{series.subtitle}</span>
+              </div>
+              {!series.locked && (
+                <span className="sp-series-count">{series.units.length} unit</span>
+              )}
+            </button>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  // ── UNIT SELECT ──────────────────────────────────────────────
+  if (screen === S.UNIT_SELECT) {
+    const units = selectedSeries?.units || [];
+    return (
+      <div className="speaking-page">
+        <div className="speaking-header">
+          <button className="sp-back-btn" onClick={() => setScreen(S.SERIES_SELECT)}>←</button>
+          <img src="/mascot.png" alt="MinhTi" className="sp-header-mascot" />
+          <div>
+            <h1 className="sp-header-title">Luyện Nói</h1>
+            <p className="sp-header-sub">{selectedSeries?.title}</p>
           </div>
         </div>
         <p className="sp-instruction">Chọn Unit để bắt đầu luyện nói hội thoại!</p>
         <div className="sp-unit-list">
-          {FF1_UNITS.map((unit) => (
+          {units.map((unit) => (
             <button key={unit.id} id={`btn-unit-${unit.unit}`}
               className="sp-unit-card"
               style={{ '--unit-color': unit.color, '--unit-dark': unit.colorDark }}

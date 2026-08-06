@@ -106,7 +106,100 @@
 }
 
 /* ── Unit list ───────────────────── */
+/* ── Series Selection ─────────────────────────────────────── */
+.sp-series-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding-bottom: var(--space-10);
+}
+
+.sp-series-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  background: white;
+  border: 3px solid var(--series-color, var(--gray-200));
+  border-radius: var(--radius-xl);
+  padding: var(--space-5) var(--space-5);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 0 var(--series-dark, var(--gray-300));
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.sp-series-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--series-color);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+
+.sp-series-card:not(.sp-series-locked):active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 var(--series-dark, var(--gray-300));
+}
+
+.sp-series-locked {
+  opacity: 0.55;
+  cursor: not-allowed;
+  border-color: var(--gray-300) !important;
+  box-shadow: 0 4px 0 var(--gray-300) !important;
+}
+
+.sp-series-emoji { font-size: 40px; flex-shrink: 0; }
+
+.sp-series-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.sp-series-info strong {
+  font-size: var(--text-lg);
+  color: var(--gray-900);
+  font-weight: 800;
+}
+
+.sp-series-info span {
+  font-size: var(--text-sm);
+  color: var(--gray-500);
+}
+
+.sp-series-count {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--series-color);
+  background: color-mix(in srgb, var(--series-color) 12%, transparent);
+  padding: 4px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+/* Back button */
+.sp-back-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: var(--gray-600);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--radius-md);
+  transition: background var(--transition-fast);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.sp-back-btn:hover { background: var(--gray-100); }
+
+/* ── Unit List ──────────────────────────────────────────────── */
 .sp-unit-list {
+
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
