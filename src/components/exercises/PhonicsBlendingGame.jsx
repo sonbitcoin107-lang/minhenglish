@@ -1,6 +1,6 @@
 // src/components/exercises/PhonicsBlendingGame.jsx
-import { useState, useMemo, useEffect } from 'react';
-import { speakText } from '../../utils/speech';
+import { useState, useMemo, useEffect, useRef } from 'react';
+import { speakText, stopSpeaking } from '../../utils/speech';
 import './PhonicsBlendingGame.css';
 
 export default function PhonicsBlendingGame({ 
@@ -21,8 +21,23 @@ export default function PhonicsBlendingGame({
   const [activeSlotIndex, setActiveSlotIndex] = useState(-1);
   const [result, setResult] = useState(null);
 
-  // Reset state when target word changes
+  // ── Lưu tất cả timer IDs để cleanup khi unmount ──────────────
+  const timersRef = useRef([]);
+
+  // Cleanup khi component unmount — dừng audio + hủy tất cả timer
   useEffect(() => {
+    return () => {
+      timersRef.current.forEach(id => clearTimeout(id));
+      timersRef.current = [];
+      stopSpeaking();
+    };
+  }, []);
+
+  // Reset state when target word changes — cũng clear timers cũ
+  useEffect(() => {
+    timersRef.current.forEach(id => clearTimeout(id));
+    timersRef.current = [];
+    stopSpeaking();
     setSelected([]);
     setResult(null);
     setIsPlaying(false);
@@ -51,34 +66,42 @@ export default function PhonicsBlendingGame({
   const handlePlayTrain = () => {
     if (selected.length !== maxSlots) return;
     if (isPlaying) return;
-    
+
+    // Clear bất kỳ timer cũ nào còn sót trước khi chạy mới
+    timersRef.current.forEach(id => clearTimeout(id));
+    timersRef.current = [];
+
     setIsPlaying(true);
     setResult(null);
     
     const wordFormed = selected.map(s => s.letter).join('').toLowerCase();
-    const isCorrect = wordFormed === targetWord.toLowerCase() || wordFormed === correctSequence.join('').toLowerCase();
+    const isCorrect = wordFormed === targetWord.toLowerCase()
+      || wordFormed === correctSequence.join('').toLowerCase();
     
-    // Sequence playback
+    // Sequence playback — lưu từng timer ID vào ref
     selected.forEach((s, idx) => {
-      setTimeout(() => { 
+      const id = setTimeout(() => { 
         setActiveSlotIndex(idx); 
         speakText(s.letter); 
       }, idx * 600);
+      timersRef.current.push(id);
     });
     
-    setTimeout(() => {
+    const finalId = setTimeout(() => {
       setActiveSlotIndex(-1);
       if (isCorrect) {
         speakText(targetWord);
         setResult({ type: 'success' });
         if (onSuccess) {
-          setTimeout(onSuccess, 2000); // Trigger next word after a delay
+          const successId = setTimeout(onSuccess, 2000);
+          timersRef.current.push(successId);
         }
       } else {
         setResult({ type: 'error' });
       }
       setIsPlaying(false);
     }, maxSlots * 600);
+    timersRef.current.push(finalId);
   };
 
   const isUsed = (id) => selected.some(s => s.id === id);
