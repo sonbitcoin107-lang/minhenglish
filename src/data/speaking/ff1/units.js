@@ -13,10 +13,10 @@
 // ✅ Unit 9   Lunchtime (Food)
 // ✅ Unit 10  My Bedroom (Furniture)
 // ✅ Unit 11  Animals
-// ❌ Unit 12  Dinnertime            ← chờ NotebookLM
-// ❌ Unit 13  Clean Up!             ← chờ NotebookLM
-// ❌ Unit 14  Action Boy (Can/Can't)← chờ NotebookLM
-// ❌ Unit 15  Let's Play Ball!      ← chờ NotebookLM
+// ✅ Unit 12  Dinnertime!
+// ✅ Unit 13  Tidy Up!
+// ✅ Unit 14  Action Boy! (Can/Can't)
+// ✅ Unit 15  Let's Play on the Beach!
 //
 // Format mỗi turn:
 //   mascot: MinhTi nói trước
@@ -590,10 +590,205 @@ export const FF1_UNITS = [
     ],
   },
 
-  // ❌ Unit 12 — Dinnertime      (chờ NotebookLM - Batch 2)
-  // ❌ Unit 13 — Clean Up!       (chờ NotebookLM - Batch 2)
-  // ❌ Unit 14 — Action Boy      (chờ NotebookLM - Batch 2)
-  // ❌ Unit 15 — Let's Play Ball!(chờ NotebookLM - Batch 3)
+  // ─────────────────────────────────────────────────────────────
+  // UNIT 12 — Dinnertime!
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 'ff1-unit12',
+    unit: 12,
+    title: 'Dinnertime!',
+    emoji: '🍛',
+    color: '#FF6B6B',
+    colorDark: '#EE5253',
+    description: 'Thức ăn và sở thích',
+    dialogues: [
+      {
+        id: 'd12-1',
+        mascot: { text: "Do you like carrots?", speak: "Do you like carrots?" },
+        child:  { text: "Yes, I do.", required: ['yes', 'i', 'do'] },
+      },
+      {
+        id: 'd12-2',
+        mascot: { text: "Do you like meat?", speak: "Do you like meat?" },
+        child:  { text: "No, I don't.", required: ['no', 'i', "don't"] },
+      },
+      {
+        id: 'd12-3',
+        mascot: { text: "Do you like fish?", speak: "Do you like fish?" },
+        child:  { text: "Yes, I do.", required: ['yes', 'i', 'do'] },
+      },
+      {
+        id: 'd12-4',
+        mascot: { text: "What food do you like?", speak: "What food do you like?" },
+        child:  { text: "I like rice.", required: ['i', 'like', 'rice'] },
+      },
+      {
+        id: 'd12-5',
+        mascot: { text: "Do you like yogurt?", speak: "Do you like yogurt?" },
+        child:  { text: "No, I don't like yogurt.", required: ['i', "don't", 'like', 'yogurt'] },
+      },
+      {
+        id: 'd12-6',
+        mascot: { text: "What's this?", speak: "What's this?" },
+        child:  { text: "It's bread.", required: ["it's", 'bread'] },
+      },
+      {
+        id: 'd12-7',
+        mascot: { text: "Do you like milk?", speak: "Do you like milk?" },
+        child:  { text: "Yes, I do. I like milk.", required: ['yes', 'i', 'like', 'milk'] },
+      },
+    ],
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // UNIT 13 — Tidy Up!
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 'ff1-unit13',
+    unit: 13,
+    title: 'Tidy Up!',
+    emoji: '🛏️',
+    color: '#9B59B6',
+    colorDark: '#8E44AD',
+    description: 'Đồ dùng trong phòng ngủ',
+    dialogues: [
+      {
+        id: 'd13-1',
+        mascot: { text: "What's on the rug?", speak: "What's on the rug?" },
+        child:  { text: "There's a pillow.", required: ["there's", 'pillow'] },
+      },
+      {
+        id: 'd13-2',
+        mascot: { text: "What are on the shelf?", speak: "What are on the shelf?" },
+        child:  { text: "There are books.", required: ['there', 'are', 'books'] },
+      },
+      {
+        id: 'd13-3',
+        mascot: { text: "Where is the blanket?", speak: "Where is the blanket?" },
+        child:  { text: "It's on the bed.", required: ["it's", 'on', 'bed'] },
+      },
+      {
+        id: 'd13-4',
+        mascot: { text: "How many cupboards are there?", speak: "How many cupboards are there?" },
+        child:  { text: "There is one cupboard.", required: ['there', 'is', 'one', 'cupboard'] },
+      },
+      {
+        id: 'd13-5',
+        mascot: { text: "What's under the bed?", speak: "What's under the bed?" },
+        child:  { text: "There's a rug.", required: ["there's", 'rug'] },
+      },
+      {
+        id: 'd13-6',
+        mascot: { text: "Where are the pillows?", speak: "Where are the pillows?" },
+        child:  { text: "They're on the bed.", required: ["they're", 'on', 'bed'] },
+      },
+      {
+        id: 'd13-7',
+        mascot: { text: "How many shelves are there?", speak: "How many shelves are there?" },
+        child:  { text: "There are two shelves.", required: ['there', 'are', 'two', 'shelves'] },
+      },
+    ],
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // UNIT 14 — Action Boy!
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 'ff1-unit14',
+    unit: 14,
+    title: 'Action Boy!',
+    emoji: '🏃',
+    color: '#FFC312',
+    colorDark: '#F79F1F',
+    description: 'Các hoạt động và khả năng',
+    dialogues: [
+      {
+        id: 'd14-1',
+        mascot: { text: "Can he run?", speak: "Can he run?" },
+        child:  { text: "Yes, he can.", required: ['yes', 'he', 'can'] },
+      },
+      {
+        id: 'd14-2',
+        mascot: { text: "Can she fly?", speak: "Can she fly?" },
+        child:  { text: "No, she can't.", required: ['no', 'she', "can't"] },
+      },
+      {
+        id: 'd14-3',
+        mascot: { text: "Can Action Boy talk?", speak: "Can Action Boy talk?" },
+        child:  { text: "Yes, he can.", required: ['yes', 'he', 'can'] },
+      },
+      {
+        id: 'd14-4',
+        mascot: { text: "What can you do?", speak: "What can you do?" },
+        child:  { text: "I can swim.", required: ['i', 'can', 'swim'] },
+      },
+      {
+        id: 'd14-5',
+        mascot: { text: "Can she climb the tree?", speak: "Can she climb the tree?" },
+        child:  { text: "No, she can't.", required: ['no', 'she', "can't"] },
+      },
+      {
+        id: 'd14-6',
+        mascot: { text: "Can you walk?", speak: "Can you walk?" },
+        child:  { text: "Yes, I can.", required: ['yes', 'i', 'can'] },
+      },
+      {
+        id: 'd14-7',
+        mascot: { text: "Can he write?", speak: "Can he write?" },
+        child:  { text: "No, he can't.", required: ['no', 'he', "can't"] },
+      },
+    ],
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // UNIT 15 — Let's Play on the Beach!
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 'ff1-unit15',
+    unit: 15,
+    title: "Let's Play on the Beach!",
+    emoji: '🏖️',
+    color: '#1DD1A1',
+    colorDark: '#10AC84',
+    description: 'Hoạt động ở bãi biển',
+    dialogues: [
+      {
+        id: 'd15-1',
+        mascot: { text: "It's sunny! Let's go to the beach.", speak: "It's sunny! Let's go to the beach." },
+        child:  { text: "Great! Let's swim in the sea.", required: ["let's", 'swim', 'sea'] },
+      },
+      {
+        id: 'd15-2',
+        mascot: { text: "Look at the sand!", speak: "Look at the sand!" },
+        child:  { text: "Let's make a sandcastle.", required: ["let's", 'make', 'sandcastle'] },
+      },
+      {
+        id: 'd15-3',
+        mascot: { text: "The sun is very hot.", speak: "The sun is very hot." },
+        child:  { text: "Let's put on sunscreen.", required: ["let's", 'put', 'sunscreen'] },
+      },
+      {
+        id: 'd15-4',
+        mascot: { text: "I see a boat.", speak: "I see a boat." },
+        child:  { text: "Let's go in a boat.", required: ["let's", 'go', 'boat'] },
+      },
+      {
+        id: 'd15-5',
+        mascot: { text: "Look! A shell.", speak: "Look! A shell." },
+        child:  { text: "Let's find shells.", required: ["let's", 'find', 'shells'] },
+      },
+      {
+        id: 'd15-6',
+        mascot: { text: "We have a bat and a ball.", speak: "We have a bat and a ball." },
+        child:  { text: "Let's play ball.", required: ["let's", 'play', 'ball'] },
+      },
+      {
+        id: 'd15-7',
+        mascot: { text: "Look at that crab!", speak: "Look at that crab!" },
+        child:  { text: "Let's look at the crab.", required: ["let's", 'look', 'crab'] },
+      },
+    ],
+  },
 ];
 
 export const getUnitById = (id) => FF1_UNITS.find(u => u.id === id);
