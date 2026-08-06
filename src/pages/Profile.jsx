@@ -1,7 +1,7 @@
 // src/pages/Profile.jsx
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { useGame } from '../context/GameContext';
-import { loadProfile, saveProfile, clearAll } from '../utils/storage';
+import { loadProfile, saveProfile, clearAll, DEFAULT_AVATAR } from '../utils/storage';
 import { useNavigate } from 'react-router-dom';
 import { COURSES } from '../data/courses';
 import './Profile.css';
@@ -25,22 +25,15 @@ export default function Profile() {
   const navigate    = useNavigate();
   const fileInputRef = useRef(null);
 
-  const [profile, setProfile]           = useState(null);
+  // Lazy init — đọc localStorage đồng bộ, không flash, không cần useEffect
+  const initialProfile = loadProfile();
+  const [profile, setProfile]           = useState(initialProfile);
   const [showReset, setShowReset]       = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
-  const [editName, setEditName]         = useState('');
-  const [editEmoji, setEditEmoji]       = useState('🦊');
-  const [editPhoto, setEditPhoto]       = useState(null); // base64
+  const [editName, setEditName]         = useState(initialProfile?.name   || '');
+  const [editEmoji, setEditEmoji]       = useState(initialProfile?.avatar || DEFAULT_AVATAR);
+  const [editPhoto, setEditPhoto]       = useState(initialProfile?.photo  || null);
 
-  useEffect(() => {
-    const p = loadProfile();
-    setProfile(p);
-    if (p) {
-      setEditName(p.name   || '');
-      setEditEmoji(p.avatar || '🦊');
-      setEditPhoto(p.photo  || null);
-    }
-  }, []);
 
   // ── Compress & save uploaded photo ──────────────────────────
   const handleFileChange = (e) => {
@@ -63,13 +56,13 @@ export default function Profile() {
     reader.readAsDataURL(file);
   };
 
-  // ── Save edits ───────────────────────────────────────────────
+  // ── Save edits ─────────────────────────────────────────────
   const handleSaveEdit = () => {
     const updated = {
-      ...profile,
+      ...(profile || {}),                          // guard: profile null-safe
       name:   editName.trim() || profile?.name || 'Bé yêu',
-      avatar: editEmoji,
-      photo:  editPhoto,
+      avatar: editEmoji || DEFAULT_AVATAR,
+      photo:  editPhoto || null,
     };
     saveProfile(updated);
     setProfile(updated);
@@ -101,7 +94,7 @@ export default function Profile() {
         <button className="profile-avatar-btn" onClick={() => setShowEditModal(true)}>
           {profile?.photo
             ? <img src={profile.photo} alt="avatar" className="profile-avatar-img" />
-            : <span className="profile-avatar-emoji">{profile?.avatar || '🦊'}</span>
+            : <span className="profile-avatar-emoji">{profile?.avatar || DEFAULT_AVATAR}</span>
           }
           <span className="profile-avatar-edit-badge">✏️</span>
         </button>

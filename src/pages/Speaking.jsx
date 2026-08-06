@@ -4,7 +4,7 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { SERIES_LIST } from '../data/speaking/index';
-import { loadProfile } from '../utils/storage';
+import { loadProfile, DEFAULT_AVATAR } from '../utils/storage';
 import {
   speakText, stopSpeaking,
   startRecognition, isSpeechSupported,
@@ -450,7 +450,7 @@ export default function Speaking() {
                 ? '🎤'
                 : profile?.photo
                   ? <img src={profile.photo} alt="avatar" className="sp-child-avatar" />
-                  : <span>{profile?.avatar || '👦'}</span>
+                : <span>{profile?.avatar || DEFAULT_AVATAR}</span>
               }
             </div>
           </div>

@@ -1,8 +1,11 @@
 // src/utils/storage.js
 // Handles all localStorage persistence
 
-const KEY = 'minhenglish_state';
+const KEY         = 'minhenglish_state';
 const PROFILE_KEY = 'minhenglish_profile';
+
+// Avatar mặc định dùng chung toàn app — đổi 1 chỗ này là đủ
+export const DEFAULT_AVATAR = '🦊';
 
 export const saveState = (state) => {
   try {
