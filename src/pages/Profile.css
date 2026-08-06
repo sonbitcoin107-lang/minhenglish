@@ -19,10 +19,53 @@
   color: white;
 }
 
-.profile-avatar {
+/* Avatar button — bấm để chỉnh */
+.profile-avatar-btn {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease;
+}
+.profile-avatar-btn:active { transform: scale(0.93); }
+
+.profile-avatar-emoji {
   font-size: 72px;
   filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));
   animation: float 3s ease-in-out infinite;
+  display: block;
+  line-height: 1;
+}
+
+.profile-avatar-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.7);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+/* Badge ✏️ nhỏ góc dưới phải */
+.profile-avatar-edit-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 18px;
+  background: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  line-height: 1;
 }
 
 .profile-name {
@@ -221,4 +264,113 @@
   text-align: center;
   font-weight: 700;
   color: var(--red-600);
+}
+
+/* ── Edit Avatar Modal ──────────────────────────────────────── */
+.av-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 200;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 0 env(safe-area-inset-bottom, 0);
+  animation: fadeIn 0.2s ease;
+}
+
+.av-modal {
+  background: white;
+  border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
+  padding: var(--space-6) var(--space-5) var(--space-8);
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  animation: slideUp 0.25s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(60px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.av-modal-title {
+  font-size: var(--text-xl);
+  font-weight: 900;
+  color: var(--gray-900);
+  text-align: center;
+  margin-bottom: var(--space-1);
+}
+
+/* Preview */
+.av-preview {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-2) 0;
+}
+.av-preview-emoji { font-size: 80px; line-height: 1; }
+.av-preview-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--gray-300);
+  box-shadow: var(--shadow-md);
+}
+
+/* Or label */
+.av-or-label {
+  text-align: center;
+  font-size: var(--text-sm);
+  color: var(--gray-400);
+  font-weight: 600;
+  margin: var(--space-1) 0;
+}
+
+/* Emoji grid */
+.av-emoji-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-2);
+}
+.av-emoji-btn {
+  font-size: 32px;
+  background: var(--gray-100);
+  border: 2.5px solid transparent;
+  border-radius: var(--radius-lg);
+  padding: var(--space-2);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: center;
+  line-height: 1;
+}
+.av-emoji-btn:active  { transform: scale(0.9); }
+.av-emoji-btn.selected {
+  border-color: var(--green-500);
+  background: var(--green-100);
+  box-shadow: 0 0 0 2px var(--green-300);
+}
+
+/* Name input */
+.av-name-input {
+  width: 100%;
+  border: 2px solid var(--gray-300);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--gray-900);
+  outline: none;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+.av-name-input:focus { border-color: var(--green-500); }
+
+/* Actions */
+.av-actions {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-1);
 }
