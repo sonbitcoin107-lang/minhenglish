@@ -385,6 +385,8 @@ export default function Speaking() {
               🎉 Đúng {correctCount}/{totalTurns} câu · ⚡ +{sessionXp} XP
             </p>
             <button className="btn btn-primary btn-full" onClick={() => {
+              clearTimers(); stopRecRef.current?.(); stopSpeaking();
+              setHistory([]); setSessionXp(0);
               setScreen(S.UNIT_SELECT); setSelectedUnit(null); setTurnIdx(0);
             }}>Chọn Unit khác</button>
             <button className="btn btn-secondary btn-full" onClick={() => startUnit(selectedUnit)}>
