@@ -327,7 +327,13 @@ export default function Speaking() {
   }
 
   // CONVERSATION (+ COMPLETE inline)
-  const correctCount = history.filter(h => h.correct).length;
+  const correctCount   = history.filter(h => h.correct).length;
+  const stars          = correctCount === totalTurns ? 3 : correctCount >= Math.ceil(totalTurns * 0.6) ? 2 : 1;
+  const completeMsg    = stars === 3 ? 'Tuyệt vời! Con làm rất tốt! 🎉'
+                       : stars === 2 ? 'Giỏi lắm! Tiếp tục cố lên! 💪'
+                       : 'Cố gắng hơn nữa nhé! 🌱';
+  const unitIdx  = selectedSeries?.units?.findIndex(u => u.id === selectedUnit?.id) ?? -1;
+  const nextUnit = selectedSeries?.units?.[unitIdx + 1] ?? null;
   return (
     <div className="speaking-page sp-conversation">
       {/* Progress bar */}
@@ -378,20 +384,27 @@ export default function Speaking() {
           </div>
         ))}
 
-        {/* COMPLETE: banner + nút — thay current block */}
+        {/* COMPLETE: thay current block */}
         {screen === S.COMPLETE ? (
-          <div className="sp-complete-actions" style={{ padding: 'var(--space-4) 0' }}>
-            <p style={{ textAlign:'center', fontWeight:800, fontSize:'var(--text-lg)', margin:0 }}>
-              🎉 Đúng {correctCount}/{totalTurns} câu · ⚡ +{sessionXp} XP
-            </p>
-            <button className="btn btn-primary btn-full" onClick={() => {
-              clearTimers(); stopRecRef.current?.(); stopSpeaking();
-              setHistory([]); setSessionXp(0);
-              setScreen(S.UNIT_SELECT); setSelectedUnit(null); setTurnIdx(0);
-            }}>Chọn Unit khác</button>
-            <button className="btn btn-secondary btn-full" onClick={() => startUnit(selectedUnit)}>
-              🔄 Luyện lại Unit này
-            </button>
+          <div className="sp-complete-inline">
+            <div className="sp-complete-stars">{'\u2b50'.repeat(stars)}</div>
+            <p className="sp-complete-msg">{completeMsg}</p>
+            <div className="sp-complete-xp-badge">⚡ +{sessionXp} XP</div>
+            {nextUnit ? (
+              <button className="btn btn-primary btn-full sp-complete-next"
+                onClick={() => startUnit(nextUnit)}>
+                Unit tiếp theo: {nextUnit.title} →
+              </button>
+            ) : (
+              <button className="btn btn-primary btn-full sp-complete-next"
+                onClick={() => {
+                  clearTimers(); stopRecRef.current?.(); stopSpeaking();
+                  setHistory([]); setSessionXp(0);
+                  setScreen(S.UNIT_SELECT); setSelectedUnit(null); setTurnIdx(0);
+                }}>← Về danh sách unit</button>
+            )}
+            <button className="btn btn-ghost btn-full sp-complete-retry"
+              onClick={() => startUnit(selectedUnit)}>🔄 Luyện lại unit này</button>
           </div>
         ) : (
         <div className="sp-current-block">
