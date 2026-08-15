@@ -403,7 +403,7 @@ export default function Speaking() {
                   setScreen(S.UNIT_SELECT); setSelectedUnit(null); setTurnIdx(0);
                 }}>← Về danh sách unit</button>
             )}
-            <button className="btn btn-ghost btn-full sp-complete-retry"
+            <button className="btn btn-secondary btn-full"
               onClick={() => startUnit(selectedUnit)}>🔄 Luyện lại unit này</button>
           </div>
         ) : (
