@@ -328,13 +328,43 @@ export default function Speaking() {
 
   // COMPLETE
   if (screen === S.COMPLETE) {
+    const correctCount = history.filter(h => h.correct).length;
     return (
       <div className="speaking-page sp-center">
         <div className="sp-complete-emoji">🎉</div>
         <img src="/mascot.png" alt="MinhTi" className="sp-complete-mascot bounce-in" />
         <h2 className="sp-complete-title">Hoàn thành Unit {selectedUnit.unit}!</h2>
-        <p className="sp-complete-sub">Con đã luyện xong tất cả {totalTurns} câu!</p>
-        <div className="sp-complete-xp"><span>⚡ +{sessionXp} XP</span></div>
+        <p className="sp-complete-sub">
+          Đúng {correctCount}/{totalTurns} câu · ⚡ +{sessionXp} XP
+        </p>
+
+        {/* ── Review: xem lại từng câu ── */}
+        {history.length > 0 && (
+          <div className="sp-review-list">
+            <p className="sp-review-heading">📋 Ôn lại hội thoại</p>
+            {history.map((h, idx) => (
+              <div key={idx} className={`sp-review-item ${h.correct ? 'correct' : 'wrong'}`}>
+                {/* Câu MinhTi */}
+                <div className="sp-review-mascot-row">
+                  <img src="/mascot.png" alt="MinhTi" className="sp-review-avatar" />
+                  <span className="sp-review-mascot-text">{h.mascotText}</span>
+                </div>
+                {/* Câu bé — từng từ tô màu */}
+                <div className="sp-review-child-row">
+                  <div className="sp-word-row">
+                    {h.wordResults.map((w, wi) => (
+                      <span key={wi}
+                        className={`sp-word ${w.correct ? 'sp-word-correct' : 'sp-word-wrong'} ${w.placeholder ? 'sp-word-placeholder' : ''}`}
+                      >{w.word}</span>
+                    ))}
+                  </div>
+                  <span className="sp-review-tick">{h.correct ? '✅' : '❌'}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
         <div className="sp-complete-actions">
           <button className="btn btn-primary btn-full" onClick={() => {
             setScreen(S.UNIT_SELECT); setSelectedUnit(null); setTurnIdx(0);
@@ -346,6 +376,7 @@ export default function Speaking() {
       </div>
     );
   }
+
 
   // CONVERSATION
   return (
