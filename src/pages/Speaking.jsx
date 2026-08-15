@@ -326,59 +326,8 @@ export default function Speaking() {
     );
   }
 
-  // COMPLETE
-  if (screen === S.COMPLETE) {
-    const correctCount = history.filter(h => h.correct).length;
-    return (
-      <div className="speaking-page sp-center">
-        <div className="sp-complete-emoji">🎉</div>
-        <img src="/mascot.png" alt="MinhTi" className="sp-complete-mascot bounce-in" />
-        <h2 className="sp-complete-title">Hoàn thành Unit {selectedUnit.unit}!</h2>
-        <p className="sp-complete-sub">
-          Đúng {correctCount}/{totalTurns} câu · ⚡ +{sessionXp} XP
-        </p>
-
-        {/* ── Review: xem lại từng câu ── */}
-        {history.length > 0 && (
-          <div className="sp-review-list">
-            <p className="sp-review-heading">📋 Ôn lại hội thoại</p>
-            {history.map((h, idx) => (
-              <div key={idx} className={`sp-review-item ${h.correct ? 'correct' : 'wrong'}`}>
-                {/* Câu MinhTi */}
-                <div className="sp-review-mascot-row">
-                  <img src="/mascot.png" alt="MinhTi" className="sp-review-avatar" />
-                  <span className="sp-review-mascot-text">{h.mascotText}</span>
-                </div>
-                {/* Câu bé — từng từ tô màu */}
-                <div className="sp-review-child-row">
-                  <div className="sp-word-row">
-                    {h.wordResults.map((w, wi) => (
-                      <span key={wi}
-                        className={`sp-word ${w.correct ? 'sp-word-correct' : 'sp-word-wrong'} ${w.placeholder ? 'sp-word-placeholder' : ''}`}
-                      >{w.word}</span>
-                    ))}
-                  </div>
-                  <span className="sp-review-tick">{h.correct ? '✅' : '❌'}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-
-        <div className="sp-complete-actions">
-          <button className="btn btn-primary btn-full" onClick={() => {
-            setScreen(S.UNIT_SELECT); setSelectedUnit(null); setTurnIdx(0);
-          }}>Chọn Unit khác</button>
-          <button className="btn btn-secondary btn-full" onClick={() => startUnit(selectedUnit)}>
-            🔄 Luyện lại Unit này
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-
-  // CONVERSATION
+  // CONVERSATION (+ COMPLETE inline)
+  const correctCount = history.filter(h => h.correct).length;
   return (
     <div className="speaking-page sp-conversation">
       {/* Progress bar */}
@@ -389,10 +338,10 @@ export default function Speaking() {
         }}>✕</button>
         <div className="sp-progress-bar-wrap">
           <div className="progress-track">
-            <div className="progress-fill" style={{ width: `${(turnIdx / totalTurns) * 100}%` }} />
+            <div className="progress-fill" style={{ width: `${screen === S.COMPLETE ? 100 : (turnIdx / totalTurns) * 100}%` }} />
           </div>
         </div>
-        <span className="sp-turn-num">{turnIdx + 1}/{totalTurns}</span>
+        <span className="sp-turn-num">{screen === S.COMPLETE ? `${totalTurns}/${totalTurns}` : `${turnIdx + 1}/${totalTurns}`}</span>
       </div>
 
       {/* Unit badge */}
@@ -429,7 +378,20 @@ export default function Speaking() {
           </div>
         ))}
 
-        {/* Current active turn */}
+        {/* COMPLETE: banner + nút — thay current block */}
+        {screen === S.COMPLETE ? (
+          <div className="sp-complete-actions" style={{ padding: 'var(--space-4) 0' }}>
+            <p style={{ textAlign:'center', fontWeight:800, fontSize:'var(--text-lg)', margin:0 }}>
+              🎉 Đúng {correctCount}/{totalTurns} câu · ⚡ +{sessionXp} XP
+            </p>
+            <button className="btn btn-primary btn-full" onClick={() => {
+              setScreen(S.UNIT_SELECT); setSelectedUnit(null); setTurnIdx(0);
+            }}>Chọn Unit khác</button>
+            <button className="btn btn-secondary btn-full" onClick={() => startUnit(selectedUnit)}>
+              🔄 Luyện lại Unit này
+            </button>
+          </div>
+        ) : (
         <div className="sp-current-block">
           {/* MinhTi nói */}
           <div className={`sp-turn sp-turn-mascot ${screen === S.MASCOT_SPEAK ? 'active' : ''}`}>
@@ -523,6 +485,7 @@ export default function Speaking() {
             </div>
           )}
         </div>
+        )}
 
         {/* Auto-scroll anchor */}
         <div ref={bottomRef} style={{ height: 32 }} />
